@@ -1597,10 +1597,10 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 02, 104, '红泥湾镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 02, 105, '黄台岗镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 02, 106, '金华镇');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 02, 301, '溧河乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 02, 302, '汉冢乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 02, 304, '茶庵乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 02, 305, '高庙乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 02, 201, '溧河乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 02, 202, '汉冢乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 02, 204, '茶庵乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 02, 205, '高庙乡');
 
 /* 河南省 南阳市 卧龙区 */
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 03, 002, '七一街道办事处');
@@ -1618,9 +1618,9 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 03, 106, '青华镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 03, 107, '英庄镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 03, 108, '潦河坡镇');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 03, 300, '七里园乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 03, 305, '谢庄乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 03, 306, '王村乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 03, 200, '七里园乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 03, 205, '谢庄乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 03, 206, '王村乡');
 
 /* 河南省 南阳市 南召县 */
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 100, '城关镇');
@@ -1631,14 +1631,14 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 105, '板山坪镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 106, '乔端镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 107, '白土岗镇');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 300, '城郊乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 301, '小店乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 302, '皇后乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 303, '太山庙乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 304, '石门乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 305, '四棵树乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 308, '马市坪乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 310, '崔庄乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 200, '城郊乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 201, '小店乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 202, '皇后乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 203, '太山庙乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 204, '石门乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 205, '四棵树乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 208, '马市坪乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 21, 210, '崔庄乡');
 
 /* 河南省 南阳市 方城县 */
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 001, '凤瑞街道办事处');
@@ -1651,13 +1651,13 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 106, '广阳镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 107, '二郎庙镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 108, '杨楼镇');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 300, '券桥乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 301, '杨集乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 303, '古庄店乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 306, '清河乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 309, '柳河乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 310, '四里店乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 311, '袁店回族乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 200, '券桥乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 201, '杨集乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 203, '古庄店乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 206, '清河乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 209, '柳河乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 210, '四里店乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 22, 211, '袁店回族乡');
 
 /* 河南省 南阳市 西峡县 */
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 23, 001, '白羽街道办事处');
@@ -1677,8 +1677,8 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 23, 112, '二郎坪镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 23, 113, '石界河镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 23, 114, '军马河镇');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 23, 300, '田关乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 23, 307, '寨根乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 23, 200, '田关乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 23, 207, '寨根乡');
 
 /* 河南省 南阳市 镇平县 */
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 24, 001, '涅阳街道办事处');
@@ -1699,10 +1699,10 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 24, 113, '张林镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 24, 114, '柳泉铺镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 24, 115, '彭营镇');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 24, 303, '二龙乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 24, 306, '王岗乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 24, 309, '马庄乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 24, 315, '郭庄回族乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 24, 203, '二龙乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 24, 206, '王岗乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 24, 209, '马庄乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 24, 215, '郭庄回族乡');
 
 /* 河南省 南阳市 内乡县 */
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 25, 100, '城关镇');
@@ -1716,11 +1716,11 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 25, 108, '灌涨镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 25, 109, '桃溪镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 25, 110, '岞岖镇');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 25, 300, '板场乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 25, 301, '大桥乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 25, 302, '赵店乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 25, 306, '七里坪乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 25, 307, '余关乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 25, 200, '板场乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 25, 201, '大桥乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 25, 202, '赵店乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 25, 206, '七里坪乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 25, 207, '余关乡');
 
 /* 河南省 南阳市 淅川县 */
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 26, 001, '龙城街道办事处');
@@ -1736,10 +1736,10 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 26, 109, '仓房镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 26, 110, '上集镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 26, 111, '马蹬镇');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 26, 301, '西簧乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 26, 302, '毛堂乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 26, 303, '大石桥乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 26, 304, '滔河乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 26, 201, '西簧乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 26, 202, '毛堂乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 26, 203, '大石桥乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 26, 204, '滔河乡');
 
 /* 河南省 南阳市 社旗县 */
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 27, 001, '赵河街道办事处');
@@ -1757,7 +1757,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 27, 111, '太和镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 27, 112, '大冯营镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 27, 113, '陌陂镇');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 27, 313, '唐庄乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 27, 213, '唐庄乡');
 
 /* 河南省 南阳市 唐河县 */
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 001, '滨河街道办事处');
@@ -1776,13 +1776,13 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 110, '上屯镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 111, '毕店镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 112, '少拜寺镇');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 300, '城郊乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 301, '桐河乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 306, '昝岗乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 307, '祁仪乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 308, '马振抚乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 309, '古城乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 311, '东王集乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 200, '城郊乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 201, '桐河乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 206, '昝岗乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 207, '祁仪乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 208, '马振抚乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 209, '古城乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 28, 211, '东王集乡');
 
 /* 河南省 南阳市 新野县 */
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 29, 001, '汉城街道办事处');
@@ -1795,11 +1795,11 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 29, 106, '五星镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 29, 107, '溧河铺镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 29, 108, '王集镇');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 29, 300, '城郊乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 29, 303, '前高庙乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 29, 305, '樊集乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 29, 307, '上庄乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 29, 309, '上港乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 29, 200, '城郊乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 29, 203, '前高庙乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 29, 205, '樊集乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 29, 207, '上庄乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 29, 209, '上港乡');
 
 /* 河南省 南阳市 桐柏县 */
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 30, 100, '城关镇');
@@ -1815,9 +1815,9 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 30, 110, '安棚镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 30, 111, '朱庄镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 30, 112, '程湾镇');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 30, 300, '城郊乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 30, 301, '回龙乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 30, 306, '新集乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 30, 200, '城郊乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 30, 201, '回龙乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 30, 206, '新集乡');
 
 /* 河南省 南阳市 邓州市 */
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 81, 001, '古城街道办事处');
@@ -1841,12 +1841,12 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 81, 117, '九龙镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 81, 118, '文渠镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 81, 119, '高集镇');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 81, 301, '张楼乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 81, 304, '夏集乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 81, 305, '裴营乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 81, 313, '陶营乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 81, 316, '小杨营乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 81, 319, '龙堰乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 81, 201, '张楼乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 81, 204, '夏集乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 81, 205, '裴营乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 81, 213, '陶营乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 81, 216, '小杨营乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 13, 81, 219, '龙堰乡');
 
 /* 河南省 商丘市 梁园区 */
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES (41, 14, 02, 001, '平原街道');
