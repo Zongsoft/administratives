@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="api\**" />
+      <EmbeddedResource Remove="api\**" />
+      <None Remove="api\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Zongsoft.Core">
+        <HintPath>..\..\Framework\Zongsoft.Core\src\bin\$(Configuration)\netcoreapp3.1\Zongsoft.Core.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+</Project>
