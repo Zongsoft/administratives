@@ -16,6 +16,10 @@
 - 《Administratives-China(Street)-8》陕西省(61)、甘肃省(62)、青海省(63) 的街道、乡镇数据；
 - 《Administratives-China(Street)-9》宁夏回族自治区(64)、新疆维吾尔自治区(65)、西藏自治区(54) 的街道、乡镇数据。
 
+### 表结构设计
+- [《Administratives-China-Tables.md》表结构设计文档](Administratives-China-Tables.md)
+- [《Administratives-China-Tables.sql》表结构构建SQL脚本](Administratives-China-Tables.sql)
+
 ## 版权说明
 
 注意：本项目采用 [MIT 授权协议](https://github.com/Zongsoft/Administratives/blob/master/LICENSE)，请严格遵照授权协议，违者必究！

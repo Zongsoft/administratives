@@ -34,4 +34,4 @@ CREATE TABLE IF NOT EXISTS `Street` (
   `PinYin` varchar(100) DEFAULT NULL COMMENT '拼音',
   `PostalCode` char(6) DEFAULT NULL COMMENT '邮政编码',
   PRIMARY KEY (`ProvinceId`,`CityId`,`DistrictId`,`StreetId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='街道(村)表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='街道(乡镇)表';
