@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<schema xmlns="http://schemas.zongsoft.com/data" name="">
+	<container name="">
+		<entity name="Province">
+			<key>
+				<member name="ProvinceId" />
+			</key>
+
+			<property name="ProvinceId" type="byte" nullable="false" />
+			<property name="Name" type="string" length="50" nullable="false" />
+			<property name="PinYin" type="string" length="100" nullable="true" />
+			<property name="Alias" type="string" nullable="false" />
+		</entity>
+
+		<entity name="City">
+			<key>
+				<member name="ProvinceId" />
+				<member name="CityId" />
+			</key>
+
+			<property name="ProvinceId" type="byte" nullable="false" />
+			<property name="CityId" type="byte" nullable="false" />
+			<property name="Name" type="string" length="50" nullable="false" />
+			<property name="PinYin" type="string" length="100" nullable="true" />
+		</entity>
+
+		<entity name="District">
+			<key>
+				<member name="ProvinceId" />
+				<member name="CityId" />
+				<member name="DistrictId" />
+			</key>
+
+			<property name="ProvinceId" type="byte" nullable="false" />
+			<property name="CityId" type="byte" nullable="false" />
+			<property name="DistrictId" type="byte" nullable="false" />
+			<property name="Name" type="string" length="50" nullable="false" />
+			<property name="PinYin" type="string" length="100" nullable="true" />
+			<property name="PostalCode" type="string" length="6" nullable="true" />
+		</entity>
+
+		<entity name="Street">
+			<key>
+				<member name="ProvinceId" />
+				<member name="CityId" />
+				<member name="DistrictId" />
+				<member name="StreetId" />
+			</key>
+
+			<property name="ProvinceId" type="byte" nullable="false" />
+			<property name="CityId" type="byte" nullable="false" />
+			<property name="DistrictId" type="byte" nullable="false" />
+			<property name="StreetId" type="byte" nullable="false" />
+			<property name="Name" type="string" length="50" nullable="false" />
+			<property name="PinYin" type="string" length="100" nullable="true" />
+			<property name="PostalCode" type="string" length="6" nullable="true" />
+		</entity>
+	</container>
+</schema>
