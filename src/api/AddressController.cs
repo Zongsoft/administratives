@@ -29,6 +29,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Zongsoft.Administratives.Web
 {
 	[ApiController]
+	[Route("Administratives")]
 	public class AddressController : ControllerBase
 	{
 		[HttpGet]
@@ -50,7 +51,7 @@ namespace Zongsoft.Administratives.Web
 				(IActionResult)this.Ok(result);
 		}
 
-		[HttpGet("{province:byte:required}-{city:byte:required}-{district:byte?}-{street:byte?}")]
+		[HttpGet("{province:int:required}-{city:int:required}-{district:int}-{street:int}")]
 		public object Get(byte province, byte city = 0, byte district = 0, byte street = 0, [FromQuery]AddressFormat format = AddressFormat.Plain)
 		{
 			if(province == 0)

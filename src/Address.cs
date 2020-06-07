@@ -262,6 +262,9 @@ namespace Zongsoft.Administratives
 			//获取数据访问服务
 			var dataAccess = (Data.IDataAccess)Services.ApplicationContext.Current.Services.GetService(typeof(Data.IDataAccess));
 
+			if(dataAccess == null)
+				return;
+
 			//获取所有的省份记录
 			var provinces = dataAccess.Select<Province>(null, Data.Paging.Disabled).ToArray();
 			//获取所有的城市记录
