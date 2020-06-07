@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+
+<plugin name="Zongsoft.Administratives.Web"
+		title="Zongsoft.Administratives.Web Plugin"
+		version="1.0"
+		author="Popeye Zhong(zongsoft@gmail.com)"
+		copyright="Copyright (C) 2015-2020 Zongsoft Corporation. All rights reserved."
+		description="">
+
+	<manifest>
+		<assemblies>
+			<assembly name="Zongsoft.Administratives.Web" />
+		</assemblies>
+
+		<dependencies>
+			<dependency name="Zongsoft.Administratives" />
+		</dependencies>
+	</manifest>
+
+</plugin>
