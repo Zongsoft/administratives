@@ -32,6 +32,8 @@ using System.Text.Json;
 using System.Threading;
 using System.Collections.Generic;
 
+using Zongsoft.Data;
+using Zongsoft.Services;
 using Zongsoft.Administratives.Models;
 
 namespace Zongsoft.Administratives
@@ -260,7 +262,8 @@ namespace Zongsoft.Administratives
 		private static void LoadFromDatabase()
 		{
 			//获取数据访问服务
-			var dataAccess = (Data.IDataAccess)Services.ApplicationContext.Current.Services.GetService(typeof(Data.IDataAccess));
+			var dataAccess = (IDataAccess)ApplicationContext.Current.Services.GetService(typeof(IDataAccess)) ??
+				((IDataAccessProvider)ApplicationContext.Current.Services.GetService(typeof(IDataAccessProvider)))?.GetAccessor(string.Empty);
 
 			if(dataAccess == null)
 				return;
@@ -407,9 +410,9 @@ namespace Zongsoft.Administratives
 		private static string GetAddressFilePath(AddressFormat format, string relativePath = null)
 		{
 			if(string.IsNullOrWhiteSpace(relativePath))
-				relativePath = AppContext.BaseDirectory;
+				relativePath = ApplicationContext.Current.ApplicationPath;
 			else if(!Path.IsPathRooted(relativePath))
-				relativePath = Path.Combine(AppContext.BaseDirectory, relativePath);
+				relativePath = Path.Combine(ApplicationContext.Current.ApplicationPath, relativePath);
 
 			return format == AddressFormat.Plain ?
 				Path.Combine(relativePath, KEY_ADDRESSES) + ".json" :
