@@ -29,6 +29,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Zongsoft.Administratives.Web
 {
 	[ApiController]
+	[Route("Addresses")]
 	[Route("Administratives")]
 	public class AddressController : ControllerBase
 	{
