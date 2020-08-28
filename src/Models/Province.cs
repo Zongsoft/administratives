@@ -35,24 +35,19 @@ namespace Zongsoft.Administratives.Models
 	public class Province
 	{
 		#region 公共属性
-		/// <summary>
-		/// 获取或设置省(州)编号。
-		/// </summary>
+		/// <summary>获取或设置省(州)编号。</summary>
 		public byte ProvinceId { get; set; }
 
-		/// <summary>
-		/// 获取或设置省(州)名称。
-		/// </summary>
+		/// <summary>获取或设置省(州)名称。</summary>
 		public string Name { get; set; }
 
-		/// <summary>
-		/// 获取或设置省(州)简称。
-		/// </summary>
-		public string Alias { get; set; }
+		/// <summary>获取或设置省(州)简称。</summary>
+		public string Abbr { get; set; }
 
-		/// <summary>
-		/// 获取或设置省(州)名称的拼音。
-		/// </summary>
+		/// <summary>获取或设置省(州)别名(代号名)。</summary>
+		public char Alias { get; set; }
+
+		/// <summary>获取或设置省(州)名称的拼音。</summary>
 		public string PinYin { get; set; }
 		#endregion
 
@@ -72,15 +67,14 @@ namespace Zongsoft.Administratives.Models
 				{
 					this.ProvinceId = province.ProvinceId;
 					this.Name = province.Name;
+					this.Abbr = province.Abbr;
 					this.PinYin = province.PinYin;
 					this.Alias = province.Alias;
 				}
 			}
 			#endregion
 
-			/// <summary>
-			/// 获取或设置当前省(州)的下属市级城市集合。
-			/// </summary>
+			/// <summary>获取或设置当前省(州)的下属市级城市集合。</summary>
 			public IDictionary<byte, City.Keyed> Cities { get; set; }
 		}
 
@@ -100,15 +94,14 @@ namespace Zongsoft.Administratives.Models
 				{
 					this.ProvinceId = province.ProvinceId;
 					this.Name = province.Name;
+					this.Abbr = province.Abbr;
 					this.PinYin = province.PinYin;
 					this.Alias = province.Alias;
 				}
 			}
 			#endregion
 
-			/// <summary>
-			/// 获取或设置当前省(州)的下属市级城市集合。
-			/// </summary>
+			/// <summary>获取或设置当前省(州)的下属市级城市集合。</summary>
 			public City.Plain[] Cities { get; set; }
 		}
 	}

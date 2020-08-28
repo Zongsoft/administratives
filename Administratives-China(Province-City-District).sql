@@ -47,7 +47,7 @@ TRUNCATE TABLE `Street`;
 
 /* 北京市 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (11, '北京市', '京');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (11, '北京市', '北京', '京');
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (11, 01, '市辖区');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (11, 01, 01, '东城区'),
@@ -69,7 +69,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 天津市 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (12, '天津市', '津');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (12, '天津市', '天津', '津');
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (12, 01, '市辖区');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (12, 01, 01, '和平区'),
@@ -91,7 +91,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 河北省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (13, '河北省', '冀');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (13, '河北省', '河北', '冀');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (13, 01, '石家庄市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -311,7 +311,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 山西省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (14, '山西省', '晋');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (14, '山西省', '山西', '晋');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (14, 01, '太原市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -478,7 +478,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 内蒙古 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES ('15', '内蒙古自治区', '蒙');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES ('15', '内蒙古自治区', '内蒙古', '蒙');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (15, 01, '呼和浩特市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -630,7 +630,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 辽宁省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (21, '辽宁省', '辽');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (21, '辽宁省', '辽宁', '辽');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (21, 01, '沈阳市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -790,7 +790,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 吉林省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (22, '吉林省', '吉');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (22, '吉林省', '吉林', '吉');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (22, 01, '长春市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -889,7 +889,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 黑龙江省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (23, '黑龙江省', '黑');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (23, '黑龙江省', '黑龙江', '黑');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (23, 01, '哈尔滨市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -1072,7 +1072,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 上海市 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (31, '上海市', '沪');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (31, '上海市', '上海', '沪');
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (31, 01, '市辖区');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (31, 01, 01, '黄浦区'),
@@ -1094,7 +1094,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 江苏省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (32, '江苏省', '苏');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (32, '江苏省', '江苏', '苏');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (32, 01, '南京市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -1246,7 +1246,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 浙江省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (33, '浙江省', '浙');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (33, '浙江省', '浙江', '浙');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (33, 01, '杭州市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -1384,7 +1384,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 安徽省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (34, '安徽省', '皖');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (34, '安徽省', '安徽', '皖');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 01, '合肥市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -1557,7 +1557,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 福建省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (35, '福建省', '闽');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (35, '福建省', '福建', '闽');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (35, 01, '福州市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -1682,7 +1682,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 江西省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (36, '江西省', '赣');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (36, '江西省', '江西', '赣');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (36, 01, '南昌市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -1830,7 +1830,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 山东省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (37, '山东省', '鲁');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (37, '山东省', '山东', '鲁');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 01, '济南市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -2039,7 +2039,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 河南省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (41, '河南省', '豫');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (41, '河南省', '河南', '豫');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 01, '郑州市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -2272,7 +2272,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES (41
 
 /* 湖北省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (42, '湖北省', '鄂');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (42, '湖北省', '湖北', '鄂');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (42, 01, '武汉市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -2433,7 +2433,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 湖南省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (43, '湖南省', '湘');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (43, '湖南省', '湖南', '湘');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (43, 01, '长沙市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -2614,7 +2614,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 广东省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (44, '广东省', '粤');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (44, '广东省', '广东', '粤');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 01, '广州市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -2870,7 +2870,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 广西省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (45, '广西壮族自治区', '桂');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (45, '广西壮族自治区', '广西', '桂');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (45, 01, '南宁市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -3041,7 +3041,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 海南省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (46, '海南省', '琼');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (46, '海南省', '海南', '琼');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (46, 01, '海口市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -3083,7 +3083,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 重庆市 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (50, '重庆市', '渝');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (50, '重庆市', '重庆', '渝');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (50, 01, '市辖区');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -3131,7 +3131,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 四川省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (51, '四川省', '川');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (51, '四川省', '四川', '川');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 01, '成都市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -3399,7 +3399,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 贵州省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (52, '贵州省', '贵');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (52, '贵州省', '贵州', '贵');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (52, 01, '贵阳市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -3523,7 +3523,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 云南省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (53, '云南省', '云');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (53, '云南省', '云南', '云');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 01, '昆明市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -3712,7 +3712,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 西藏自治区 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (54, '西藏自治区', '藏');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (54, '西藏自治区', '西藏', '藏');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (54, 01, '拉萨市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -3813,7 +3813,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 陕西省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (61, '陕西省', '陕');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (61, '陕西省', '陕西', '陕');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (61, 01, '西安市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -3964,7 +3964,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 甘肃省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (62, '甘肃省', '甘');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (62, '甘肃省', '甘肃', '甘');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (62, 01, '兰州市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -4107,7 +4107,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 青海省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (63, '青海省', '青');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (63, '青海省', '青海', '青');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (63, 01, '西宁市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -4179,7 +4179,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 宁夏回族自治区 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (64, '宁夏回族自治区', '宁');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (64, '宁夏回族自治区', '宁夏', '宁');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (64, 01, '银川市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -4225,7 +4225,7 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 新疆维吾尔自治区 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (65, '新疆维吾尔自治区', '新');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (65, '新疆维吾尔自治区', '新疆', '新');
 
 INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (65, 01, '乌鲁木齐市');
 INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
@@ -4377,6 +4377,6 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 港澳台 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (71, '台湾省', '台');
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (81, '香港特别行政区', '港');
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Alias`) VALUES (82, '澳门特别行政区', '澳');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (71, '台湾省', '台湾', '台');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (81, '香港特别行政区', '香港', '港');
+INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (82, '澳门特别行政区', '澳门', '澳');
