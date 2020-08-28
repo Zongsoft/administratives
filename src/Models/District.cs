@@ -35,34 +35,22 @@ namespace Zongsoft.Administratives.Models
 	public class District
 	{
 		#region 公共属性
-		/// <summary>
-		/// 获取或设置所属的省(州)编号。
-		/// </summary>
+		/// <summary>获取或设置所属的省(州)编号。</summary>
 		public byte ProvinceId { get; set; }
 
-		/// <summary>
-		/// 获取或设置所属的城市编号。
-		/// </summary>
+		/// <summary>获取或设置所属的城市编号。</summary>
 		public byte CityId { get; set; }
 
-		/// <summary>
-		/// 获取或设置区县编号。
-		/// </summary>
+		/// <summary>获取或设置区县编号。</summary>
 		public byte DistrictId { get; set; }
 
-		/// <summary>
-		/// 获取或设置区县名称。
-		/// </summary>
+		/// <summary>获取或设置区县名称。</summary>
 		public string Name { get; set; }
 
-		/// <summary>
-		/// 获取或设置区县名称的拼音。
-		/// </summary>
+		/// <summary>获取或设置区县名称的拼音。</summary>
 		public string PinYin { get; set; }
 
-		/// <summary>
-		/// 获取或设置区县的邮政编码。
-		/// </summary>
+		/// <summary>获取或设置区县的邮政编码。</summary>
 		public string PostalCode { get; set; }
 		#endregion
 
@@ -90,9 +78,7 @@ namespace Zongsoft.Administratives.Models
 			}
 			#endregion
 
-			/// <summary>
-			/// 获取或设置当前区县的下属街道(乡镇)集合。
-			/// </summary>
+			/// <summary>获取或设置当前区县的下属街道(乡镇)集合。</summary>
 			public IDictionary<byte, Street> Streets { get; set; }
 		}
 
@@ -120,9 +106,7 @@ namespace Zongsoft.Administratives.Models
 			}
 			#endregion
 
-			/// <summary>
-			/// 获取或设置当前区县的下属街道(乡镇)集合。
-			/// </summary>
+			/// <summary>获取或设置当前区县的下属街道(乡镇)集合。</summary>
 			public ICollection<Street> Streets { get; set; }
 		}
 	}

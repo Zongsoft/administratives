@@ -269,13 +269,13 @@ namespace Zongsoft.Administratives
 				return;
 
 			//获取所有的省份记录
-			var provinces = dataAccess.Select<Province>(null, Data.Paging.Disabled).ToArray();
+			var provinces = dataAccess.Select<Province>(null, Paging.Disabled).ToArray();
 			//获取所有的城市记录
-			var cities = dataAccess.Select<City>(null, Data.Paging.Disabled).ToArray();
+			var cities = dataAccess.Select<City>(null, Paging.Disabled).ToArray();
 			//获取所有的区县记录
-			var districts = dataAccess.Select<District>(null, Data.Paging.Disabled).ToArray();
+			var districts = dataAccess.Select<District>(null, Paging.Disabled).ToArray();
 			//获取所有的街道记录
-			var streets = dataAccess.Select<Street>(null, Data.Paging.Disabled).ToArray();
+			var streets = dataAccess.Select<Street>(null, Paging.Disabled).ToArray();
 
 			if(_plainProvinces == null)
 			{

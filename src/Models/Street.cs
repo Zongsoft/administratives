@@ -35,39 +35,25 @@ namespace Zongsoft.Administratives.Models
 	public class Street
 	{
 		#region 公共属性
-		/// <summary>
-		/// 获取或设置所属的省(州)编号。
-		/// </summary>
+		/// <summary>获取或设置所属的省(州)编号。</summary>
 		public byte ProvinceId { get; set; }
 
-		/// <summary>
-		/// 获取或设置所属的城市编号。
-		/// </summary>
+		/// <summary>获取或设置所属的城市编号。</summary>
 		public byte CityId { get; set; }
 
-		/// <summary>
-		/// 获取或设置区县编号。
-		/// </summary>
+		/// <summary>获取或设置区县编号。</summary>
 		public byte DistrictId { get; set; }
 
-		/// <summary>
-		/// 获取或设置街道(乡镇)编号。
-		/// </summary>
+		/// <summary>获取或设置街道(乡镇)编号。</summary>
 		public byte StreetId { get; set; }
 
-		/// <summary>
-		/// 获取或设置街道(乡镇)名称。
-		/// </summary>
+		/// <summary>获取或设置街道(乡镇)名称。</summary>
 		public string Name { get; set; }
 
-		/// <summary>
-		/// 获取或设置街道(乡镇)名称的拼音。
-		/// </summary>
+		/// <summary>获取或设置街道(乡镇)名称的拼音。</summary>
 		public string PinYin { get; set; }
 
-		/// <summary>
-		/// 获取或设置街道(乡镇)的邮政编码。
-		/// </summary>
+		/// <summary>获取或设置街道(乡镇)的邮政编码。</summary>
 		public string PostalCode { get; set; }
 		#endregion
 
