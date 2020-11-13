@@ -53,6 +53,9 @@ namespace Zongsoft.Administratives.Models
 		/// <summary>获取或设置街道(乡镇)名称的拼音。</summary>
 		public string PinYin { get; set; }
 
+		/// <summary>获取或设置街道(乡镇)全称。</summary>
+		public string FullName { get; set; }
+
 		/// <summary>获取或设置街道(乡镇)的邮政编码。</summary>
 		public string PostalCode { get; set; }
 		#endregion

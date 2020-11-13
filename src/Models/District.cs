@@ -50,6 +50,9 @@ namespace Zongsoft.Administratives.Models
 		/// <summary>获取或设置区县名称的拼音。</summary>
 		public string PinYin { get; set; }
 
+		/// <summary>获取或设置区县全称。</summary>
+		public string FullName { get; set; }
+
 		/// <summary>获取或设置区县的邮政编码。</summary>
 		public string PostalCode { get; set; }
 		#endregion

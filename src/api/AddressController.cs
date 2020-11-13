@@ -39,7 +39,7 @@ namespace Zongsoft.Administratives.Web
 			return Address.GetAddresses(format);
 		}
 
-		[HttpGet("{id:long}")]
+		[HttpGet("{id}")]
 		public IActionResult Get(uint id)
 		{
 			if(id == 0)
@@ -52,8 +52,8 @@ namespace Zongsoft.Administratives.Web
 				(IActionResult)this.Ok(result);
 		}
 
-		[HttpGet("{province:int:required}-{city:int:required}-{district:int}-{street:int}")]
-		public object Get(byte province, byte city = 0, byte district = 0, byte street = 0, [FromQuery]AddressFormat format = AddressFormat.Plain)
+		[HttpGet("{province:required}-{city:required}-{district}-{street}")]
+		public object Get(byte province, byte city, byte district = 0, byte street = 0, [FromQuery]AddressFormat format = AddressFormat.Plain)
 		{
 			if(province == 0)
 				return this.BadRequest();

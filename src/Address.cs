@@ -76,18 +76,33 @@ namespace Zongsoft.Administratives
 			if(province == null || cityId == 0)
 				return province;
 
+			var fullName = province.Abbr;
+
 			if(province.Cities != null && province.Cities.TryGetValue(cityId, out var city))
 			{
-				if(city == null || districtId == 0)
+				fullName += city.Name;
+
+				if(districtId == 0)
+				{
+					city.FullName = fullName;
 					return city;
+				}
 
 				if(city.Districts != null && city.Districts.TryGetValue(districtId, out var district))
 				{
-					if(district == null || streetId == 0)
+					fullName += district.Name;
+
+					if(streetId == 0)
+					{
+						district.FullName = fullName;
 						return district;
+					}
 
 					if(district.Streets != null && district.Streets.TryGetValue(streetId, out var street))
+					{
+						street.FullName = fullName + street.Name;
 						return street;
+					}
 				}
 			}
 
@@ -116,8 +131,11 @@ namespace Zongsoft.Administratives
 
 					if(keyed != null && keyed.Cities != null)
 					{
-						if(keyed.Cities.TryGetValue(cityId, out var city))
+						if(keyed.Cities.TryGetValue(cityId, out var city) && city != null)
+						{
+							city.FullName = province.Abbr + city.Name;
 							return city;
+						}
 					}
 
 					return null;
@@ -125,7 +143,14 @@ namespace Zongsoft.Administratives
 					var plain = province as Province.Plain;
 
 					if(plain != null && plain.Cities != null)
-						return plain.Cities.FirstOrDefault(p => p.CityId == cityId);
+					{
+						var city = plain.Cities.FirstOrDefault(p => p.CityId == cityId);
+
+						if(city != null)
+							city.FullName = province.Abbr + city.Name;
+
+						return city;
+					}
 
 					return null;
 			}
@@ -147,8 +172,11 @@ namespace Zongsoft.Administratives
 
 					if(keyed != null && keyed.Districts != null)
 					{
-						if(keyed.Districts.TryGetValue(districtId, out var district))
+						if(keyed.Districts.TryGetValue(districtId, out var district) && district != null)
+						{
+							district.FullName = city.FullName + district.Name;
 							return district;
+						}
 					}
 
 					return null;
@@ -156,7 +184,14 @@ namespace Zongsoft.Administratives
 					var plain = city as City.Plain;
 
 					if(plain != null && plain.Districts != null)
-						return plain.Districts.FirstOrDefault(p => p.DistrictId == districtId);
+					{
+						var district = plain.Districts.FirstOrDefault(p => p.DistrictId == districtId);
+
+						if(district != null)
+							district.FullName = city.FullName + district.Name;
+
+						return district;
+					}
 
 					return null;
 			}

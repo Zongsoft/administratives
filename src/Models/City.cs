@@ -46,6 +46,9 @@ namespace Zongsoft.Administratives.Models
 
 		/// <summary>获取或设置城市名称的拼音。</summary>
 		public string PinYin { get; set; }
+
+		/// <summary>获取或设置城市全称。</summary>
+		public string FullName { get; set; }
 		#endregion
 
 		/// <summary>
