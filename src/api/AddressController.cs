@@ -69,5 +69,16 @@ namespace Zongsoft.Administratives.Web
 
 			return Address.Get(province, city, district, street);
 		}
+
+		[HttpGet("States")]
+		[HttpGet("Provinces")]
+		public IActionResult GetProvinces()
+		{
+			var provinces = Address.GetProvinces();
+
+			return provinces == null || provinces.Length == 0 ?
+				(IActionResult)this.NoContent() :
+				(IActionResult)this.Ok(provinces);
+		}
 	}
 }

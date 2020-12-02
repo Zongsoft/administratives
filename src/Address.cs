@@ -53,6 +53,7 @@ namespace Zongsoft.Administratives
 		private static IEnumerable<Province.Keyed> _keyedProvinces;
 		private static byte[] _compressedPlainData;
 		private static byte[] _compressedKeyedData;
+		private static Province[] _provinces;
 
 		private static readonly ManualResetEventSlim _signaling = new ManualResetEventSlim(true, 50);
 		#endregion
@@ -199,6 +200,21 @@ namespace Zongsoft.Administratives
 			return null;
 		}
 
+		public static Province[] GetProvinces()
+		{
+			if(_provinces == null)
+			{
+				var dataAccess = ApplicationContext.Current.Services.GetDataAccess();
+
+				if(dataAccess == null)
+					return null;
+
+				_provinces = dataAccess.Select<Province>().ToArray();
+			}
+
+			return _provinces;
+		}
+
 		public static IEnumerable<Province> GetAddresses(AddressFormat format)
 		{
 			switch(format)
@@ -297,8 +313,7 @@ namespace Zongsoft.Administratives
 		private static void LoadFromDatabase()
 		{
 			//获取数据访问服务
-			var dataAccess = (IDataAccess)ApplicationContext.Current.Services.GetService(typeof(IDataAccess)) ??
-				((IDataAccessProvider)ApplicationContext.Current.Services.GetService(typeof(IDataAccessProvider)))?.GetAccessor(string.Empty);
+			var dataAccess = ApplicationContext.Current.Services.GetDataAccess();
 
 			if(dataAccess == null)
 				return;
