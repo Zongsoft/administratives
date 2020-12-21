@@ -1824,7 +1824,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 01, 05, 170, '龙嘉镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 01, 05, 173, '劝农山镇（长春莲花山生态旅游度假区省级）');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 01, 05, 174, '泉眼镇');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 01, 05, 270, '四家乡（长春莲花山生态旅游度假区省级）');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 01, 05, 250, '四家乡（长春莲花山生态旅游度假区省级）');
 
 /* 吉林省 长春市 绿园区 */
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 01, 06, 001, '正阳街道办事处');
@@ -1844,7 +1844,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 01, 12, 100, '齐家镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 01, 12, 101, '太平镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 01, 12, 102, '鹿乡镇');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 01, 12, 270, '双营子回族乡（梅花鹿产业经济开发区）（省级）');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 01, 12, 250, '双营子回族乡（梅花鹿产业经济开发区）（省级）');
 
 /* 吉林省 长春市 九台区 */
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 01, 13, 001, '九台街道办事处');
@@ -2007,7 +2007,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 02, 11, 100, '旺起镇');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 02, 11, 200, '江南乡');
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 02, 11, 201, '前二道乡');
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 02, 11, 270, '小白山乡');
+INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 02, 11, 250, '小白山乡');
 
 /* 吉林省 吉林市 永吉县 */
 INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, `Name`) VALUES (22, 02, 21, 100, '口前镇');
