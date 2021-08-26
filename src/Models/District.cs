@@ -34,6 +34,23 @@ namespace Zongsoft.Administratives.Models
 	/// </summary>
 	public class District
 	{
+		#region 构造函数
+		public District() { }
+		public District(District district)
+		{
+			if(district != null)
+			{
+				this.ProvinceId = district.ProvinceId;
+				this.CityId = district.CityId;
+				this.DistrictId = district.DistrictId;
+				this.Name = district.Name;
+				this.PinYin = district.PinYin;
+				this.FullName = district.FullName;
+				this.PostalCode = district.PostalCode;
+			}
+		}
+		#endregion
+
 		#region 公共属性
 		/// <summary>获取或设置所属的省(州)编号。</summary>
 		public byte ProvinceId { get; set; }
@@ -63,10 +80,7 @@ namespace Zongsoft.Administratives.Models
 		public class Keyed : District
 		{
 			#region 构造函数
-			public Keyed()
-			{
-			}
-
+			public Keyed() { }
 			public Keyed(District district)
 			{
 				if(district != null)
@@ -76,6 +90,7 @@ namespace Zongsoft.Administratives.Models
 					this.DistrictId = district.DistrictId;
 					this.Name = district.Name;
 					this.PinYin = district.PinYin;
+					this.FullName = district.FullName;
 					this.PostalCode = district.PostalCode;
 				}
 			}
@@ -91,10 +106,7 @@ namespace Zongsoft.Administratives.Models
 		public class Plain : District
 		{
 			#region 构造函数
-			public Plain()
-			{
-			}
-
+			public Plain() { }
 			public Plain(District district)
 			{
 				if(district != null)
@@ -104,6 +116,7 @@ namespace Zongsoft.Administratives.Models
 					this.DistrictId = district.DistrictId;
 					this.Name = district.Name;
 					this.PinYin = district.PinYin;
+					this.FullName = district.FullName;
 					this.PostalCode = district.PostalCode;
 				}
 			}

@@ -34,6 +34,21 @@ namespace Zongsoft.Administratives.Models
 	/// </summary>
 	public class City
 	{
+		#region 构造函数
+		public City() { }
+		public City(City city)
+		{
+			if(city != null)
+			{
+				this.ProvinceId = city.ProvinceId;
+				this.CityId = city.CityId;
+				this.Name = city.Name;
+				this.PinYin = city.PinYin;
+				this.FullName = city.FullName;
+			}
+		}
+		#endregion
+
 		#region 公共属性
 		/// <summary>获取或设置所属的省(州)编号。</summary>
 		public byte ProvinceId { get; set; }
@@ -57,10 +72,7 @@ namespace Zongsoft.Administratives.Models
 		public class Keyed : City
 		{
 			#region 构造函数
-			public Keyed()
-			{
-			}
-
+			public Keyed() { }
 			public Keyed(City city)
 			{
 				if(city != null)
@@ -69,6 +81,7 @@ namespace Zongsoft.Administratives.Models
 					this.CityId = city.CityId;
 					this.Name = city.Name;
 					this.PinYin = city.PinYin;
+					this.FullName = city.FullName;
 				}
 			}
 			#endregion
@@ -83,10 +96,7 @@ namespace Zongsoft.Administratives.Models
 		public class Plain : City
 		{
 			#region 构造函数
-			public Plain()
-			{
-			}
-
+			public Plain() { }
 			public Plain(City city)
 			{
 				if(city != null)
@@ -95,6 +105,7 @@ namespace Zongsoft.Administratives.Models
 					this.CityId = city.CityId;
 					this.Name = city.Name;
 					this.PinYin = city.PinYin;
+					this.FullName = city.FullName;
 				}
 			}
 			#endregion

@@ -34,6 +34,21 @@ namespace Zongsoft.Administratives.Models
 	/// </summary>
 	public class Province
 	{
+		#region 构造函数
+		public Province() { }
+		public Province(Province province)
+		{
+			if(province != null)
+			{
+				this.ProvinceId = province.ProvinceId;
+				this.Name = province.Name;
+				this.Abbr = province.Abbr;
+				this.PinYin = province.PinYin;
+				this.Alias = province.Alias;
+			}
+		}
+		#endregion
+
 		#region 公共属性
 		/// <summary>获取或设置省(州)编号。</summary>
 		public byte ProvinceId { get; set; }
@@ -57,10 +72,7 @@ namespace Zongsoft.Administratives.Models
 		public class Keyed : Province
 		{
 			#region 构造函数
-			public Keyed()
-			{
-			}
-
+			public Keyed() { }
 			public Keyed(Province province)
 			{
 				if(province != null)
@@ -84,10 +96,7 @@ namespace Zongsoft.Administratives.Models
 		public class Plain : Province
 		{
 			#region 构造函数
-			public Plain()
-			{
-			}
-
+			public Plain() { }
 			public Plain(Province province)
 			{
 				if(province != null)

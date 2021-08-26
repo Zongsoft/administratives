@@ -215,6 +215,27 @@ namespace Zongsoft.Administratives
 			return _provinces;
 		}
 
+		public static IEnumerable<City> GetCities(byte provinceId)
+		{
+			if(provinceId == 0)
+				return null;
+
+			return Get(provinceId, AddressFormat.Plain) is Province.Plain province ? province.Cities.Select(city => new City(city)) : null;
+		}
+
+		public static IEnumerable<District> GetDistricts(byte provinceId, byte cityId)
+		{
+			if(provinceId == 0 || cityId == 0)
+				return null;
+
+			return Get(provinceId, cityId, AddressFormat.Plain) is City.Plain city ? city.Districts.Select(district => new District(district)) : null;
+		}
+
+		public static IEnumerable<Street> GetStreets(byte provinceId, byte cityId, byte districtId)
+		{
+			return Get(provinceId, cityId, districtId, AddressFormat.Plain) is District.Plain district ? district.Streets : null;
+		}
+
 		public static IEnumerable<Province> GetAddresses(AddressFormat format)
 		{
 			switch(format)
