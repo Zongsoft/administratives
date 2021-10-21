@@ -1,4 +1,4 @@
-﻿/*
+/*
  *   _____                                ______
  *  /_   /  ____  ____  ____  _________  / __/ /_
  *    / /  / __ \/ __ \/ __ \/ ___/ __ \/ /_/ __/
@@ -64,7 +64,7 @@ namespace Zongsoft.Administratives
 			if(addressId == 0)
 				return null;
 
-			return Get((byte)(addressId >> 24), (byte)(addressId >> 16), (byte)(addressId >> 8), (byte)(addressId & 0xFF));
+			return Get((byte)(addressId >> 24), (byte)(addressId >> 16), (byte)(addressId >> 8), (byte)(addressId));
 		}
 
 		public static object Get(byte provinceId, byte cityId, byte districtId, byte streetId)
