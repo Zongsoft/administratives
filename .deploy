@@ -1,0 +1,5 @@
+src/Zongsoft.Administratives.option
+src/Zongsoft.Administratives.plugin
+src/Zongsoft.Administratives.mapping
+
+src/bin/$(Edition)/$(Target)/Zongsoft.Administratives.*
