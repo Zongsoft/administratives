@@ -1,17 +1,28 @@
 <Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
-    </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Version>1.1.0.0</Version>
+    <Authors>Popeye Zhong(zongsoft@qq.com)</Authors>
+    <Company>Zongsoft Studio</Company>
+    <Product>Zongsoft Administratives(Chinese) Library</Product>
+    <Description>This is a class library about chinese administratives development.</Description>
+    <Copyright>Copyright(C) Zongsoft Studio 2010-2022. All rights reserved.</Copyright>
+  </PropertyGroup>
 
-    <ItemGroup>
-      <Compile Remove="api\**" />
-      <EmbeddedResource Remove="api\**" />
-      <None Remove="api\**" />
-    </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591;NU5048;SYSLIB0001</NoWarn>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
 
-    <ItemGroup>
-      <Reference Include="Zongsoft.Core">
-        <HintPath>..\..\Framework\Zongsoft.Core\src\bin\$(Configuration)\net5.0\Zongsoft.Core.dll</HintPath>
-      </Reference>
-    </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="api\**" />
+    <EmbeddedResource Remove="api\**" />
+    <None Remove="api\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Zongsoft.Core">
+      <HintPath>..\..\Framework\Zongsoft.Core\src\bin\$(Configuration)\net5.0\Zongsoft.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>
