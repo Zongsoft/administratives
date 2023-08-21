@@ -204,7 +204,7 @@ namespace Zongsoft.Administratives
 		{
 			if(_provinces == null)
 			{
-				var dataAccess = ApplicationContext.Current.Services.GetDataAccess();
+				var dataAccess = ApplicationContext.Current.Services.ResolveRequired<IDataAccessProvider>().GetAccessor();
 
 				if(dataAccess == null)
 					return null;
@@ -334,7 +334,7 @@ namespace Zongsoft.Administratives
 		private static void LoadFromDatabase()
 		{
 			//获取数据访问服务
-			var dataAccess = ApplicationContext.Current.Services.GetDataAccess();
+			var dataAccess = ApplicationContext.Current.Services.ResolveRequired<IDataAccessProvider>().GetAccessor();
 
 			if(dataAccess == null)
 				return;
