@@ -10,8 +10,8 @@
 			<property name="ProvinceId" type="byte" nullable="false" />
 			<property name="Name" type="nvarchar" length="50" nullable="false" />
 			<property name="Abbr" type="nvarchar" length="50" nullable="false" />
-			<property name="PinYin" type="varchar" length="200" nullable="true" />
-			<property name="Alias" type="nchar" length="1" nullable="false" />
+			<property name="Alias" type="nchar" length="1" nullable="true" />
+			<property name="Acronym" type="varchar" length="50" nullable="true" />
 		</entity>
 
 		<entity name="City">
@@ -23,7 +23,7 @@
 			<property name="ProvinceId" type="byte" nullable="false" />
 			<property name="CityId" type="byte" nullable="false" />
 			<property name="Name" type="nvarchar" length="50" nullable="false" />
-			<property name="PinYin" type="varchar" length="200" nullable="true" />
+			<property name="Acronym" type="varchar" length="50" nullable="true" />
 		</entity>
 
 		<entity name="District">
@@ -37,7 +37,7 @@
 			<property name="CityId" type="byte" nullable="false" />
 			<property name="DistrictId" type="byte" nullable="false" />
 			<property name="Name" type="nvarchar" length="50" nullable="false" />
-			<property name="PinYin" type="varchar" length="200" nullable="true" />
+			<property name="Acronym" type="varchar" length="50" nullable="true" />
 			<property name="PostalCode" type="char" length="6" nullable="true" />
 		</entity>
 
@@ -54,7 +54,7 @@
 			<property name="DistrictId" type="byte" nullable="false" />
 			<property name="StreetId" type="byte" nullable="false" />
 			<property name="Name" type="nvarchar" length="50" nullable="false" />
-			<property name="PinYin" type="varchar" length="200" nullable="true" />
+			<property name="Acronym" type="varchar" length="50" nullable="true" />
 			<property name="PostalCode" type="char" length="6" nullable="true" />
 		</entity>
 	</container>

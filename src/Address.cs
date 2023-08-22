@@ -169,9 +169,7 @@ namespace Zongsoft.Administratives
 			switch(format)
 			{
 				case AddressFormat.Keyed:
-					var keyed = city as City.Keyed;
-
-					if(keyed != null && keyed.Districts != null)
+					if(city is City.Keyed keyed && keyed.Districts != null)
 					{
 						if(keyed.Districts.TryGetValue(districtId, out var district) && district != null)
 						{
@@ -182,9 +180,7 @@ namespace Zongsoft.Administratives
 
 					return null;
 				case AddressFormat.Plain:
-					var plain = city as City.Plain;
-
-					if(plain != null && plain.Districts != null)
+					if(city is City.Plain plain && plain.Districts != null)
 					{
 						var district = plain.Districts.FirstOrDefault(p => p.DistrictId == districtId);
 
@@ -305,8 +301,7 @@ namespace Zongsoft.Administratives
 			finally
 			{
 				//设置信号量释放其他线程（绿灯）
-				if(_signaling != null)
-					_signaling.Set();
+				_signaling?.Set();
 			}
 		}
 
@@ -324,8 +319,7 @@ namespace Zongsoft.Administratives
 					}
 				}
 
-				if(_keyedProvinces == null)
-					_keyedProvinces = PopulateKeyedProvinces((ICollection<Province.Plain>)_plainProvinces);
+				_keyedProvinces ??= PopulateKeyedProvinces((ICollection<Province.Plain>)_plainProvinces);
 			}
 
 			return _plainProvinces != null;
@@ -340,13 +334,13 @@ namespace Zongsoft.Administratives
 				return;
 
 			//获取所有的省份记录
-			var provinces = dataAccess.Select<Province>(null, Paging.Disabled).ToArray();
+			var provinces = dataAccess.Select<Province>().ToArray();
 			//获取所有的城市记录
-			var cities = dataAccess.Select<City>(null, Paging.Disabled).ToArray();
+			var cities = dataAccess.Select<City>().ToArray();
 			//获取所有的区县记录
-			var districts = dataAccess.Select<District>(null, Paging.Disabled).ToArray();
+			var districts = dataAccess.Select<District>().ToArray();
 			//获取所有的街道记录
-			var streets = dataAccess.Select<Street>(null, Paging.Disabled).ToArray();
+			var streets = dataAccess.Select<Street>().ToArray();
 
 			if(_plainProvinces == null)
 			{
@@ -463,7 +457,6 @@ namespace Zongsoft.Administratives
 		private static void SaveToFile()
 		{
 			var data = _plainProvinces;
-
 			if(data == null)
 				return;
 

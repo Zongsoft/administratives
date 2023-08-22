@@ -50,8 +50,8 @@ namespace Zongsoft.Administratives.Models
 		/// <summary>获取或设置街道(乡镇)名称。</summary>
 		public string Name { get; set; }
 
-		/// <summary>获取或设置街道(乡镇)名称的拼音。</summary>
-		public string PinYin { get; set; }
+		/// <summary>获取或设置街道(乡镇)名称缩写。</summary>
+		public string Acronym { get; set; }
 
 		/// <summary>获取或设置街道(乡镇)全称。</summary>
 		public string FullName { get; set; }
@@ -70,7 +70,7 @@ namespace Zongsoft.Administratives.Models
 				DistrictId = this.DistrictId,
 				StreetId = this.StreetId,
 				Name = this.Name,
-				PinYin = this.PinYin,
+				Acronym = this.Acronym,
 				PostalCode = this.PostalCode,
 			};
 		}

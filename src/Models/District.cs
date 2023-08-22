@@ -44,7 +44,7 @@ namespace Zongsoft.Administratives.Models
 				this.CityId = district.CityId;
 				this.DistrictId = district.DistrictId;
 				this.Name = district.Name;
-				this.PinYin = district.PinYin;
+				this.Acronym = district.Acronym;
 				this.FullName = district.FullName;
 				this.PostalCode = district.PostalCode;
 			}
@@ -64,8 +64,8 @@ namespace Zongsoft.Administratives.Models
 		/// <summary>获取或设置区县名称。</summary>
 		public string Name { get; set; }
 
-		/// <summary>获取或设置区县名称的拼音。</summary>
-		public string PinYin { get; set; }
+		/// <summary>获取或设置区县名称缩写。</summary>
+		public string Acronym { get; set; }
 
 		/// <summary>获取或设置区县全称。</summary>
 		public string FullName { get; set; }
@@ -89,7 +89,7 @@ namespace Zongsoft.Administratives.Models
 					this.CityId = district.CityId;
 					this.DistrictId = district.DistrictId;
 					this.Name = district.Name;
-					this.PinYin = district.PinYin;
+					this.Acronym = district.Acronym;
 					this.FullName = district.FullName;
 					this.PostalCode = district.PostalCode;
 				}
@@ -115,7 +115,7 @@ namespace Zongsoft.Administratives.Models
 					this.CityId = district.CityId;
 					this.DistrictId = district.DistrictId;
 					this.Name = district.Name;
-					this.PinYin = district.PinYin;
+					this.Acronym = district.Acronym;
 					this.FullName = district.FullName;
 					this.PostalCode = district.PostalCode;
 				}

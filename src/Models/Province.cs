@@ -43,7 +43,7 @@ namespace Zongsoft.Administratives.Models
 				this.ProvinceId = province.ProvinceId;
 				this.Name = province.Name;
 				this.Abbr = province.Abbr;
-				this.PinYin = province.PinYin;
+				this.Acronym = province.Acronym;
 				this.Alias = province.Alias;
 			}
 		}
@@ -62,8 +62,8 @@ namespace Zongsoft.Administratives.Models
 		/// <summary>获取或设置省(州)别名(代号名)。</summary>
 		public char Alias { get; set; }
 
-		/// <summary>获取或设置省(州)名称的拼音。</summary>
-		public string PinYin { get; set; }
+		/// <summary>获取或设置省(州)名称缩写。</summary>
+		public string Acronym { get; set; }
 		#endregion
 
 		/// <summary>
@@ -80,7 +80,7 @@ namespace Zongsoft.Administratives.Models
 					this.ProvinceId = province.ProvinceId;
 					this.Name = province.Name;
 					this.Abbr = province.Abbr;
-					this.PinYin = province.PinYin;
+					this.Acronym = province.Acronym;
 					this.Alias = province.Alias;
 				}
 			}
@@ -104,7 +104,7 @@ namespace Zongsoft.Administratives.Models
 					this.ProvinceId = province.ProvinceId;
 					this.Name = province.Name;
 					this.Abbr = province.Abbr;
-					this.PinYin = province.PinYin;
+					this.Acronym = province.Acronym;
 					this.Alias = province.Alias;
 				}
 			}

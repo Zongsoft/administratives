@@ -43,7 +43,7 @@ namespace Zongsoft.Administratives.Models
 				this.ProvinceId = city.ProvinceId;
 				this.CityId = city.CityId;
 				this.Name = city.Name;
-				this.PinYin = city.PinYin;
+				this.Acronym = city.Acronym;
 				this.FullName = city.FullName;
 			}
 		}
@@ -59,8 +59,8 @@ namespace Zongsoft.Administratives.Models
 		/// <summary>获取或设置城市名称。</summary>
 		public string Name { get; set; }
 
-		/// <summary>获取或设置城市名称的拼音。</summary>
-		public string PinYin { get; set; }
+		/// <summary>获取或设置城市名称缩写。</summary>
+		public string Acronym { get; set; }
 
 		/// <summary>获取或设置城市全称。</summary>
 		public string FullName { get; set; }
@@ -80,7 +80,7 @@ namespace Zongsoft.Administratives.Models
 					this.ProvinceId = city.ProvinceId;
 					this.CityId = city.CityId;
 					this.Name = city.Name;
-					this.PinYin = city.PinYin;
+					this.Acronym = city.Acronym;
 					this.FullName = city.FullName;
 				}
 			}
@@ -104,7 +104,7 @@ namespace Zongsoft.Administratives.Models
 					this.ProvinceId = city.ProvinceId;
 					this.CityId = city.CityId;
 					this.Name = city.Name;
-					this.PinYin = city.PinYin;
+					this.Acronym = city.Acronym;
 					this.FullName = city.FullName;
 				}
 			}
