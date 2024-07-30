@@ -1,0 +1,56 @@
+### 行政区划数据集
+GET /Administratives HTTP/1.1
+Host: {{host}}:{{port}}
+
+### 行政区划数据集
+# @prompt format 格式(plain,keyed)
+GET /Administratives?format={{format}} HTTP/1.1
+Host: {{host}}:{{port}}
+
+### 行政区划数据集
+# @prompt id 地址编号(譬如:739180544)
+GET /Administratives/{{id}} HTTP/1.1
+Host: {{host}}:{{port}}
+
+### 行政区划数据集
+# @prompt province 省市编号(省/州/直辖市)
+# @prompt city     市县编号(市县/区)
+GET /Administratives/{{province}}-{{city}}-0-0 HTTP/1.1
+Host: {{host}}:{{port}}
+
+### 行政区划数据集
+# @prompt province 省市编号(省/州/直辖市)
+# @prompt city     市县编号(市县/区)
+# @prompt district 区镇编号(区镇/乡)
+GET /Administratives/{{province}}-{{city}}-{{district}}-0 HTTP/1.1
+Host: {{host}}:{{port}}
+
+### 行政区划数据集
+# @prompt province 省市编号(省/州/直辖市)
+# @prompt city     市县编号(市县/区)
+# @prompt district 区镇编号(区镇/乡)
+# @prompt street   街道编号(街道/社区/村)
+GET /Administratives/{{province}}-{{city}}-{{district}}-{{street}} HTTP/1.1
+Host: {{host}}:{{port}}
+
+### 行政区划数据集(省级)
+GET /Administratives/Provinces HTTP/1.1
+Host: {{host}}:{{port}}
+
+### 行政区划数据集(市县级)
+# @prompt province 省市编号(省/州/直辖市)
+GET /Administratives/{{province}}/Cities HTTP/1.1
+Host: {{host}}:{{port}}
+
+### 行政区划数据集(区镇级)
+# @prompt province 省市编号(省/州/直辖市)
+# @prompt city     市县编号(市县/区)
+GET /Administratives/{{province}}-{{city}}/Districts HTTP/1.1
+Host: {{host}}:{{port}}
+
+### 行政区划数据集(街道/乡级)
+# @prompt province 省市编号(省/州/直辖市)
+# @prompt city     市县编号(市县/区)
+# @prompt district 区镇编号(区镇/乡)
+GET /Administratives/{{province}}-{{city}}-{{district}}/Streets HTTP/1.1
+Host: {{host}}:{{port}}
