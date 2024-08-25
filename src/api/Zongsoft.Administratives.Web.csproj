@@ -1,12 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
-		<Version>1.1.0.0</Version>
+		<Version>1.0.0.0</Version>
 		<Product>Zongsoft Administratives(Chinese) Web Library</Product>
 		<Description>This is a web class library about chinese administratives development.</Description>
+		<IsPackable>true</IsPackable>
+		<IncludeSymbols>true</IncludeSymbols>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageProjectUrl>https://github.com/Zongsoft/Administratives</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Zongsoft/Administratives/tree/master/src/api</RepositoryUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\Zongsoft.Administratives.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="$(MSBuildProjectName).deploy" Link=".deploy" Pack="true" PackagePath="\.deploy" />
+		<None Include="$(MSBuildProjectName).plugin" Pack="true" PackagePath="\artifacts" />
 	</ItemGroup>
 </Project>

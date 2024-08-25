@@ -1,0 +1,2 @@
+artifacts/Zongsoft.Administratives.Web.plugin
+lib/$(Framework)/Zongsoft.Administratives.Web.*

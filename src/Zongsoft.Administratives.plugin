@@ -2,9 +2,8 @@
 
 <plugin name="Zongsoft.Administratives"
 		title="Zongsoft.Administratives Plugin"
-		version="1.0"
-		author="Popeye Zhong(zongsoft@gmail.com)"
-		copyright="Copyright (C) 2015-2020 Zongsoft Corporation. All rights reserved."
+		author="Zongsoft Studio(zongsoft@qq.com)"
+		copyright="Copyright (C) 2015-2020 Zongsoft Studio. All rights reserved."
 		description="">
 
 	<manifest>
@@ -12,5 +11,4 @@
 			<assembly name="Zongsoft.Administratives" />
 		</assemblies>
 	</manifest>
-
 </plugin>

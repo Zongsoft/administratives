@@ -1,0 +1,3 @@
+artifacts/Zongsoft.Administratives.plugin
+artifacts/Zongsoft.Administratives.mapping
+lib/$(Framework)/Zongsoft.Administratives.*
