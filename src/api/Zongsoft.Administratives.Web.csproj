@@ -18,5 +18,6 @@
 	<ItemGroup>
 		<None Include="$(MSBuildProjectName).deploy" Link=".deploy" Pack="true" PackagePath="\.deploy" />
 		<None Include="$(MSBuildProjectName).plugin" Pack="true" PackagePath="\artifacts" />
+		<None Include="..\..\.http\administratives.http" Pack="true" PackagePath="\artifacts\http" />
 	</ItemGroup>
 </Project>
