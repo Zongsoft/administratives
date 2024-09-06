@@ -21,7 +21,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Zongsoft.Core" Version="6.1.0" />
+		<PackageReference Include="Zongsoft.Core" Version="6.3.0" />
 	</ItemGroup>
 
 	<ItemGroup>
