@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<Version>1.0.0.0</Version>
+		<Version>1.0.0</Version>
 		<Product>Zongsoft Administratives(Chinese) Library</Product>
 		<Description>This is a class library about chinese administratives development.</Description>
 		<IsPackable>true</IsPackable>
