@@ -31,6 +31,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
+SET NAMES utf8mb4;
+SET TIME_ZONE='+08:00';
 
 /*
  * 《2015年统计用区划代码和城乡划分代码（截止2015年09月30日）》 即（街道、社区、镇、乡/村）行政区划信息

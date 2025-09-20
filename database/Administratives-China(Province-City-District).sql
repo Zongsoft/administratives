@@ -44,6 +44,8 @@ TRUNCATE TABLE `City`;
 TRUNCATE TABLE `District`;
 TRUNCATE TABLE `Street`;
 
+SET NAMES utf8mb4;
+SET TIME_ZONE='+08:00';
 
 /* 北京市 */
 
