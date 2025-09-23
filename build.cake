@@ -1,4 +1,5 @@
 var target = Argument("target", "default");
+var edition = Argument("edition", "Debug");
 
 var solutionFile  = "src/Zongsoft.Administratives.sln";
 
@@ -6,9 +7,8 @@ Task("clean")
 	.Description("清理解决方案")
 	.Does(() =>
 {
-	DeleteFiles("**/*.nupkg");
-	CleanDirectories("**/bin");
-	CleanDirectories("**/obj");
+	CleanDirectories($"**/bin/{edition}");
+	CleanDirectories($"**/obj/{edition}");
 });
 
 Task("restore")
@@ -26,7 +26,7 @@ Task("build")
 {
 	var settings = new DotNetBuildSettings
 	{
-		NoRestore = true
+		Configuration = edition,
 	};
 
 	DotNetBuild(solutionFile, settings);
@@ -39,8 +39,9 @@ Task("test")
 {
 	var settings = new DotNetTestSettings
 	{
+		NoBuild = true,
 		NoRestore = true,
-		NoBuild = true
+		Configuration = edition,
 	};
 
 	var projects = GetFiles("**/test/*.csproj");
@@ -48,6 +49,24 @@ Task("test")
 	foreach(var project in projects)
 	{
 		DotNetTest(project.FullPath, settings);
+	}
+});
+
+Task("pack")
+	.Description("发包(NuGet)")
+	.IsDependentOn("build")
+	.Does(() =>
+{
+	var packages = GetFiles($"**/{edition}/*.nupkg");
+
+	foreach(var package in packages)
+	{
+		DotNetNuGetPush(package.FullPath, new DotNetNuGetPushSettings
+		{
+			Source = "nuget.org",
+			ApiKey = EnvironmentVariable("NUGET_API_KEY"),
+			SkipDuplicate = true,
+		});
 	}
 });
 
