@@ -31,9 +31,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-SET NAMES utf8mb4;
-SET TIME_ZONE='+08:00';
-
 /*
  * 《2015年统计用区划代码和城乡划分代码（截止2015年09月30日）》 即（街道、社区、镇、乡/村）行政区划信息
  * 数据来源：中华人民共和国国家统计局（http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2015/index.html）
@@ -41,7 +38,7 @@ SET TIME_ZONE='+08:00';
  */
 
 /* 陕西省 西安市 新城区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 02, 001, '西一路街道办事处'),
 	(61, 01, 02, 002, '长乐中路街道办事处'),
 	(61, 01, 02, 003, '中山门街道办事处'),
@@ -53,7 +50,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 02, 009, '胡家庙街道办事处');
 
 /* 陕西省 西安市 碑林区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 03, 001, '南院门街道办事处'),
 	(61, 01, 03, 002, '柏树林街道办事处'),
 	(61, 01, 03, 003, '长乐坊街道办事处'),
@@ -64,7 +61,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 03, 008, '张家村街道办事处');
 
 /* 陕西省 西安市 莲湖区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 04, 001, '青年路街道办事处'),
 	(61, 01, 04, 002, '北院门街道办事处'),
 	(61, 01, 04, 003, '北关街道办事处'),
@@ -76,7 +73,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 04, 009, '枣园街道办事处');
 
 /* 陕西省 西安市 灞桥区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 11, 001, '纺织城街道办事处'),
 	(61, 01, 11, 002, '十里铺街道办事处'),
 	(61, 01, 11, 003, '红旗街道办事处'),
@@ -88,7 +85,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 11, 009, '新合街道办事处');
 
 /* 陕西省 西安市 未央区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 12, 001, '张家堡街道办事处'),
 	(61, 01, 12, 002, '三桥街道办事处'),
 	(61, 01, 12, 003, '辛家庙街道办事处'),
@@ -103,7 +100,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 12, 012, '建章路街道办事处');
 
 /* 陕西省 西安市 雁塔区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 13, 001, '小寨路街道办事处'),
 	(61, 01, 13, 002, '大雁塔街道办事处'),
 	(61, 01, 13, 003, '长延堡街道办事处'),
@@ -114,7 +111,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 13, 008, '曲江街道办事处');
 
 /* 陕西省 西安市 阎良区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 14, 001, '凤凰路街道办事处'),
 	(61, 01, 14, 002, '新华路街道办事处'),
 	(61, 01, 14, 003, '振兴街道办事处'),
@@ -124,7 +121,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 14, 101, '关山镇');
 
 /* 陕西省 西安市 临潼区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 15, 001, '骊山街道办事处'),
 	(61, 01, 15, 002, '秦陵街道办事处'),
 	(61, 01, 15, 003, '新丰街道办事处'),
@@ -150,7 +147,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 15, 023, '仁宗街道办事处');
 
 /* 陕西省 西安市 长安区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 16, 001, '韦曲街道办事处'),
 	(61, 01, 16, 002, '郭杜街道办事处'),
 	(61, 01, 16, 003, '滦镇街道办事处'),
@@ -178,7 +175,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 16, 025, '魏寨街道办事处');
 
 /* 陕西省 西安市 高陵区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 17, 001, '鹿苑街道办事处'),
 	(61, 01, 17, 002, '泾渭街道办事处'),
 	(61, 01, 17, 003, '崇皇街道办事处'),
@@ -187,7 +184,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 17, 106, '张卜镇');
 
 /* 陕西省 西安市 蓝田县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 22, 001, '蓝关街道办事处'),
 	(61, 01, 22, 101, '洩湖镇'),
 	(61, 01, 22, 102, '华胥镇'),
@@ -209,7 +206,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 22, 120, '小寨镇');
 
 /* 陕西省 西安市 周至县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 24, 001, '二曲街道办事处'),
 	(61, 01, 24, 101, '哑柏镇'),
 	(61, 01, 24, 102, '终南镇'),
@@ -232,7 +229,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 24, 121, '王家河镇');
 
 /* 陕西省 西安市 户县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 25, 001, '甘亭街道办'),
 	(61, 01, 25, 101, '余下镇'),
 	(61, 01, 25, 102, '祖庵镇'),
@@ -249,7 +246,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 01, 25, 114, '渭丰镇');
 
 /* 陕西省 铜川市 王益区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 02, 02, 001, '七一路街道办事处'),
 	(61, 02, 02, 002, '红旗街道办事处'),
 	(61, 02, 02, 003, '桃园街道办事处'),
@@ -259,7 +256,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 02, 02, 100, '黄堡镇');
 
 /* 陕西省 铜川市 印台区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 02, 03, 001, '城关街道办事处'),
 	(61, 02, 03, 002, '三里洞街道办事处'),
 	(61, 02, 03, 003, '王石凹街道办事处'),
@@ -271,7 +268,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 02, 03, 106, '阿庄镇');
 
 /* 陕西省 铜川市 耀州区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 02, 04, 001, '永安路街道办事处'),
 	(61, 02, 04, 002, '天宝路街道办事处'),
 	(61, 02, 04, 003, '咸丰路街道办事处'),
@@ -288,7 +285,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 02, 04, 111, '石柱镇');
 
 /* 陕西省 铜川市 宜君县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 02, 22, 001, '宜阳街道办事处'),
 	(61, 02, 22, 101, '彭镇'),
 	(61, 02, 22, 102, '五里镇'),
@@ -299,7 +296,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 02, 22, 201, '云梦乡');
 
 /* 陕西省 宝鸡市 渭滨区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 02, 001, '金陵街道办事处'),
 	(61, 03, 02, 002, '经二路街道办事处'),
 	(61, 03, 02, 003, '清姜街道办事处'),
@@ -312,7 +309,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 02, 104, '八鱼镇');
 
 /* 陕西省 宝鸡市 金台区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 03, 001, '中山东路街道办事处'),
 	(61, 03, 03, 002, '西关街道办事处'),
 	(61, 03, 03, 003, '中山西路街道办事处'),
@@ -326,7 +323,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 03, 103, '硖石镇');
 
 /* 陕西省 宝鸡市 陈仓区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 04, 001, '虢镇街道办事处'),
 	(61, 03, 04, 002, '东关街道办事处'),
 	(61, 03, 04, 003, '千渭街道办事处'),
@@ -347,7 +344,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 04, 116, '钓渭镇');
 
 /* 陕西省 宝鸡市 凤翔县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 22, 100, '城关镇'),
 	(61, 03, 22, 101, '虢王镇'),
 	(61, 03, 22, 102, '彪角镇'),
@@ -362,7 +359,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 22, 112, '范家寨镇');
 
 /* 陕西省 宝鸡市 岐山县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 23, 100, '凤鸣镇'),
 	(61, 03, 23, 101, '蔡家坡镇'),
 	(61, 03, 23, 103, '益店镇'),
@@ -374,7 +371,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 23, 112, '京当镇');
 
 /* 陕西省 宝鸡市 扶风县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 24, 100, '城关镇'),
 	(61, 03, 24, 101, '天度镇'),
 	(61, 03, 24, 102, '午井镇'),
@@ -385,7 +382,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 24, 107, '法门镇');
 
 /* 陕西省 宝鸡市 眉县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 26, 100, '首善镇'),
 	(61, 03, 26, 101, '横渠镇'),
 	(61, 03, 26, 102, '槐芽镇'),
@@ -396,7 +393,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 26, 107, '齐镇');
 
 /* 陕西省 宝鸡市 陇县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 27, 100, '城关镇'),
 	(61, 03, 27, 101, '东风镇'),
 	(61, 03, 27, 102, '八渡镇'),
@@ -409,7 +406,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 27, 113, '新集川镇');
 
 /* 陕西省 宝鸡市 千阳县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 28, 100, '城关镇'),
 	(61, 03, 28, 101, '崔家头镇'),
 	(61, 03, 28, 102, '南寨镇'),
@@ -419,7 +416,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 28, 107, '高崖镇');
 
 /* 陕西省 宝鸡市 麟游县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 29, 100, '九成宫镇'),
 	(61, 03, 29, 101, '崔木镇'),
 	(61, 03, 29, 102, '招贤镇'),
@@ -429,7 +426,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 29, 107, '酒房镇');
 
 /* 陕西省 宝鸡市 凤县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 30, 100, '双石铺镇'),
 	(61, 03, 30, 101, '凤州镇'),
 	(61, 03, 30, 102, '黄牛铺镇'),
@@ -441,7 +438,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 30, 110, '留凤关镇');
 
 /* 陕西省 宝鸡市 太白县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 31, 100, '咀头镇'),
 	(61, 03, 31, 101, '桃川镇'),
 	(61, 03, 31, 102, '鹦鸽镇'),
@@ -451,7 +448,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 03, 31, 106, '王家堎镇');
 
 /* 陕西省 咸阳市 秦都区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 02, 001, '人民路街道办事处'),
 	(61, 04, 02, 002, '西兰路街道办事处'),
 	(61, 04, 02, 003, '吴家堡街道办事处'),
@@ -466,7 +463,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 02, 012, '马庄街道办事处');
 
 /* 陕西省 咸阳市 杨陵区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 03, 001, '杨陵街道办事处'),
 	(61, 04, 03, 002, '李台街道办事处'),
 	(61, 04, 03, 003, '大寨街道办事处'),
@@ -474,7 +471,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 03, 102, '揉谷镇');
 
 /* 陕西省 咸阳市 渭城区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 04, 001, '中山街道办事处'),
 	(61, 04, 04, 002, '文汇路街道办事处'),
 	(61, 04, 04, 003, '新兴街道办事处'),
@@ -487,7 +484,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 04, 010, '北杜街道办事处');
 
 /* 陕西省 咸阳市 三原县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 22, 001, '城关街道办事处'),
 	(61, 04, 22, 102, '陂西镇'),
 	(61, 04, 22, 103, '独李镇'),
@@ -500,7 +497,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 22, 111, '渠岸镇');
 
 /* 陕西省 咸阳市 泾阳县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 23, 001, '泾干街道办事处'),
 	(61, 04, 23, 101, '永乐镇'),
 	(61, 04, 23, 102, '云阳镇'),
@@ -516,7 +513,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 23, 115, '中张镇');
 
 /* 陕西省 咸阳市 乾县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 24, 001, '城关街道办事处'),
 	(61, 04, 24, 101, '薛录镇'),
 	(61, 04, 24, 102, '梁村镇'),
@@ -535,7 +532,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 24, 115, '大杨镇');
 
 /* 陕西省 咸阳市 礼泉县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 25, 001, '城关街道办事处'),
 	(61, 04, 25, 101, '史德镇'),
 	(61, 04, 25, 102, '西张堡镇'),
@@ -550,7 +547,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 25, 112, '骏马镇');
 
 /* 陕西省 咸阳市 永寿县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 26, 001, '监军街道办事处'),
 	(61, 04, 26, 101, '店头镇'),
 	(61, 04, 26, 102, '常宁镇'),
@@ -560,7 +557,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 26, 110, '永平镇');
 
 /* 陕西省 咸阳市 彬县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 27, 001, '城关街道办事处'),
 	(61, 04, 27, 101, '北极镇'),
 	(61, 04, 27, 102, '新民镇'),
@@ -572,7 +569,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 27, 109, '太峪镇');
 
 /* 陕西省 咸阳市 长武县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 28, 001, '昭仁街道办事处'),
 	(61, 04, 28, 101, '相公镇'),
 	(61, 04, 28, 102, '巨家镇'),
@@ -583,7 +580,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 28, 108, '枣元镇');
 
 /* 陕西省 咸阳市 旬邑县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 29, 001, '城关街道办事处'),
 	(61, 04, 29, 101, '土桥镇'),
 	(61, 04, 29, 102, '职田镇'),
@@ -596,7 +593,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 29, 110, '清塬镇');
 
 /* 陕西省 咸阳市 淳化县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 30, 001, '城关街道办事处'),
 	(61, 04, 30, 101, '官庄镇'),
 	(61, 04, 30, 103, '方里镇'),
@@ -607,7 +604,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 30, 109, '十里塬镇');
 
 /* 陕西省 咸阳市 武功县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 31, 001, '普集街道办事处'),
 	(61, 04, 31, 101, '苏坊镇'),
 	(61, 04, 31, 102, '武功镇'),
@@ -618,7 +615,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 31, 107, '大庄镇');
 
 /* 陕西省 咸阳市 兴平市 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 81, 001, '东城街道办事处'),
 	(61, 04, 81, 002, '西城街道办事处'),
 	(61, 04, 81, 003, '店张街道办事处'),
@@ -634,7 +631,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 04, 81, 109, '汤坊镇');
 
 /* 陕西省 渭南市 临渭区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 02, 001, '杜桥街道办事处'),
 	(61, 05, 02, 002, '人民街道办事处'),
 	(61, 05, 02, 003, '解放街道办事处'),
@@ -661,7 +658,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 02, 116, '官道镇');
 
 /* 陕西省 渭南市 华县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 21, 001, '华州街道办事处'),
 	(61, 05, 21, 101, '杏林镇'),
 	(61, 05, 21, 102, '赤水镇'),
@@ -674,7 +671,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 21, 109, '金堆镇');
 
 /* 陕西省 渭南市 潼关县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 22, 001, '城关街道办事处'),
 	(61, 05, 22, 101, '秦东镇'),
 	(61, 05, 22, 102, '太要镇'),
@@ -682,7 +679,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 22, 104, '代字营镇');
 
 /* 陕西省 渭南市 大荔县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 23, 001, '城关街道办事处'),
 	(61, 05, 23, 101, '许庄镇'),
 	(61, 05, 23, 102, '朝邑镇'),
@@ -701,7 +698,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 23, 117, '段家镇');
 
 /* 陕西省 渭南市 合阳县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 24, 001, '城关街道办事处'),
 	(61, 05, 24, 101, '甘井镇'),
 	(61, 05, 24, 102, '坊镇'),
@@ -716,7 +713,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 24, 112, '金峪镇');
 
 /* 陕西省 渭南市 澄城县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 25, 001, '城关街道办事处'),
 	(61, 05, 25, 101, '冯原镇'),
 	(61, 05, 25, 102, '王庄镇'),
@@ -729,7 +726,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 25, 109, '庄头镇');
 
 /* 陕西省 渭南市 蒲城县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 26, 001, '城关街道办事处'),
 	(61, 05, 26, 101, '罕井镇'),
 	(61, 05, 26, 102, '孙镇'),
@@ -748,7 +745,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 26, 118, '龙池镇');
 
 /* 陕西省 渭南市 白水县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 27, 001, '城关街道办事处'),
 	(61, 05, 27, 102, '尧禾镇'),
 	(61, 05, 27, 103, '杜康镇'),
@@ -759,7 +756,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 27, 109, '雷牙镇');
 
 /* 陕西省 渭南市 富平县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 28, 001, '城关街道办事处'),
 	(61, 05, 28, 101, '庄里镇'),
 	(61, 05, 28, 102, '张桥镇'),
@@ -777,7 +774,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 28, 115, '齐村镇');
 
 /* 陕西省 渭南市 韩城市 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 81, 001, '新城街道办事处'),
 	(61, 05, 81, 002, '金城街道办事处'),
 	(61, 05, 81, 100, '龙门镇'),
@@ -788,7 +785,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 81, 107, '板桥镇');
 
 /* 陕西省 渭南市 华阴市 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 82, 001, '太华路街道办事处'),
 	(61, 05, 82, 002, '岳庙街道办事处'),
 	(61, 05, 82, 100, '孟塬镇'),
@@ -797,7 +794,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 05, 82, 105, '华山镇');
 
 /* 陕西省 延安市 宝塔区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 02, 001, '宝塔山街道办事处'),
 	(61, 06, 02, 002, '南市街道办事处'),
 	(61, 06, 02, 003, '凤凰山街道办事处'),
@@ -818,7 +815,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 02, 208, '万花山乡');
 
 /* 陕西省 延安市 延长县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 21, 001, '七里村街道办事处'),
 	(61, 06, 21, 101, '黑家堡镇'),
 	(61, 06, 21, 102, '郑庄镇'),
@@ -829,7 +826,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 21, 108, '安沟镇');
 
 /* 陕西省 延安市 延川县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 22, 001, '大禹街道办事处'),
 	(61, 06, 22, 101, '永坪镇'),
 	(61, 06, 22, 102, '延水关镇'),
@@ -840,7 +837,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 22, 108, '乾坤湾镇');
 
 /* 陕西省 延安市 子长县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 23, 001, '瓦窑堡街道办事处'),
 	(61, 06, 23, 101, '杨家园子镇'),
 	(61, 06, 23, 102, '玉家湾镇'),
@@ -852,7 +849,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 23, 108, '余家坪镇');
 
 /* 陕西省 延安市 安塞县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 24, 001, '真武洞街道办事处'),
 	(61, 06, 24, 101, '砖窑湾镇'),
 	(61, 06, 24, 102, '沿河湾镇'),
@@ -864,7 +861,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 24, 108, '镰刀湾镇');
 
 /* 陕西省 延安市 志丹县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 25, 001, '保安街道办事处'),
 	(61, 06, 25, 101, '杏河镇'),
 	(61, 06, 25, 102, '顺宁镇'),
@@ -875,7 +872,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 25, 107, '双河镇');
 
 /* 陕西省 延安市 吴起县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 26, 001, '吴起街道办事处'),
 	(61, 06, 26, 101, '铁边城镇'),
 	(61, 06, 26, 102, '周湾镇'),
@@ -887,7 +884,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 26, 108, '庙沟镇');
 
 /* 陕西省 延安市 甘泉县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 27, 001, '美水街道办事处'),
 	(61, 06, 27, 101, '下寺湾镇'),
 	(61, 06, 27, 102, '道镇'),
@@ -896,7 +893,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 27, 203, '劳山乡');
 
 /* 陕西省 延安市 富县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 28, 001, '茶坊街道办事处'),
 	(61, 06, 28, 101, '羊泉镇'),
 	(61, 06, 28, 102, '张村驿镇'),
@@ -907,7 +904,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 28, 204, '北道德乡');
 
 /* 陕西省 延安市 洛川县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 29, 001, '凤栖街道办事处'),
 	(61, 06, 29, 101, '旧县镇'),
 	(61, 06, 29, 102, '交口河镇'),
@@ -919,7 +916,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 29, 200, '菩堤乡');
 
 /* 陕西省 延安市 宜川县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 30, 001, '丹州街道办事处'),
 	(61, 06, 30, 101, '秋林镇'),
 	(61, 06, 30, 102, '云岩镇'),
@@ -929,7 +926,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 30, 201, '交里乡');
 
 /* 陕西省 延安市 黄龙县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 31, 100, '石堡镇'),
 	(61, 06, 31, 101, '白马滩镇'),
 	(61, 06, 31, 102, '瓦子街镇'),
@@ -939,7 +936,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 31, 206, '崾崄乡');
 
 /* 陕西省 延安市 黄陵县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 32, 001, '桥山街道办事处'),
 	(61, 06, 32, 101, '店头镇'),
 	(61, 06, 32, 102, '隆坊镇'),
@@ -948,7 +945,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 06, 32, 105, '双龙镇');
 
 /* 陕西省 汉中市 汉台区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 02, 001, '北关街道办事处'),
 	(61, 07, 02, 002, '东大街街道办事处'),
 	(61, 07, 02, 003, '汉中路街道办事处'),
@@ -966,7 +963,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 02, 107, '徐望镇');
 
 /* 陕西省 汉中市 南郑县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 21, 001, '汉山街道办事处'),
 	(61, 07, 21, 101, '圣水镇'),
 	(61, 07, 21, 102, '大河坎镇'),
@@ -990,7 +987,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 21, 120, '胡家营镇');
 
 /* 陕西省 汉中市 城固县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 22, 001, '博望街道办事处'),
 	(61, 07, 22, 002, '莲花街道办事处'),
 	(61, 07, 22, 101, '龙头镇'),
@@ -1010,7 +1007,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 22, 120, '三合镇');
 
 /* 陕西省 汉中市 洋县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 23, 001, '洋州街道办事处'),
 	(61, 07, 23, 002, '纸坊街道办事处'),
 	(61, 07, 23, 003, '戚氏街道办事处'),
@@ -1031,7 +1028,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 23, 121, '关帝镇');
 
 /* 陕西省 汉中市 西乡县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 24, 001, '城北街道办事处'),
 	(61, 07, 24, 002, '城南街道办事处'),
 	(61, 07, 24, 101, '杨河镇'),
@@ -1051,7 +1048,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 24, 118, '白勉峡镇');
 
 /* 陕西省 汉中市 勉县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 25, 001, '勉阳街道办事处'),
 	(61, 07, 25, 101, '武侯镇'),
 	(61, 07, 25, 102, '周家山镇'),
@@ -1072,7 +1069,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 25, 120, '长沟河镇');
 
 /* 陕西省 汉中市 宁强县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 26, 001, '汉源街道办事处'),
 	(61, 07, 26, 002, '高寨子街道办事处'),
 	(61, 07, 26, 102, '大安镇'),
@@ -1093,7 +1090,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 26, 120, '禅家岩镇');
 
 /* 陕西省 汉中市 略阳县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 27, 001, '兴州街道办事处'),
 	(61, 07, 27, 002, '横现河街道办事处'),
 	(61, 07, 27, 101, '接官亭镇'),
@@ -1113,7 +1110,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 27, 115, '观音寺镇');
 
 /* 陕西省 汉中市 镇巴县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 28, 001, '泾洋街道办事处'),
 	(61, 07, 28, 101, '渔渡镇'),
 	(61, 07, 28, 102, '盐场镇'),
@@ -1136,7 +1133,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 28, 120, '永乐镇');
 
 /* 陕西省 汉中市 留坝县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 29, 001, '紫柏街道办事处'),
 	(61, 07, 29, 101, '马道镇'),
 	(61, 07, 29, 102, '武关驿镇'),
@@ -1147,7 +1144,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 29, 107, '青桥驿镇');
 
 /* 陕西省 汉中市 佛坪县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 30, 001, '袁家庄街道办事处'),
 	(61, 07, 30, 101, '陈家坝镇'),
 	(61, 07, 30, 102, '大河坝镇'),
@@ -1157,7 +1154,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 07, 30, 106, '石墩河镇');
 
 /* 陕西省 榆林市 榆阳区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 02, 001, '鼓楼街道办事处'),
 	(61, 08, 02, 002, '青山路街道办事处'),
 	(61, 08, 02, 003, '上郡路街道办事处'),
@@ -1187,7 +1184,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 02, 209, '红石桥乡');
 
 /* 陕西省 榆林市 神木县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 21, 100, '神木镇'),
 	(61, 08, 21, 101, '高家堡镇'),
 	(61, 08, 21, 102, '店塔镇'),
@@ -1205,7 +1202,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 21, 114, '锦界镇');
 
 /* 陕西省 榆林市 府谷县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 22, 100, '府谷镇'),
 	(61, 08, 22, 101, '黄甫镇'),
 	(61, 08, 22, 103, '哈镇'),
@@ -1222,7 +1219,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 22, 114, '田家寨镇');
 
 /* 陕西省 榆林市 横山县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 23, 001, '横山街道办事处'),
 	(61, 08, 23, 101, '石湾镇'),
 	(61, 08, 23, 102, '高镇'),
@@ -1239,7 +1236,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 23, 113, '雷龙湾镇');
 
 /* 陕西省 榆林市 靖边县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 24, 001, '张家畔街道办事处'),
 	(61, 08, 24, 101, '东坑镇'),
 	(61, 08, 24, 102, '青阳岔镇'),
@@ -1259,7 +1256,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 24, 116, '镇靖镇');
 
 /* 陕西省 榆林市 定边县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 25, 001, '定边街道办事处'),
 	(61, 08, 25, 101, '贺圈镇'),
 	(61, 08, 25, 102, '红柳沟镇'),
@@ -1281,7 +1278,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 25, 210, '学庄乡');
 
 /* 陕西省 榆林市 绥德县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 26, 100, '名州镇'),
 	(61, 08, 26, 101, '薛家峁镇'),
 	(61, 08, 26, 102, '崔家湾镇'),
@@ -1299,7 +1296,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 26, 114, '白家硷镇');
 
 /* 陕西省 榆林市 米脂县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 27, 001, '银州街道办事处'),
 	(61, 08, 27, 101, '桃镇'),
 	(61, 08, 27, 102, '龙镇'),
@@ -1311,7 +1308,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 27, 108, '城郊镇');
 
 /* 陕西省 榆林市 佳县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 28, 001, '佳州街道办事处'),
 	(61, 08, 28, 101, '坑镇'),
 	(61, 08, 28, 102, '店镇'),
@@ -1327,7 +1324,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 28, 112, '木头峪镇');
 
 /* 陕西省 榆林市 吴堡县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 29, 001, '宋家川街道办事处'),
 	(61, 08, 29, 101, '辛家沟镇'),
 	(61, 08, 29, 102, '郭家沟镇'),
@@ -1336,7 +1333,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 29, 105, '张家山镇');
 
 /* 陕西省 榆林市 清涧县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 30, 100, '宽州镇'),
 	(61, 08, 30, 101, '石咀驿镇'),
 	(61, 08, 30, 102, '折家坪镇'),
@@ -1348,7 +1345,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 30, 108, '下廿里铺镇');
 
 /* 陕西省 榆林市 子洲县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 31, 001, '双湖峪街道办事处'),
 	(61, 08, 31, 101, '何家集镇'),
 	(61, 08, 31, 102, '老君殿镇'),
@@ -1364,7 +1361,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 08, 31, 200, '驼耳巷乡');
 
 /* 陕西省 安康市 汉滨区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 02, 001, '老城街道办事处'),
 	(61, 09, 02, 002, '新城街道办事处'),
 	(61, 09, 02, 003, '江北街道办事处'),
@@ -1396,7 +1393,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 02, 132, '谭坝镇');
 
 /* 陕西省 安康市 汉阴县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 21, 100, '城关镇'),
 	(61, 09, 21, 101, '涧池镇'),
 	(61, 09, 21, 102, '蒲溪镇'),
@@ -1409,7 +1406,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 21, 112, '观音河镇');
 
 /* 陕西省 安康市 石泉县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 22, 100, '城关镇'),
 	(61, 09, 22, 101, '饶峰镇'),
 	(61, 09, 22, 102, '两河镇'),
@@ -1423,7 +1420,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 22, 110, '曾溪镇');
 
 /* 陕西省 安康市 宁陕县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 23, 100, '城关镇'),
 	(61, 09, 23, 101, '四亩地镇'),
 	(61, 09, 23, 102, '江口镇'),
@@ -1437,7 +1434,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 23, 113, '新场镇');
 
 /* 陕西省 安康市 紫阳县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 24, 100, '城关镇'),
 	(61, 09, 24, 101, '蒿坪镇'),
 	(61, 09, 24, 102, '汉王镇'),
@@ -1457,7 +1454,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 24, 117, '界岭镇');
 
 /* 陕西省 安康市 岚皋县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 25, 100, '城关镇'),
 	(61, 09, 25, 101, '佐龙镇'),
 	(61, 09, 25, 103, '滔河镇'),
@@ -1472,7 +1469,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 25, 115, '南宫山镇');
 
 /* 陕西省 安康市 平利县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 26, 100, '城关镇'),
 	(61, 09, 26, 101, '兴隆镇'),
 	(61, 09, 26, 102, '老县镇'),
@@ -1486,7 +1483,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 26, 110, '西河镇');
 
 /* 陕西省 安康市 镇坪县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 27, 100, '城关镇'),
 	(61, 09, 27, 101, '曾家镇'),
 	(61, 09, 27, 102, '牛头店镇'),
@@ -1496,7 +1493,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 27, 108, '曙坪镇');
 
 /* 陕西省 安康市 旬阳县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 28, 100, '城关镇'),
 	(61, 09, 28, 101, '棕溪镇'),
 	(61, 09, 28, 102, '关口镇'),
@@ -1520,7 +1517,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 28, 120, '仁河口镇');
 
 /* 陕西省 安康市 白河县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 29, 100, '城关镇'),
 	(61, 09, 29, 101, '中厂镇'),
 	(61, 09, 29, 102, '构扒镇'),
@@ -1534,7 +1531,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 09, 29, 110, '麻虎镇');
 
 /* 陕西省 商洛市 商州区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 10, 02, 001, '城关街道办事处'),
 	(61, 10, 02, 002, '大赵峪街道办事处'),
 	(61, 10, 02, 003, '陈塬街道办事处'),
@@ -1555,7 +1552,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 10, 02, 121, '闫村镇');
 
 /* 陕西省 商洛市 洛南县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 10, 21, 001, '城关街道办事处'),
 	(61, 10, 21, 002, '四皓街道办事处'),
 	(61, 10, 21, 101, '景村镇'),
@@ -1574,7 +1571,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 10, 21, 118, '高耀镇');
 
 /* 陕西省 商洛市 丹凤县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 10, 22, 001, '龙驹寨街道办事处'),
 	(61, 10, 22, 101, '庾岭镇'),
 	(61, 10, 22, 102, '蔡川镇'),
@@ -1589,7 +1586,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 10, 22, 115, '花瓶子镇');
 
 /* 陕西省 商洛市 商南县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 10, 23, 001, '城关街道办事处'),
 	(61, 10, 23, 101, '富水镇'),
 	(61, 10, 23, 102, '湘河镇'),
@@ -1602,7 +1599,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 10, 23, 112, '青山镇');
 
 /* 陕西省 商洛市 山阳县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 10, 24, 001, '城关街道办事处'),
 	(61, 10, 24, 002, '十里铺街道办事处'),
 	(61, 10, 24, 101, '高坝店镇'),
@@ -1623,7 +1620,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 10, 24, 121, '法官镇');
 
 /* 陕西省 商洛市 镇安县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 10, 25, 001, '永乐街道办事处'),
 	(61, 10, 25, 101, '回龙镇'),
 	(61, 10, 25, 102, '铁厂镇'),
@@ -1641,7 +1638,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 10, 25, 117, '月河镇');
 
 /* 陕西省 商洛市 柞水县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(61, 10, 26, 001, '乾佑街道办事处'),
 	(61, 10, 26, 101, '营盘镇'),
 	(61, 10, 26, 102, '下梁镇'),
@@ -1654,7 +1651,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 
 
 /* 甘肃省 兰州市 城关区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 01, 02, 001, '酒泉路街道'),
 	(62, 01, 02, 002, '张掖路街道'),
 	(62, 01, 02, 003, '雁南街道'),
@@ -1681,7 +1678,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 01, 02, 024, '青白石街道');
 
 /* 甘肃省 兰州市 七里河区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 01, 03, 001, '西园街道'),
 	(62, 01, 03, 002, '西湖街道'),
 	(62, 01, 03, 003, '建兰路街道'),
@@ -1699,7 +1696,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 01, 03, 201, '黄峪乡');
 
 /* 甘肃省 兰州市 西固区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 01, 04, 001, '陈坪街道'),
 	(62, 01, 04, 002, '先锋路街道'),
 	(62, 01, 04, 003, '福利路街道'),
@@ -1715,7 +1712,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 01, 04, 204, '金沟乡');
 
 /* 甘肃省 兰州市 安宁区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 01, 05, 001, '培黎街道'),
 	(62, 01, 05, 002, '西路街道'),
 	(62, 01, 05, 003, '沙井驿街道'),
@@ -1726,7 +1723,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 01, 05, 008, '安宁堡街道');
 
 /* 甘肃省 兰州市 红古区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 01, 11, 001, '窑街街道'),
 	(62, 01, 11, 002, '下窑街道'),
 	(62, 01, 11, 003, '矿区街道'),
@@ -1736,7 +1733,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 01, 11, 104, '红古镇');
 
 /* 甘肃省 兰州市 永登县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 01, 21, 100, '城关镇'),
 	(62, 01, 21, 101, '红城镇'),
 	(62, 01, 21, 102, '中堡镇'),
@@ -1755,7 +1752,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 01, 21, 204, '七山乡');
 
 /* 甘肃省 兰州市 皋兰县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 01, 22, 100, '石洞镇'),
 	(62, 01, 22, 102, '忠和镇'),
 	(62, 01, 22, 103, '什川镇'),
@@ -1764,7 +1761,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 01, 22, 106, '黑石镇');
 
 /* 甘肃省 兰州市 榆中县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 01, 23, 100, '城关镇'),
 	(62, 01, 23, 101, '夏官营镇'),
 	(62, 01, 23, 102, '高崖镇'),
@@ -1790,13 +1787,13 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 01, 23, 214, '哈岘乡');
 
 /* 甘肃省 嘉峪关市 市辖区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 02, 01, 100, '新城镇'),
 	(62, 02, 01, 101, '峪泉镇'),
 	(62, 02, 01, 102, '文殊镇');
 
 /* 甘肃省 金昌市 金川区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 03, 02, 001, '滨河路街道'),
 	(62, 03, 02, 002, '桂林路街道'),
 	(62, 03, 02, 003, '北京路街道'),
@@ -1807,7 +1804,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 03, 02, 101, '双湾镇');
 
 /* 甘肃省 金昌市 永昌县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 03, 21, 100, '城关镇'),
 	(62, 03, 21, 101, '河西堡镇'),
 	(62, 03, 21, 102, '新城子镇'),
@@ -1820,7 +1817,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 03, 21, 203, '南坝乡');
 
 /* 甘肃省 白银市 白银区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 04, 02, 001, '人民路街道'),
 	(62, 04, 02, 002, '公园路街道'),
 	(62, 04, 02, 003, '四龙路街道'),
@@ -1833,7 +1830,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 04, 02, 202, '武川乡');
 
 /* 甘肃省 白银市 平川区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 04, 03, 001, '长征街道'),
 	(62, 04, 03, 002, '电力路街道'),
 	(62, 04, 03, 003, '红会路街道'),
@@ -1847,7 +1844,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 04, 03, 204, '复兴乡');
 
 /* 甘肃省 白银市 靖远县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 04, 21, 101, '北湾镇'),
 	(62, 04, 21, 102, '东湾镇'),
 	(62, 04, 21, 103, '乌兰镇'),
@@ -1868,7 +1865,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 04, 21, 216, '若笠乡');
 
 /* 甘肃省 白银市 会宁县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 04, 22, 100, '会师镇'),
 	(62, 04, 22, 101, '郭城驿镇'),
 	(62, 04, 22, 102, '河畔镇'),
@@ -1899,7 +1896,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 04, 22, 227, '新庄乡');
 
 /* 甘肃省 白银市 景泰县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 04, 23, 100, '一条山镇'),
 	(62, 04, 23, 101, '芦阳镇'),
 	(62, 04, 23, 102, '上沙沃镇'),
@@ -1913,7 +1910,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 04, 23, 207, '漫水滩乡');
 
 /* 甘肃省 天水市 秦州区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 05, 02, 001, '大城街道'),
 	(62, 05, 02, 002, '七里墩街道'),
 	(62, 05, 02, 003, '东关街道'),
@@ -1939,7 +1936,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 05, 02, 205, '大门乡');
 
 /* 甘肃省 天水市 麦积区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 05, 03, 001, '道北街道'),
 	(62, 05, 03, 002, '北道埠街道'),
 	(62, 05, 03, 003, '桥南街道'),
@@ -1962,7 +1959,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 05, 03, 204, '利桥乡');
 
 /* 甘肃省 天水市 清水县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 05, 21, 100, '永清镇'),
 	(62, 05, 21, 101, '红堡镇'),
 	(62, 05, 21, 102, '白驼镇'),
@@ -1983,7 +1980,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 05, 21, 211, '新城乡');
 
 /* 甘肃省 天水市 秦安县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 05, 22, 100, '兴国镇'),
 	(62, 05, 22, 101, '莲花镇'),
 	(62, 05, 22, 102, '西川镇'),
@@ -2003,7 +2000,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 05, 22, 211, '兴丰乡');
 
 /* 甘肃省 天水市 甘谷县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 05, 23, 100, '大像山镇'),
 	(62, 05, 23, 101, '磐安镇'),
 	(62, 05, 23, 102, '新兴镇'),
@@ -2021,7 +2018,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 05, 23, 215, '白家湾乡');
 
 /* 甘肃省 天水市 武山县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 05, 24, 100, '城关镇'),
 	(62, 05, 24, 101, '洛门镇'),
 	(62, 05, 24, 102, '鸳鸯镇'),
@@ -2039,7 +2036,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 05, 24, 208, '龙台乡');
 
 /* 甘肃省 天水市 张家川回族自治县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 05, 25, 100, '张家川镇'),
 	(62, 05, 25, 101, '龙山镇'),
 	(62, 05, 25, 102, '恭门镇'),
@@ -2057,7 +2054,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 05, 25, 215, '马鹿乡');
 
 /* 甘肃省 武威市 凉州区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 06, 02, 001, '东大街街道办事处'),
 	(62, 06, 02, 002, '西大街街道办事处'),
 	(62, 06, 02, 003, '东关街街道办事处'),
@@ -2105,7 +2102,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 06, 02, 216, '东河乡');
 
 /* 甘肃省 武威市 民勤县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 06, 21, 100, '三雷镇'),
 	(62, 06, 21, 101, '东坝镇'),
 	(62, 06, 21, 102, '泉山镇'),
@@ -2126,7 +2123,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 06, 21, 211, '南湖乡');
 
 /* 甘肃省 武威市 古浪县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 06, 22, 100, '古浪镇'),
 	(62, 06, 22, 101, '泗水镇'),
 	(62, 06, 22, 102, '土门镇'),
@@ -2148,7 +2145,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 06, 22, 209, '古丰乡');
 
 /* 甘肃省 武威市 天祝藏族自治县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 06, 23, 100, '华藏寺镇'),
 	(62, 06, 23, 101, '打柴沟镇'),
 	(62, 06, 23, 102, '安远镇'),
@@ -2170,7 +2167,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 06, 23, 210, '旦马乡');
 
 /* 甘肃省 张掖市 甘州区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 07, 02, 001, '东街街道'),
 	(62, 07, 02, 002, '南街街道'),
 	(62, 07, 02, 003, '西街街道'),
@@ -2196,7 +2193,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 07, 02, 211, '平山湖蒙古族乡');
 
 /* 甘肃省 张掖市 肃南裕固族自治县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 07, 21, 100, '红湾寺镇'),
 	(62, 07, 21, 101, '皇城镇'),
 	(62, 07, 21, 200, '马蹄藏族乡'),
@@ -2207,7 +2204,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 07, 21, 205, '祁丰蔵族乡');
 
 /* 甘肃省 张掖市 民乐县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 07, 22, 101, '洪水镇'),
 	(62, 07, 22, 102, '六坝镇'),
 	(62, 07, 22, 103, '新天镇'),
@@ -2220,7 +2217,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 07, 22, 204, '丰乐乡');
 
 /* 甘肃省 张掖市 临泽县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 07, 23, 101, '沙河镇'),
 	(62, 07, 23, 102, '新华镇'),
 	(62, 07, 23, 103, '蓼泉镇'),
@@ -2230,7 +2227,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 07, 23, 107, '倪家营镇');
 
 /* 甘肃省 张掖市 高台县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 07, 24, 100, '城关镇'),
 	(62, 07, 24, 101, '宣化镇'),
 	(62, 07, 24, 102, '南华镇'),
@@ -2242,7 +2239,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 07, 24, 202, '罗城乡');
 
 /* 甘肃省 张掖市 山丹县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 07, 25, 101, '清泉镇'),
 	(62, 07, 25, 102, '位奇镇'),
 	(62, 07, 25, 103, '霍城镇'),
@@ -2253,7 +2250,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 07, 25, 204, '李桥乡');
 
 /* 甘肃省 平凉市 崆峒区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 08, 02, 001, '东关街道'),
 	(62, 08, 02, 002, '中街街道'),
 	(62, 08, 02, 003, '西郊街道'),
@@ -2275,7 +2272,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 08, 02, 212, '峡门乡');
 
 /* 甘肃省 平凉市 泾川县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 08, 21, 001, '街道办事处'),
 	(62, 08, 21, 100, '城关镇'),
 	(62, 08, 21, 101, '玉都镇'),
@@ -2293,7 +2290,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 08, 21, 205, '太平乡');
 
 /* 甘肃省 平凉市 灵台县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 08, 22, 001, '街道办事处'),
 	(62, 08, 22, 100, '中台镇'),
 	(62, 08, 22, 101, '邵寨镇'),
@@ -2310,7 +2307,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 08, 22, 208, '蒲窝乡');
 
 /* 甘肃省 平凉市 崇信县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 08, 23, 001, '锦屏街道办'),
 	(62, 08, 23, 100, '锦屏镇'),
 	(62, 08, 23, 101, '新窑镇'),
@@ -2320,7 +2317,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 08, 23, 203, '木林乡');
 
 /* 甘肃省 平凉市 华亭县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 08, 24, 001, '东华街道办事处'),
 	(62, 08, 24, 100, '东华镇'),
 	(62, 08, 24, 101, '安口镇'),
@@ -2334,7 +2331,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 08, 24, 204, '砚峡乡');
 
 /* 甘肃省 平凉市 庄浪县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 08, 25, 001, '水洛街道办事处'),
 	(62, 08, 25, 100, '水洛镇'),
 	(62, 08, 25, 101, '南湖镇'),
@@ -2356,7 +2353,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 08, 25, 217, '南坪乡');
 
 /* 甘肃省 平凉市 静宁县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 08, 26, 001, '城区街道'),
 	(62, 08, 26, 100, '城关镇'),
 	(62, 08, 26, 101, '威戎镇'),
@@ -2384,7 +2381,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 08, 26, 218, '灵芝乡');
 
 /* 甘肃省 酒泉市 肃州区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 09, 02, 001, '东北街街道办事处'),
 	(62, 09, 02, 002, '东南街街道办事处'),
 	(62, 09, 02, 003, '工业园街道办事处'),
@@ -2409,7 +2406,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 09, 02, 211, '丰乐乡');
 
 /* 甘肃省 酒泉市 金塔县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 09, 21, 100, '中东镇'),
 	(62, 09, 21, 101, '鼎新镇'),
 	(62, 09, 21, 102, '金塔镇'),
@@ -2421,7 +2418,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 09, 21, 209, '羊井子湾乡');
 
 /* 甘肃省 酒泉市 瓜州县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 09, 22, 100, '渊泉镇'),
 	(62, 09, 22, 101, '柳园镇'),
 	(62, 09, 22, 102, '三道沟镇'),
@@ -2439,20 +2436,20 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 09, 22, 216, '梁湖乡');
 
 /* 甘肃省 酒泉市 肃北蒙古族自治县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 09, 23, 100, '党城湾镇'),
 	(62, 09, 23, 101, '马鬃山镇'),
 	(62, 09, 23, 201, '盐池湾乡'),
 	(62, 09, 23, 202, '石包城乡');
 
 /* 甘肃省 酒泉市 阿克塞哈萨克族自治县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 09, 24, 100, '红柳湾镇'),
 	(62, 09, 24, 200, '阿克旗乡'),
 	(62, 09, 24, 203, '阿勒腾乡');
 
 /* 甘肃省 酒泉市 玉门市 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 09, 81, 002, '新市区街道办事处'),
 	(62, 09, 81, 101, '玉门镇'),
 	(62, 09, 81, 102, '赤金镇'),
@@ -2468,7 +2465,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 09, 81, 209, '六墩乡');
 
 /* 甘肃省 酒泉市 敦煌市 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 09, 82, 100, '七里镇'),
 	(62, 09, 82, 101, '沙州镇'),
 	(62, 09, 82, 102, '肃州镇'),
@@ -2480,7 +2477,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 09, 82, 108, '黄渠镇');
 
 /* 甘肃省 庆阳市 西峰区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 10, 02, 001, '北街办事处'),
 	(62, 10, 02, 002, '南街办事处'),
 	(62, 10, 02, 003, '西街办事处'),
@@ -2493,7 +2490,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 10, 02, 204, '显胜乡');
 
 /* 甘肃省 庆阳市 庆城县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 10, 21, 100, '庆城镇'),
 	(62, 10, 21, 101, '驿马镇'),
 	(62, 10, 21, 102, '三十里铺镇'),
@@ -2511,7 +2508,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 10, 21, 209, '蔡家庙乡');
 
 /* 甘肃省 庆阳市 环县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 10, 22, 100, '环城镇'),
 	(62, 10, 22, 101, '曲子镇'),
 	(62, 10, 22, 102, '甜水镇'),
@@ -2534,7 +2531,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 10, 22, 215, '芦家湾乡');
 
 /* 甘肃省 庆阳市 华池县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 10, 23, 100, '悦乐镇'),
 	(62, 10, 23, 101, '柔远镇'),
 	(62, 10, 23, 102, '元城镇'),
@@ -2552,7 +2549,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 10, 23, 211, '紫坊畔乡');
 
 /* 甘肃省 庆阳市 合水县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 10, 24, 100, '西华池镇'),
 	(62, 10, 24, 101, '老城镇'),
 	(62, 10, 24, 102, '太白镇'),
@@ -2567,7 +2564,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 10, 24, 208, '蒿咀铺乡');
 
 /* 甘肃省 庆阳市 正宁县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 10, 25, 100, '山河镇'),
 	(62, 10, 25, 101, '榆林子镇'),
 	(62, 10, 25, 102, '宫河镇'),
@@ -2580,7 +2577,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 10, 25, 205, '三嘉乡');
 
 /* 甘肃省 庆阳市 宁县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 10, 26, 100, '新宁镇'),
 	(62, 10, 26, 101, '平子镇'),
 	(62, 10, 26, 102, '早胜镇'),
@@ -2601,7 +2598,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 10, 26, 209, '春荣乡');
 
 /* 甘肃省 庆阳市 镇原县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 10, 27, 100, '城关镇'),
 	(62, 10, 27, 101, '屯字镇'),
 	(62, 10, 27, 102, '孟坝镇'),
@@ -2623,7 +2620,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 10, 27, 211, '新城乡');
 
 /* 甘肃省 定西市 安定区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 11, 02, 001, '中华路街道办事处'),
 	(62, 11, 02, 002, '永定路街道办事处'),
 	(62, 11, 02, 101, '凤翔镇'),
@@ -2647,7 +2644,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 11, 02, 214, '杏园乡');
 
 /* 甘肃省 定西市 通渭县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 11, 21, 100, '平襄镇'),
 	(62, 11, 21, 101, '马营镇'),
 	(62, 11, 21, 102, '鸡川镇'),
@@ -2668,7 +2665,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 11, 21, 216, '北城铺乡');
 
 /* 甘肃省 定西市 陇西县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 11, 22, 100, '巩昌镇'),
 	(62, 11, 22, 101, '文峰镇'),
 	(62, 11, 22, 102, '首阳镇'),
@@ -2688,7 +2685,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 11, 22, 207, '权家湾乡');
 
 /* 甘肃省 定西市 渭源县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 11, 23, 100, '清源镇'),
 	(62, 11, 23, 101, '莲峰镇'),
 	(62, 11, 23, 102, '会川镇'),
@@ -2707,7 +2704,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 11, 23, 210, '田家河乡');
 
 /* 甘肃省 定西市 临洮县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 11, 24, 100, '洮阳镇'),
 	(62, 11, 24, 101, '八里铺镇'),
 	(62, 11, 24, 102, '新添镇'),
@@ -2728,7 +2725,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 11, 24, 205, '连儿湾乡');
 
 /* 甘肃省 定西市 漳县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 11, 25, 100, '武阳镇'),
 	(62, 11, 25, 101, '三岔镇'),
 	(62, 11, 25, 102, '新寺镇'),
@@ -2744,7 +2741,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 11, 25, 209, '东泉乡');
 
 /* 甘肃省 定西市 岷县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 11, 26, 100, '岷阳镇'),
 	(62, 11, 26, 101, '蒲麻镇'),
 	(62, 11, 26, 102, '西寨镇'),
@@ -2765,7 +2762,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 11, 26, 208, '锁龙乡');
 
 /* 甘肃省 陇南市 武都区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 02, 001, '钟楼滩街道办事处'),
 	(62, 12, 02, 002, '吉石坝街道办事处'),
 	(62, 12, 02, 003, '江北街道办事处'),
@@ -2808,7 +2805,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 02, 237, '裕河乡');
 
 /* 甘肃省 陇南市 成县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 21, 100, '城关镇'),
 	(62, 12, 21, 101, '黄渚镇'),
 	(62, 12, 21, 102, '红川镇'),
@@ -2828,7 +2825,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 21, 213, '镡河乡');
 
 /* 甘肃省 陇南市 文县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 22, 100, '城关镇'),
 	(62, 12, 22, 101, '碧口镇'),
 	(62, 12, 22, 102, '尚德镇'),
@@ -2851,7 +2848,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 22, 220, '石鸡坝乡');
 
 /* 甘肃省 陇南市 宕昌县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 23, 100, '城关镇'),
 	(62, 12, 23, 101, '哈达铺镇'),
 	(62, 12, 23, 102, '理川镇'),
@@ -2879,7 +2876,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 23, 225, '两河口乡');
 
 /* 甘肃省 陇南市 康县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 24, 100, '城关镇'),
 	(62, 12, 24, 101, '平洛镇'),
 	(62, 12, 24, 102, '大堡镇'),
@@ -2903,7 +2900,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 24, 218, '三河坝乡');
 
 /* 甘肃省 陇南市 西和县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 25, 100, '汉源镇'),
 	(62, 12, 25, 101, '长道镇'),
 	(62, 12, 25, 102, '何坝镇'),
@@ -2926,7 +2923,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 25, 221, '西高山乡');
 
 /* 甘肃省 陇南市 礼县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 26, 100, '城关镇'),
 	(62, 12, 26, 101, '盐官镇'),
 	(62, 12, 26, 102, '石桥镇'),
@@ -2958,7 +2955,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 26, 233, '滩坪乡');
 
 /* 甘肃省 陇南市 徽县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 27, 100, '城关镇'),
 	(62, 12, 27, 101, '伏家镇'),
 	(62, 12, 27, 102, '江洛镇'),
@@ -2976,7 +2973,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 27, 211, '虞关乡');
 
 /* 甘肃省 陇南市 两当县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 28, 100, '城关镇'),
 	(62, 12, 28, 101, '站儿巷镇'),
 	(62, 12, 28, 102, '西坡镇'),
@@ -2991,7 +2988,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 12, 28, 212, '金洞乡');
 
 /* 甘肃省 临夏回族自治州 临夏市 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 29, 01, 001, '城南街道'),
 	(62, 29, 01, 002, '城北街道'),
 	(62, 29, 01, 003, '东关街道'),
@@ -3004,7 +3001,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 29, 01, 103, '折桥镇');
 
 /* 甘肃省 临夏回族自治州 临夏县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 29, 21, 100, '韩集镇'),
 	(62, 29, 21, 101, '土桥镇'),
 	(62, 29, 21, 102, '马集镇'),
@@ -3032,7 +3029,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 29, 21, 224, '民主乡');
 
 /* 甘肃省 临夏回族自治州 康乐县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 29, 22, 100, '附城镇'),
 	(62, 29, 22, 101, '苏集镇'),
 	(62, 29, 22, 102, '胭脂镇'),
@@ -3050,7 +3047,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 29, 22, 212, '五户乡');
 
 /* 甘肃省 临夏回族自治州 永靖县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 29, 23, 100, '刘家峡镇'),
 	(62, 29, 23, 101, '盐锅峡镇'),
 	(62, 29, 23, 102, '太极镇'),
@@ -3070,7 +3067,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 29, 23, 208, '杨塔乡');
 
 /* 甘肃省 临夏回族自治州 广河县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 29, 24, 100, '城关镇'),
 	(62, 29, 24, 101, '三甲集镇'),
 	(62, 29, 24, 102, '祁家集镇'),
@@ -3082,7 +3079,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 29, 24, 204, '阿力麻土东乡族乡');
 
 /* 甘肃省 临夏回族自治州 和政县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 29, 25, 100, '城关镇'),
 	(62, 29, 25, 101, '三合镇'),
 	(62, 29, 25, 102, '三十里铺镇'),
@@ -3098,7 +3095,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 29, 25, 207, '达浪乡');
 
 /* 甘肃省 临夏回族自治州 东乡族自治县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 29, 26, 100, '锁南镇'),
 	(62, 29, 26, 101, '达板镇'),
 	(62, 29, 26, 102, '河滩镇'),
@@ -3125,7 +3122,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 29, 26, 223, '董岭乡');
 
 /* 甘肃省 临夏回族自治州 积石山保安族东乡族撒拉族自治县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 29, 27, 100, '吹麻滩镇'),
 	(62, 29, 27, 101, '大河家镇'),
 	(62, 29, 27, 102, '居集镇'),
@@ -3145,7 +3142,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 29, 27, 212, '银川乡');
 
 /* 甘肃省 甘南藏族自治州 合作市 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 30, 01, 001, '当周街道办事处'),
 	(62, 30, 01, 002, '伊合昂街道办事处'),
 	(62, 30, 01, 003, '坚木克尔街道办事处'),
@@ -3158,7 +3155,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 30, 01, 205, '那吾乡');
 
 /* 甘肃省 甘南藏族自治州 临潭县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 30, 21, 100, '城关镇'),
 	(62, 30, 21, 101, '新城镇'),
 	(62, 30, 21, 102, '冶力关镇'),
@@ -3177,7 +3174,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 30, 21, 212, '八角乡');
 
 /* 甘肃省 甘南藏族自治州 卓尼县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 30, 22, 100, '柳林镇'),
 	(62, 30, 22, 101, '木耳镇'),
 	(62, 30, 22, 102, '扎古录镇'),
@@ -3195,7 +3192,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 30, 22, 211, '藏巴哇乡');
 
 /* 甘肃省 甘南藏族自治州 舟曲县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 30, 23, 100, '城关镇'),
 	(62, 30, 23, 101, '大川镇'),
 	(62, 30, 23, 102, '峰迭镇'),
@@ -3217,7 +3214,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 30, 23, 215, '博峪乡');
 
 /* 甘肃省 甘南藏族自治州 迭部县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 30, 24, 100, '电尕镇'),
 	(62, 30, 24, 200, '益哇乡'),
 	(62, 30, 24, 201, '卡坝乡'),
@@ -3231,7 +3228,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 30, 24, 209, '洛大乡');
 
 /* 甘肃省 甘南藏族自治州 玛曲县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 30, 25, 100, '尼玛镇'),
 	(62, 30, 25, 200, '欧拉乡'),
 	(62, 30, 25, 201, '欧拉秀玛乡'),
@@ -3242,7 +3239,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 30, 25, 206, '曼日玛乡');
 
 /* 甘肃省 甘南藏族自治州 碌曲县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 30, 26, 100, '郎木寺镇'),
 	(62, 30, 26, 101, '玛艾镇'),
 	(62, 30, 26, 200, '尕海乡'),
@@ -3252,7 +3249,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 30, 26, 204, '阿拉乡');
 
 /* 甘肃省 甘南藏族自治州 夏河县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(62, 30, 27, 100, '拉卜楞镇'),
 	(62, 30, 27, 101, '王格尔塘镇'),
 	(62, 30, 27, 102, '阿木去乎镇'),
@@ -3269,7 +3266,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 
 
 /* 青海省 西宁市 城东区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 01, 02, 001, '东关大街社区公共服务中心'),
 	(63, 01, 02, 002, '清真巷社区公共服务中心'),
 	(63, 01, 02, 003, '大众街社区公共服务中心'),
@@ -3286,7 +3283,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 01, 02, 101, '韵家口镇政府');
 
 /* 青海省 西宁市 城中区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 01, 03, 001, '人民街街道办事处'),
 	(63, 01, 03, 002, '南滩街道办事处'),
 	(63, 01, 03, 003, '仓门街街道办事处'),
@@ -3297,7 +3294,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 01, 03, 100, '总寨镇');
 
 /* 青海省 西宁市 城西区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 01, 04, 001, '西关大街街道办事处'),
 	(63, 01, 04, 002, '古城台街道办事处'),
 	(63, 01, 04, 003, '虎台街道办事处'),
@@ -3306,7 +3303,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 01, 04, 100, '彭家寨镇');
 
 /* 青海省 西宁市 城北区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 01, 05, 001, '朝阳街道办事处'),
 	(63, 01, 05, 002, '小桥大街街道办事处'),
 	(63, 01, 05, 003, '马坊街道办事处'),
@@ -3314,7 +3311,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 01, 05, 101, '廿里铺镇');
 
 /* 青海省 西宁市 大通回族土族自治县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 01, 21, 100, '桥头镇'),
 	(63, 01, 21, 101, '城关镇'),
 	(63, 01, 21, 102, '塔尔镇'),
@@ -3337,7 +3334,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 01, 21, 210, '朔北藏族乡');
 
 /* 青海省 西宁市 湟中县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 01, 22, 001, '康川街道办事处'),
 	(63, 01, 22, 100, '鲁沙尔镇'),
 	(63, 01, 22, 101, '西堡镇'),
@@ -3356,7 +3353,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 01, 22, 204, '海子沟乡');
 
 /* 青海省 西宁市 湟源县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 01, 23, 100, '城关镇'),
 	(63, 01, 23, 101, '大华镇'),
 	(63, 01, 23, 200, '东峡乡'),
@@ -3368,7 +3365,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 01, 23, 206, '寺寨乡');
 
 /* 青海省 海东市 乐都区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 02, 02, 100, '碾伯镇'),
 	(63, 02, 02, 101, '雨润镇'),
 	(63, 02, 02, 102, '寿乐镇'),
@@ -3390,7 +3387,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 02, 02, 211, '达拉乡');
 
 /* 青海省 海东市 平安区 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 02, 03, 100, '平安镇'),
 	(63, 02, 03, 101, '小峡镇'),
 	(63, 02, 03, 102, '三合镇'),
@@ -3401,7 +3398,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 02, 03, 204, '巴藏沟乡');
 
 /* 青海省 海东市 民和回族土族自治县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 02, 22, 100, '川口镇'),
 	(63, 02, 22, 101, '古鄯镇'),
 	(63, 02, 22, 102, '马营镇'),
@@ -3426,7 +3423,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 02, 22, 213, '新民乡');
 
 /* 青海省 海东市 互助土族自治县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 02, 23, 100, '威远镇'),
 	(63, 02, 23, 101, '丹麻镇'),
 	(63, 02, 23, 102, '高寨镇'),
@@ -3448,7 +3445,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 02, 23, 210, '蔡家堡乡');
 
 /* 青海省 海东市 化隆回族自治县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 02, 24, 100, '巴燕镇'),
 	(63, 02, 24, 101, '群科镇'),
 	(63, 02, 24, 102, '牙什尕镇'),
@@ -3468,7 +3465,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 02, 24, 210, '石大仓乡');
 
 /* 青海省 海东市 循化撒拉族自治县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 02, 25, 100, '积石镇'),
 	(63, 02, 25, 101, '白庄镇'),
 	(63, 02, 25, 102, '街子镇'),
@@ -3480,7 +3477,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 02, 25, 205, '尕楞藏族乡');
 
 /* 青海省 海北藏族自治州 门源回族自治县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 22, 21, 100, '浩门镇'),
 	(63, 22, 21, 101, '青石咀镇'),
 	(63, 22, 21, 102, '泉口镇'),
@@ -3495,7 +3492,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 22, 21, 207, '皇城蒙古族乡');
 
 /* 青海省 海北藏族自治州 祁连县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 22, 22, 100, '八宝镇'),
 	(63, 22, 22, 101, '峨堡镇'),
 	(63, 22, 22, 102, '默勒镇'),
@@ -3505,7 +3502,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 22, 22, 203, '央隆乡');
 
 /* 青海省 海北藏族自治州 海晏县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 22, 23, 100, '三角城镇'),
 	(63, 22, 23, 101, '西海镇（海北州政府驻地）'),
 	(63, 22, 23, 200, '金滩乡'),
@@ -3514,7 +3511,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 22, 23, 203, '甘子河乡');
 
 /* 青海省 海北藏族自治州 刚察县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 22, 24, 100, '沙柳河镇'),
 	(63, 22, 24, 101, '哈尔盖镇'),
 	(63, 22, 24, 200, '伊克乌兰乡'),
@@ -3522,7 +3519,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 22, 24, 202, '吉尔孟乡');
 
 /* 青海省 黄南藏族自治州 同仁县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 23, 21, 100, '隆务镇'),
 	(63, 23, 21, 101, '保安镇'),
 	(63, 23, 21, 102, '多哇镇'),
@@ -3536,7 +3533,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 23, 21, 208, '加吾乡');
 
 /* 青海省 黄南藏族自治州 尖扎县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 23, 22, 100, '马克堂镇'),
 	(63, 23, 22, 101, '康扬镇'),
 	(63, 23, 22, 102, '坎布拉镇'),
@@ -3548,7 +3545,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 23, 22, 205, '尖扎滩乡');
 
 /* 青海省 黄南藏族自治州 泽库县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 23, 23, 100, '泽曲镇'),
 	(63, 23, 23, 101, '麦秀镇'),
 	(63, 23, 23, 102, '和日镇'),
@@ -3558,7 +3555,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 23, 23, 204, '多禾茂乡');
 
 /* 青海省 黄南藏族自治州 河南蒙古族自治县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 23, 24, 100, '优干宁镇'),
 	(63, 23, 24, 101, '宁木特镇'),
 	(63, 23, 24, 201, '多松乡'),
@@ -3566,7 +3563,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 23, 24, 203, '柯生乡');
 
 /* 青海省 海南藏族自治州 共和县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 25, 21, 100, '恰卜恰镇'),
 	(63, 25, 21, 101, '倒淌河镇'),
 	(63, 25, 21, 102, '龙羊峡镇'),
@@ -3580,7 +3577,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 25, 21, 206, '江西沟乡');
 
 /* 青海省 海南藏族自治州 同德县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 25, 22, 100, '尕巴松多镇'),
 	(63, 25, 22, 101, '唐谷镇'),
 	(63, 25, 22, 200, '巴沟乡'),
@@ -3588,7 +3585,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 25, 22, 202, '河北乡');
 
 /* 青海省 海南藏族自治州 贵德县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 25, 23, 100, '河阴镇'),
 	(63, 25, 23, 101, '河西镇'),
 	(63, 25, 23, 102, '拉西瓦镇'),
@@ -3598,7 +3595,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 25, 23, 202, '尕让乡');
 
 /* 青海省 海南藏族自治州 兴海县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 25, 24, 100, '子科滩镇'),
 	(63, 25, 24, 101, '河卡镇'),
 	(63, 25, 24, 102, '曲什安镇'),
@@ -3608,7 +3605,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 25, 24, 203, '唐乃亥乡');
 
 /* 青海省 海南藏族自治州 贵南县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 25, 25, 100, '茫曲镇'),
 	(63, 25, 25, 101, '过马营镇'),
 	(63, 25, 25, 102, '森多镇'),
@@ -3617,7 +3614,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 25, 25, 203, '塔秀乡');
 
 /* 青海省 果洛藏族自治州 玛沁县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 26, 21, 100, '大武镇'),
 	(63, 26, 21, 101, '拉加镇'),
 	(63, 26, 21, 200, '大武乡'),
@@ -3628,7 +3625,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 26, 21, 205, '当洛乡');
 
 /* 青海省 果洛藏族自治州 班玛县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 26, 22, 100, '赛来塘镇'),
 	(63, 26, 22, 200, '多贡麻乡'),
 	(63, 26, 22, 201, '马可河乡'),
@@ -3640,7 +3637,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 26, 22, 207, '灯塔乡');
 
 /* 青海省 果洛藏族自治州 甘德县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 26, 23, 100, '柯曲镇'),
 	(63, 26, 23, 200, '上贡麻乡'),
 	(63, 26, 23, 201, '下贡麻乡'),
@@ -3650,7 +3647,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 26, 23, 205, '下藏科乡');
 
 /* 青海省 果洛藏族自治州 达日县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 26, 24, 100, '吉迈镇'),
 	(63, 26, 24, 200, '满掌乡'),
 	(63, 26, 24, 201, '德昂乡'),
@@ -3663,7 +3660,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 26, 24, 208, '特合土乡');
 
 /* 青海省 果洛藏族自治州 久治县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 26, 25, 100, '智青松多镇'),
 	(63, 26, 25, 200, '门堂乡'),
 	(63, 26, 25, 201, '哇赛乡'),
@@ -3672,14 +3669,14 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 26, 25, 204, '哇尔依乡');
 
 /* 青海省 果洛藏族自治州 玛多县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 26, 26, 100, '玛查理镇'),
 	(63, 26, 26, 101, '花石峡镇'),
 	(63, 26, 26, 200, '黄河乡'),
 	(63, 26, 26, 201, '扎陵湖乡');
 
 /* 青海省 玉树藏族自治州 玉树市 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 27, 01, 001, '结古镇街道办事处'),
 	(63, 27, 01, 002, '扎西科街道办事处'),
 	(63, 27, 01, 003, '西杭街道办事处'),
@@ -3694,7 +3691,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 27, 01, 205, '安冲乡');
 
 /* 青海省 玉树藏族自治州 杂多县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 27, 22, 100, '萨呼腾镇'),
 	(63, 27, 22, 200, '昂赛乡'),
 	(63, 27, 22, 201, '结多乡'),
@@ -3705,7 +3702,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 27, 22, 206, '扎青乡');
 
 /* 青海省 玉树藏族自治州 称多县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 27, 23, 100, '称文镇'),
 	(63, 27, 23, 101, '歇武镇'),
 	(63, 27, 23, 102, '扎朵镇'),
@@ -3715,7 +3712,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 27, 23, 201, '拉布乡');
 
 /* 青海省 玉树藏族自治州 治多县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 27, 24, 100, '加吉博洛格镇'),
 	(63, 27, 24, 200, '索加乡'),
 	(63, 27, 24, 201, '扎河乡'),
@@ -3724,7 +3721,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 27, 24, 204, '立新乡');
 
 /* 青海省 玉树藏族自治州 囊谦县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 27, 25, 100, '香达镇'),
 	(63, 27, 25, 200, '白扎乡'),
 	(63, 27, 25, 201, '吉曲乡'),
@@ -3737,7 +3734,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 27, 25, 208, '着晓乡');
 
 /* 青海省 玉树藏族自治州 曲麻莱县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 27, 26, 100, '约改镇'),
 	(63, 27, 26, 200, '巴干乡'),
 	(63, 27, 26, 201, '秋智乡'),
@@ -3746,7 +3743,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 27, 26, 204, '曲麻河乡');
 
 /* 青海省 海西蒙古族藏族自治州 格尔木市 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 28, 01, 001, '昆仑路街道办事处'),
 	(63, 28, 01, 002, '黄河路街道办事处'),
 	(63, 28, 01, 003, '金峰路街道办事处'),
@@ -3758,7 +3755,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 28, 01, 201, '乌图美仁乡');
 
 /* 青海省 海西蒙古族藏族自治州 德令哈市 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 28, 02, 001, '河西街道办事处'),
 	(63, 28, 02, 002, '河东街道办事处'),
 	(63, 28, 02, 003, '火车站街道办事处'),
@@ -3768,14 +3765,14 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 28, 02, 200, '蓄集乡');
 
 /* 青海省 海西蒙古族藏族自治州 乌兰县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 28, 21, 100, '希里沟镇'),
 	(63, 28, 21, 101, '茶卡镇'),
 	(63, 28, 21, 102, '柯柯镇'),
 	(63, 28, 21, 103, '铜普镇');
 
 /* 青海省 海西蒙古族藏族自治州 都兰县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 28, 22, 100, '察汉乌苏镇'),
 	(63, 28, 22, 101, '香日德镇'),
 	(63, 28, 22, 102, '夏日哈镇'),
@@ -3786,7 +3783,7 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 28, 22, 203, '巴隆乡');
 
 /* 青海省 海西蒙古族藏族自治州 天峻县 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 28, 23, 100, '新源镇'),
 	(63, 28, 23, 101, '木里镇'),
 	(63, 28, 23, 102, '江河镇'),
@@ -3799,15 +3796,15 @@ INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 28, 23, 206, '龙门乡');
 
 /* 青海省 海西蒙古族藏族自治州 大柴旦行政委员会 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 28, 57, 100, '柴旦镇'),
 	(63, 28, 57, 101, '锡铁山镇');
 
 /* 青海省 海西蒙古族藏族自治州 冷湖行政委员会 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 28, 58, 100, '冷湖镇');
 
 /* 青海省 海西蒙古族藏族自治州 茫崖行政委员会 */
-INSERT INTO `Street` (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
+INSERT INTO Street (ProvinceId, CityId, DistrictId, StreetId, Name) VALUES
 	(63, 28, 59, 100, '花土沟镇'),
 	(63, 28, 59, 101, '茫崖镇');

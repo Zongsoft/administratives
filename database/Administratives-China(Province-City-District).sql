@@ -39,19 +39,16 @@
 
 
 /* 注意：清空行政区划表的所有数据！！！ */
-TRUNCATE TABLE `Province`;
-TRUNCATE TABLE `City`;
-TRUNCATE TABLE `District`;
-TRUNCATE TABLE `Street`;
-
-SET NAMES utf8mb4;
-SET TIME_ZONE='+08:00';
+TRUNCATE TABLE Province;
+TRUNCATE TABLE City;
+TRUNCATE TABLE District;
+TRUNCATE TABLE Street;
 
 /* 北京市 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (11, '北京市', '北京', '京');
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (11, 01, '市辖区');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (11, '北京市', '北京', '京');
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (11, 01, '市辖区');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (11, 01, 01, '东城区'),
 (11, 01, 02, '西城区'),
 (11, 01, 05, '朝阳区'),
@@ -71,9 +68,9 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 天津市 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (12, '天津市', '天津', '津');
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (12, 01, '市辖区');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (12, '天津市', '天津', '津');
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (12, 01, '市辖区');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (12, 01, 01, '和平区'),
 (12, 01, 02, '河东区'),
 (12, 01, 03, '河西区'),
@@ -93,10 +90,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 河北省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (13, '河北省', '河北', '冀');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (13, '河北省', '河北', '冀');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (13, 01, '石家庄市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (13, 01, '石家庄市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (13, 01, 01, '市辖区'),
 (13, 01, 02, '长安区'),
 (13, 01, 04, '桥西区'),
@@ -120,8 +117,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (13, 01, 83, '晋州市'),
 (13, 01, 84, '新乐市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (13, 02, '唐山市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (13, 02, '唐山市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (13, 02, 01, '市辖区'),
 (13, 02, 02, '路南区'),
 (13, 02, 03, '路北区'),
@@ -138,8 +135,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (13, 02, 81, '遵化市'),
 (13, 02, 83, '迁安市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (13, 03, '秦皇岛市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (13, 03, '秦皇岛市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (13, 03, 01, '市辖区'),
 (13, 03, 02, '海港区'),
 (13, 03, 03, '山海关区'),
@@ -149,8 +146,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (13, 03, 22, '昌黎县'),
 (13, 03, 24, '卢龙县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (13, 04, '邯郸市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (13, 04, '邯郸市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (13, 04, 01, '市辖区'),
 (13, 04, 02, '邯山区'),
 (13, 04, 03, '丛台区'),
@@ -172,8 +169,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (13, 04, 35, '曲周县'),
 (13, 04, 81, '武安市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (13, 05, '邢台市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (13, 05, '邢台市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (13, 05, 01, '市辖区'),
 (13, 05, 02, '桥东区'),
 (13, 05, 03, '桥西区'),
@@ -195,8 +192,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (13, 05, 81, '南宫市'),
 (13, 05, 82, '沙河市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (13, 06, '保定市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (13, 06, '保定市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (13, 06, 01, '市辖区'),
 (13, 06, 02, '竞秀区'),
 (13, 06, 06, '莲池区'),
@@ -222,8 +219,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (13, 06, 83, '安国市'),
 (13, 06, 84, '高碑店市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (13, 07, '张家口市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (13, 07, '张家口市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (13, 07, 01, '市辖区'),
 (13, 07, 02, '桥东区'),
 (13, 07, 03, '桥西区'),
@@ -242,8 +239,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (13, 07, 31, '涿鹿县'),
 (13, 07, 32, '赤城县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (13, 08, '承德市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (13, 08, '承德市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (13, 08, 01, '市辖区'),
 (13, 08, 02, '双桥区'),
 (13, 08, 03, '双滦区'),
@@ -257,8 +254,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (13, 08, 27, '宽城满族自治县'),
 (13, 08, 28, '围场满族蒙古族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (13, 09, '沧州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (13, 09, '沧州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (13, 09, 01, '市辖区'),
 (13, 09, 02, '新华区'),
 (13, 09, 03, '运河区'),
@@ -277,8 +274,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (13, 09, 83, '黄骅市'),
 (13, 09, 84, '河间市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (13, 10, '廊坊市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (13, 10, '廊坊市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (13, 10, 01, '市辖区'),
 (13, 10, 02, '安次区'),
 (13, 10, 03, '广阳区'),
@@ -291,8 +288,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (13, 10, 81, '霸州市'),
 (13, 10, 82, '三河市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (13, 11, '衡水市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (13, 11, '衡水市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (13, 11, 01, '市辖区'),
 (13, 11, 02, '桃城区'),
 (13, 11, 03, '冀州区'),
@@ -306,17 +303,17 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (13, 11, 28, '阜城县'),
 (13, 11, 82, '深州市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (13, 90, '省直辖县级行政区划');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (13, 90, '省直辖县级行政区划');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (13, 90, 01, '定州市'),
 (13, 90, 02, '辛集市');
 
 /* 山西省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (14, '山西省', '山西', '晋');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (14, '山西省', '山西', '晋');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (14, 01, '太原市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (14, 01, '太原市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (14, 01, 01, '市辖区'),
 (14, 01, 05, '小店区'),
 (14, 01, 06, '迎泽区'),
@@ -329,8 +326,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (14, 01, 23, '娄烦县'),
 (14, 01, 81, '古交市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (14, 02, '大同市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (14, 02, '大同市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (14, 02, 01, '市辖区'),
 (14, 02, 02, '城区'),
 (14, 02, 03, '矿区'),
@@ -344,8 +341,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (14, 02, 26, '左云县'),
 (14, 02, 27, '大同县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (14, 03, '阳泉市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (14, 03, '阳泉市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (14, 03, 01, '市辖区'),
 (14, 03, 02, '城区'),
 (14, 03, 03, '矿区'),
@@ -353,8 +350,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (14, 03, 21, '平定县'),
 (14, 03, 22, '盂县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (14, 04, '长治市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (14, 04, '长治市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (14, 04, 01, '市辖区'),
 (14, 04, 02, '城区'),
 (14, 04, 11, '郊区'),
@@ -370,8 +367,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (14, 04, 31, '沁源县'),
 (14, 04, 81, '潞城市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (14, 05, '晋城市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (14, 05, '晋城市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (14, 05, 01, '市辖区'),
 (14, 05, 02, '城区'),
 (14, 05, 21, '沁水县'),
@@ -380,8 +377,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (14, 05, 25, '泽州县'),
 (14, 05, 81, '高平市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (14, 06, '朔州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (14, 06, '朔州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (14, 06, 01, '市辖区'),
 (14, 06, 02, '朔城区'),
 (14, 06, 03, '平鲁区'),
@@ -390,8 +387,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (14, 06, 23, '右玉县'),
 (14, 06, 24, '怀仁县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (14, 07, '晋中市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (14, 07, '晋中市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (14, 07, 01, '市辖区'),
 (14, 07, 02, '榆次区'),
 (14, 07, 21, '榆社县'),
@@ -405,8 +402,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (14, 07, 29, '灵石县'),
 (14, 07, 81, '介休市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (14, 08, '运城市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (14, 08, '运城市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (14, 08, 01, '市辖区'),
 (14, 08, 02, '盐湖区'),
 (14, 08, 21, '临猗县'),
@@ -422,8 +419,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (14, 08, 81, '永济市'),
 (14, 08, 82, '河津市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (14, 09, '忻州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (14, 09, '忻州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (14, 09, 01, '市辖区'),
 (14, 09, 02, '忻府区'),
 (14, 09, 21, '定襄县'),
@@ -440,8 +437,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (14, 09, 32, '偏关县'),
 (14, 09, 81, '原平市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (14, 10, '临汾市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (14, 10, '临汾市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (14, 10, 01, '市辖区'),
 (14, 10, 02, '尧都区'),
 (14, 10, 21, '曲沃县'),
@@ -461,8 +458,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (14, 10, 81, '侯马市'),
 (14, 10, 82, '霍州市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (14, 11, '吕梁市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (14, 11, '吕梁市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (14, 11, 01, '市辖区'),
 (14, 11, 02, '离石区'),
 (14, 11, 21, '文水县'),
@@ -480,10 +477,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 内蒙古 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES ('15', '内蒙古自治区', '内蒙古', '蒙');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES ('15', '内蒙古自治区', '内蒙古', '蒙');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (15, 01, '呼和浩特市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (15, 01, '呼和浩特市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (15, 01, 01, '市辖区'),
 (15, 01, 02, '新城区'),
 (15, 01, 03, '回民区'),
@@ -495,8 +492,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (15, 01, 24, '清水河县'),
 (15, 01, 25, '武川县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (15, 02, '包头市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (15, 02, '包头市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (15, 02, 01, '市辖区'),
 (15, 02, 02, '东河区'),
 (15, 02, 03, '昆都仑区'),
@@ -508,15 +505,15 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (15, 02, 22, '固阳县'),
 (15, 02, 23, '达尔罕茂明安联合旗');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (15, 03, '乌海市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (15, 03, '乌海市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (15, 03, 01, '市辖区'),
 (15, 03, 02, '海勃湾区'),
 (15, 03, 03, '海南区'),
 (15, 03, 04, '乌达区');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (15, 04, '赤峰市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (15, 04, '赤峰市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (15, 04, 01, '市辖区'),
 (15, 04, 02, '红山区'),
 (15, 04, 03, '元宝山区'),
@@ -531,8 +528,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (15, 04, 29, '宁城县'),
 (15, 04, 30, '敖汉旗');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (15, 05, '通辽市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (15, 05, '通辽市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (15, 05, 01, '市辖区'),
 (15, 05, 02, '科尔沁区'),
 (15, 05, 21, '科尔沁左翼中旗'),
@@ -543,8 +540,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (15, 05, 26, '扎鲁特旗'),
 (15, 05, 81, '霍林郭勒市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (15, 06, '鄂尔多斯市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (15, 06, '鄂尔多斯市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (15, 06, 01, '市辖区'),
 (15, 06, 02, '东胜区'),
 (15, 06, 03, '康巴什区'),
@@ -556,8 +553,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (15, 06, 26, '乌审旗'),
 (15, 06, 27, '伊金霍洛旗');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (15, 07, '呼伦贝尔市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (15, 07, '呼伦贝尔市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (15, 07, 01, '市辖区'),
 (15, 07, 02, '海拉尔区'),
 (15, 07, 03, '扎赉诺尔区'),
@@ -574,8 +571,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (15, 07, 84, '额尔古纳市'),
 (15, 07, 85, '根河市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (15, 08, '巴彦淖尔市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (15, 08, '巴彦淖尔市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (15, 08, 01, '市辖区'),
 (15, 08, 02, '临河区'),
 (15, 08, 21, '五原县'),
@@ -585,8 +582,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (15, 08, 25, '乌拉特后旗'),
 (15, 08, 26, '杭锦后旗');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (15, 09, '乌兰察布市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (15, 09, '乌兰察布市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (15, 09, 01, '市辖区'),
 (15, 09, 02, '集宁区'),
 (15, 09, 21, '卓资县'),
@@ -600,8 +597,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (15, 09, 29, '四子王旗'),
 (15, 09, 81, '丰镇市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (15, 22, '兴安盟');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (15, 22, '兴安盟');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (15, 22, 01, '乌兰浩特市'),
 (15, 22, 02, '阿尔山市'),
 (15, 22, 21, '科尔沁右翼前旗'),
@@ -609,8 +606,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (15, 22, 23, '扎赉特旗'),
 (15, 22, 24, '突泉县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (15, 25, '锡林郭勒盟');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (15, 25, '锡林郭勒盟');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (15, 25, 01, '二连浩特市'),
 (15, 25, 02, '锡林浩特市'),
 (15, 25, 22, '阿巴嘎旗'),
@@ -624,18 +621,18 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (15, 25, 30, '正蓝旗'),
 (15, 25, 31, '多伦县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (15, 29, '阿拉善盟');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (15, 29, '阿拉善盟');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (15, 29, 21, '阿拉善左旗'),
 (15, 29, 22, '阿拉善右旗'),
 (15, 29, 23, '额济纳旗');
 
 /* 辽宁省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (21, '辽宁省', '辽宁', '辽');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (21, '辽宁省', '辽宁', '辽');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (21, 01, '沈阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (21, 01, '沈阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (21, 01, 01, '市辖区'),
 (21, 01, 02, '和平区'),
 (21, 01, 03, '沈河区'),
@@ -651,8 +648,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (21, 01, 24, '法库县'),
 (21, 01, 81, '新民市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (21, 02, '大连市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (21, 02, '大连市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (21, 02, 01, '市辖区'),
 (21, 02, 02, '中山区'),
 (21, 02, 03, '西岗区'),
@@ -665,8 +662,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (21, 02, 81, '瓦房店市'),
 (21, 02, 83, '庄河市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (21, 03, '鞍山市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (21, 03, '鞍山市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (21, 03, 01, '市辖区'),
 (21, 03, 02, '铁东区'),
 (21, 03, 03, '铁西区'),
@@ -676,8 +673,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (21, 03, 23, '岫岩满族自治县'),
 (21, 03, 81, '海城市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (21, 04, '抚顺市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (21, 04, '抚顺市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (21, 04, 01, '市辖区'),
 (21, 04, 02, '新抚区'),
 (21, 04, 03, '东洲区'),
@@ -687,8 +684,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (21, 04, 22, '新宾满族自治县'),
 (21, 04, 23, '清原满族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (21, 05, '本溪市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (21, 05, '本溪市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (21, 05, 01, '市辖区'),
 (21, 05, 02, '平山区'),
 (21, 05, 03, '溪湖区'),
@@ -697,8 +694,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (21, 05, 21, '本溪满族自治县'),
 (21, 05, 22, '桓仁满族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (21, 06, '丹东市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (21, 06, '丹东市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (21, 06, 01, '市辖区'),
 (21, 06, 02, '元宝区'),
 (21, 06, 03, '振兴区'),
@@ -707,8 +704,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (21, 06, 81, '东港市'),
 (21, 06, 82, '凤城市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (21, 07, '锦州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (21, 07, '锦州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (21, 07, 01, '市辖区'),
 (21, 07, 02, '古塔区'),
 (21, 07, 03, '凌河区'),
@@ -718,8 +715,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (21, 07, 81, '凌海市'),
 (21, 07, 82, '北镇市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (21, 08, '营口市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (21, 08, '营口市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (21, 08, 01, '市辖区'),
 (21, 08, 02, '站前区'),
 (21, 08, 03, '西市区'),
@@ -728,8 +725,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (21, 08, 81, '盖州市'),
 (21, 08, 82, '大石桥市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (21, 09, '阜新市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (21, 09, '阜新市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (21, 09, 01, '市辖区'),
 (21, 09, 02, '海州区'),
 (21, 09, 03, '新邱区'),
@@ -739,8 +736,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (21, 09, 21, '阜新蒙古族自治县'),
 (21, 09, 22, '彰武县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (21, 10, '辽阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (21, 10, '辽阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (21, 10, 01, '市辖区'),
 (21, 10, 02, '白塔区'),
 (21, 10, 03, '文圣区'),
@@ -750,16 +747,16 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (21, 10, 21, '辽阳县'),
 (21, 10, 81, '灯塔市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (21, 11, '盘锦市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (21, 11, '盘锦市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (21, 11, 01, '市辖区'),
 (21, 11, 02, '双台子区'),
 (21, 11, 03, '兴隆台区'),
 (21, 11, 04, '大洼区'),
 (21, 11, 22, '盘山县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (21, 12, '铁岭市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (21, 12, '铁岭市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (21, 12, 01, '市辖区'),
 (21, 12, 02, '银州区'),
 (21, 12, 04, '清河区'),
@@ -769,8 +766,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (21, 12, 81, '调兵山市'),
 (21, 12, 82, '开原市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (21, 13, '朝阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (21, 13, '朝阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (21, 13, 01, '市辖区'),
 (21, 13, 02, '双塔区'),
 (21, 13, 03, '龙城区'),
@@ -780,8 +777,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (21, 13, 81, '北票市'),
 (21, 13, 82, '凌源市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (21, 14, '葫芦岛市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (21, 14, '葫芦岛市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (21, 14, 01, '市辖区'),
 (21, 14, 02, '连山区'),
 (21, 14, 03, '龙港区'),
@@ -792,10 +789,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 吉林省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (22, '吉林省', '吉林', '吉');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (22, '吉林省', '吉林', '吉');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (22, 01, '长春市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (22, 01, '长春市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (22, 01, 01, '市辖区'),
 (22, 01, 02, '南关区'),
 (22, 01, 03, '宽城区'),
@@ -808,8 +805,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (22, 01, 82, '榆树市'),
 (22, 01, 83, '德惠市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (22, 02, '吉林市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (22, 02, '吉林市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (22, 02, 01, '市辖区'),
 (22, 02, 02, '昌邑区'),
 (22, 02, 03, '龙潭区'),
@@ -821,8 +818,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (22, 02, 83, '舒兰市'),
 (22, 02, 84, '磐石市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (22, 03, '四平市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (22, 03, '四平市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (22, 03, 01, '市辖区'),
 (22, 03, 02, '铁西区'),
 (22, 03, 03, '铁东区'),
@@ -831,16 +828,16 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (22, 03, 81, '公主岭市'),
 (22, 03, 82, '双辽市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (22, 04, '辽源市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (22, 04, '辽源市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (22, 04, 01, '市辖区'),
 (22, 04, 02, '龙山区'),
 (22, 04, 03, '西安区'),
 (22, 04, 21, '东丰县'),
 (22, 04, 22, '东辽县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (22, 05, '通化市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (22, 05, '通化市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (22, 05, 01, '市辖区'),
 (22, 05, 02, '东昌区'),
 (22, 05, 03, '二道江区'),
@@ -850,8 +847,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (22, 05, 81, '梅河口市'),
 (22, 05, 82, '集安市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (22, 06, '白山市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (22, 06, '白山市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (22, 06, 01, '市辖区'),
 (22, 06, 02, '浑江区'),
 (22, 06, 05, '江源区'),
@@ -860,8 +857,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (22, 06, 23, '长白朝鲜族自治县'),
 (22, 06, 81, '临江市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (22, 07, '松原市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (22, 07, '松原市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (22, 07, 01, '市辖区'),
 (22, 07, 02, '宁江区'),
 (22, 07, 21, '前郭尔罗斯蒙古族自治县'),
@@ -869,8 +866,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (22, 07, 23, '乾安县'),
 (22, 07, 81, '扶余市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (22, 08, '白城市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (22, 08, '白城市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (22, 08, 01, '市辖区'),
 (22, 08, 02, '洮北区'),
 (22, 08, 21, '镇赉县'),
@@ -878,8 +875,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (22, 08, 81, '洮南市'),
 (22, 08, 82, '大安市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (22, 24, '延边朝鲜族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (22, 24, '延边朝鲜族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (22, 24, 01, '延吉市'),
 (22, 24, 02, '图们市'),
 (22, 24, 03, '敦化市'),
@@ -891,10 +888,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 黑龙江省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (23, '黑龙江省', '黑龙江', '黑');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (23, '黑龙江省', '黑龙江', '黑');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (23, 01, '哈尔滨市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (23, 01, '哈尔滨市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (23, 01, 01, '市辖区'),
 (23, 01, 02, '道里区'),
 (23, 01, 03, '南岗区'),
@@ -915,8 +912,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (23, 01, 83, '尚志市'),
 (23, 01, 84, '五常市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (23, 02, '齐齐哈尔市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (23, 02, '齐齐哈尔市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (23, 02, 01, '市辖区'),
 (23, 02, 02, '龙沙区'),
 (23, 02, 03, '建华区'),
@@ -935,8 +932,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (23, 02, 31, '拜泉县'),
 (23, 02, 81, '讷河市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (23, 03, '鸡西市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (23, 03, '鸡西市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (23, 03, 01, '市辖区'),
 (23, 03, 02, '鸡冠区'),
 (23, 03, 03, '恒山区'),
@@ -948,8 +945,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (23, 03, 81, '虎林市'),
 (23, 03, 82, '密山市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (23, 04, '鹤岗市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (23, 04, '鹤岗市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (23, 04, 01, '市辖区'),
 (23, 04, 02, '向阳区'),
 (23, 04, 03, '工农区'),
@@ -960,8 +957,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (23, 04, 21, '萝北县'),
 (23, 04, 22, '绥滨县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (23, 05, '双鸭山市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (23, 05, '双鸭山市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (23, 05, 01, '市辖区'),
 (23, 05, 02, '尖山区'),
 (23, 05, 03, '岭东区'),
@@ -972,8 +969,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (23, 05, 23, '宝清县'),
 (23, 05, 24, '饶河县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (23, 06, '大庆市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (23, 06, '大庆市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (23, 06, 01, '市辖区'),
 (23, 06, 02, '萨尔图区'),
 (23, 06, 03, '龙凤区'),
@@ -985,8 +982,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (23, 06, 23, '林甸县'),
 (23, 06, 24, '杜尔伯特蒙古族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (23, 07, '伊春市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (23, 07, '伊春市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (23, 07, 01, '市辖区'),
 (23, 07, 02, '伊春区'),
 (23, 07, 03, '南岔区'),
@@ -1006,8 +1003,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (23, 07, 22, '嘉荫县'),
 (23, 07, 81, '铁力市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (23, 08, '佳木斯市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (23, 08, '佳木斯市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (23, 08, 01, '市辖区'),
 (23, 08, 03, '向阳区'),
 (23, 08, 04, '前进区'),
@@ -1020,16 +1017,16 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (23, 08, 82, '富锦市'),
 (23, 08, 83, '抚远市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (23, 09, '七台河市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (23, 09, '七台河市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (23, 09, 01, '市辖区'),
 (23, 09, 02, '新兴区'),
 (23, 09, 03, '桃山区'),
 (23, 09, 04, '茄子河区'),
 (23, 09, 21, '勃利县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (23, 10, '牡丹江市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (23, 10, '牡丹江市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (23, 10, 01, '市辖区'),
 (23, 10, 02, '东安区'),
 (23, 10, 03, '阳明区'),
@@ -1042,8 +1039,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (23, 10, 85, '穆棱市'),
 (23, 10, 86, '东宁市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (23, 11, '黑河市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (23, 11, '黑河市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (23, 11, 01, '市辖区'),
 (23, 11, 02, '爱辉区'),
 (23, 11, 21, '嫩江县'),
@@ -1052,8 +1049,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (23, 11, 81, '北安市'),
 (23, 11, 82, '五大连池市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (23, 12, '绥化市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (23, 12, '绥化市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (23, 12, 01, '市辖区'),
 (23, 12, 02, '北林区'),
 (23, 12, 21, '望奎县'),
@@ -1066,17 +1063,17 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (23, 12, 82, '肇东市'),
 (23, 12, 83, '海伦市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (23, 27, '大兴安岭地区');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (23, 27, '大兴安岭地区');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (23, 27, 21, '呼玛县'),
 (23, 27, 22, '塔河县'),
 (23, 27, 23, '漠河县');
 
 /* 上海市 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (31, '上海市', '上海', '沪');
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (31, 01, '市辖区');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (31, '上海市', '上海', '沪');
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (31, 01, '市辖区');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (31, 01, 01, '黄浦区'),
 (31, 01, 04, '徐汇区'),
 (31, 01, 05, '长宁区'),
@@ -1096,10 +1093,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 江苏省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (32, '江苏省', '江苏', '苏');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (32, '江苏省', '江苏', '苏');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (32, 01, '南京市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (32, 01, '南京市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (32, 01, 01, '市辖区'),
 (32, 01, 02, '玄武区'),
 (32, 01, 04, '秦淮区'),
@@ -1113,8 +1110,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (32, 01, 17, '溧水区'),
 (32, 01, 18, '高淳区');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (32, 02, '无锡市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (32, 02, '无锡市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (32, 02, 01, '市辖区'),
 (32, 02, 05, '锡山区'),
 (32, 02, 06, '惠山区'),
@@ -1124,8 +1121,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (32, 02, 81, '江阴市'),
 (32, 02, 82, '宜兴市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (32, 03, '徐州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (32, 03, '徐州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (32, 03, 01, '市辖区'),
 (32, 03, 02, '鼓楼区'),
 (32, 03, 03, '云龙区'),
@@ -1138,8 +1135,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (32, 03, 81, '新沂市'),
 (32, 03, 82, '邳州市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (32, 04, '常州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (32, 04, '常州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (32, 04, 01, '市辖区'),
 (32, 04, 02, '天宁区'),
 (32, 04, 04, '钟楼区'),
@@ -1148,8 +1145,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (32, 04, 13, '金坛区'),
 (32, 04, 81, '溧阳市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (32, 05, '苏州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (32, 05, '苏州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (32, 05, 01, '市辖区'),
 (32, 05, 05, '虎丘区'),
 (32, 05, 06, '吴中区'),
@@ -1161,8 +1158,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (32, 05, 83, '昆山市'),
 (32, 05, 85, '太仓市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (32, 06, '南通市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (32, 06, '南通市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (32, 06, 01, '市辖区'),
 (32, 06, 02, '崇川区'),
 (32, 06, 11, '港闸区'),
@@ -1173,8 +1170,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (32, 06, 82, '如皋市'),
 (32, 06, 84, '海门市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (32, 07, '连云港市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (32, 07, '连云港市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (32, 07, 01, '市辖区'),
 (32, 07, 03, '连云区'),
 (32, 07, 06, '海州区'),
@@ -1183,8 +1180,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (32, 07, 23, '灌云县'),
 (32, 07, 24, '灌南县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (32, 08, '淮安市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (32, 08, '淮安市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (32, 08, 01, '市辖区'),
 (32, 08, 03, '淮安区'),
 (32, 08, 04, '淮阴区'),
@@ -1194,8 +1191,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (32, 08, 30, '盱眙县'),
 (32, 08, 31, '金湖县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (32, 09, '盐城市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (32, 09, '盐城市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (32, 09, 01, '市辖区'),
 (32, 09, 02, '亭湖区'),
 (32, 09, 03, '盐都区'),
@@ -1207,8 +1204,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (32, 09, 25, '建湖县'),
 (32, 09, 81, '东台市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (32, 10, '扬州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (32, 10, '扬州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (32, 10, 01, '市辖区'),
 (32, 10, 02, '广陵区'),
 (32, 10, 03, '邗江区'),
@@ -1217,8 +1214,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (32, 10, 81, '仪征市'),
 (32, 10, 84, '高邮市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (32, 11, '镇江市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (32, 11, '镇江市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (32, 11, 01, '市辖区'),
 (32, 11, 02, '京口区'),
 (32, 11, 11, '润州区'),
@@ -1227,8 +1224,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (32, 11, 82, '扬中市'),
 (32, 11, 83, '句容市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (32, 12, '泰州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (32, 12, '泰州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (32, 12, 01, '市辖区'),
 (32, 12, 02, '海陵区'),
 (32, 12, 03, '高港区'),
@@ -1237,8 +1234,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (32, 12, 82, '靖江市'),
 (32, 12, 83, '泰兴市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (32, 13, '宿迁市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (32, 13, '宿迁市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (32, 13, 01, '市辖区'),
 (32, 13, 02, '宿城区'),
 (32, 13, 11, '宿豫区'),
@@ -1248,10 +1245,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 浙江省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (33, '浙江省', '浙江', '浙');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (33, '浙江省', '浙江', '浙');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (33, 01, '杭州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (33, 01, '杭州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (33, 01, 01, '市辖区'),
 (33, 01, 02, '上城区'),
 (33, 01, 03, '下城区'),
@@ -1267,8 +1264,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (33, 01, 82, '建德市'),
 (33, 01, 85, '临安市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (33, 02, '宁波市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (33, 02, '宁波市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (33, 02, 01, '市辖区'),
 (33, 02, 03, '海曙区'),
 (33, 02, 04, '江东区'),
@@ -1282,8 +1279,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (33, 02, 82, '慈溪市'),
 (33, 02, 83, '奉化市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (33, 03, '温州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (33, 03, '温州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (33, 03, 01, '市辖区'),
 (33, 03, 02, '鹿城区'),
 (33, 03, 03, '龙湾区'),
@@ -1297,8 +1294,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (33, 03, 81, '瑞安市'),
 (33, 03, 82, '乐清市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (33, 04, '嘉兴市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (33, 04, '嘉兴市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (33, 04, 01, '市辖区'),
 (33, 04, 02, '南湖区'),
 (33, 04, 11, '秀洲区'),
@@ -1308,8 +1305,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (33, 04, 82, '平湖市'),
 (33, 04, 83, '桐乡市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (33, 05, '湖州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (33, 05, '湖州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (33, 05, 01, '市辖区'),
 (33, 05, 02, '吴兴区'),
 (33, 05, 03, '南浔区'),
@@ -1317,8 +1314,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (33, 05, 22, '长兴县'),
 (33, 05, 23, '安吉县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (33, 06, '绍兴市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (33, 06, '绍兴市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (33, 06, 01, '市辖区'),
 (33, 06, 02, '越城区'),
 (33, 06, 03, '柯桥区'),
@@ -1327,8 +1324,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (33, 06, 81, '诸暨市'),
 (33, 06, 83, '嵊州市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (33, 07, '金华市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (33, 07, '金华市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (33, 07, 01, '市辖区'),
 (33, 07, 02, '婺城区'),
 (33, 07, 03, '金东区'),
@@ -1340,8 +1337,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (33, 07, 83, '东阳市'),
 (33, 07, 84, '永康市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (33, 08, '衢州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (33, 08, '衢州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (33, 08, 01, '市辖区'),
 (33, 08, 02, '柯城区'),
 (33, 08, 03, '衢江区'),
@@ -1350,16 +1347,16 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (33, 08, 25, '龙游县'),
 (33, 08, 81, '江山市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (33, 09, '舟山市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (33, 09, '舟山市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (33, 09, 01, '市辖区'),
 (33, 09, 02, '定海区'),
 (33, 09, 03, '普陀区'),
 (33, 09, 21, '岱山县'),
 (33, 09, 22, '嵊泗县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (33, 10, '台州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (33, 10, '台州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (33, 10, 01, '市辖区'),
 (33, 10, 02, '椒江区'),
 (33, 10, 03, '黄岩区'),
@@ -1371,8 +1368,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (33, 10, 81, '温岭市'),
 (33, 10, 82, '临海市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (33, 11, '丽水市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (33, 11, '丽水市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (33, 11, 01, '市辖区'),
 (33, 11, 02, '莲都区'),
 (33, 11, 21, '青田县'),
@@ -1386,10 +1383,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 安徽省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (34, '安徽省', '安徽', '皖');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (34, '安徽省', '安徽', '皖');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 01, '合肥市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (34, 01, '合肥市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (34, 01, 01, '市辖区'),
 (34, 01, 02, '瑶海区'),
 (34, 01, 03, '庐阳区'),
@@ -1401,8 +1398,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (34, 01, 24, '庐江县'),
 (34, 01, 81, '巢湖市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 02, '芜湖市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (34, 02, '芜湖市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (34, 02, 01, '市辖区'),
 (34, 02, 02, '镜湖区'),
 (34, 02, 03, '弋江区'),
@@ -1413,8 +1410,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (34, 02, 23, '南陵县'),
 (34, 02, 25, '无为县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 03, '蚌埠市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (34, 03, '蚌埠市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (34, 03, 01, '市辖区'),
 (34, 03, 02, '龙子湖区'),
 (34, 03, 03, '蚌山区'),
@@ -1424,8 +1421,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (34, 03, 22, '五河县'),
 (34, 03, 23, '固镇县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 04, '淮南市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (34, 04, '淮南市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (34, 04, 01, '市辖区'),
 (34, 04, 02, '大通区'),
 (34, 04, 03, '田家庵区'),
@@ -1435,8 +1432,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (34, 04, 21, '凤台县'),
 (34, 04, 22, '寿县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 05, '马鞍山市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (34, 05, '马鞍山市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (34, 05, 01, '市辖区'),
 (34, 05, 03, '花山区'),
 (34, 05, 04, '雨山区'),
@@ -1445,24 +1442,24 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (34, 05, 22, '含山县'),
 (34, 05, 23, '和县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 06, '淮北市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (34, 06, '淮北市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (34, 06, 01, '市辖区'),
 (34, 06, 02, '杜集区'),
 (34, 06, 03, '相山区'),
 (34, 06, 04, '烈山区'),
 (34, 06, 21, '濉溪县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 07, '铜陵市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (34, 07, '铜陵市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (34, 07, 01, '市辖区'),
 (34, 07, 05, '铜官区'),
 (34, 07, 06, '义安区'),
 (34, 07, 11, '郊区'),
 (34, 07, 22, '枞阳县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 08, '安庆市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (34, 08, '安庆市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (34, 08, 01, '市辖区'),
 (34, 08, 02, '迎江区'),
 (34, 08, 03, '大观区'),
@@ -1475,8 +1472,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (34, 08, 28, '岳西县'),
 (34, 08, 81, '桐城市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 10, '黄山市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (34, 10, '黄山市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (34, 10, 01, '市辖区'),
 (34, 10, 02, '屯溪区'),
 (34, 10, 03, '黄山区'),
@@ -1486,8 +1483,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (34, 10, 23, '黟县'),
 (34, 10, 24, '祁门县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 11, '滁州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (34, 11, '滁州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (34, 11, 01, '市辖区'),
 (34, 11, 02, '琅琊区'),
 (34, 11, 03, '南谯区'),
@@ -1498,8 +1495,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (34, 11, 81, '天长市'),
 (34, 11, 82, '明光市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 12, '阜阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (34, 12, '阜阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (34, 12, 01, '市辖区'),
 (34, 12, 02, '颍州区'),
 (34, 12, 03, '颍东区'),
@@ -1510,8 +1507,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (34, 12, 26, '颍上县'),
 (34, 12, 82, '界首市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 13, '宿州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (34, 13, '宿州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (34, 13, 01, '市辖区'),
 (34, 13, 02, '埇桥区'),
 (34, 13, 21, '砀山县'),
@@ -1519,8 +1516,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (34, 13, 23, '灵璧县'),
 (34, 13, 24, '泗县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 15, '六安市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (34, 15, '六安市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (34, 15, 01, '市辖区'),
 (34, 15, 02, '金安区'),
 (34, 15, 03, '裕安区'),
@@ -1530,24 +1527,24 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (34, 15, 24, '金寨县'),
 (34, 15, 25, '霍山县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 16, '亳州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (34, 16, '亳州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (34, 16, 01, '市辖区'),
 (34, 16, 02, '谯城区'),
 (34, 16, 21, '涡阳县'),
 (34, 16, 22, '蒙城县'),
 (34, 16, 23, '利辛县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 17, '池州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (34, 17, '池州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (34, 17, 01, '市辖区'),
 (34, 17, 02, '贵池区'),
 (34, 17, 21, '东至县'),
 (34, 17, 22, '石台县'),
 (34, 17, 23, '青阳县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (34, 18, '宣城市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (34, 18, '宣城市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (34, 18, 01, '市辖区'),
 (34, 18, 02, '宣州区'),
 (34, 18, 21, '郎溪县'),
@@ -1559,10 +1556,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 福建省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (35, '福建省', '福建', '闽');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (35, '福建省', '福建', '闽');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (35, 01, '福州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (35, 01, '福州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (35, 01, 01, '市辖区'),
 (35, 01, 02, '鼓楼区'),
 (35, 01, 03, '台江区'),
@@ -1578,8 +1575,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (35, 01, 81, '福清市'),
 (35, 01, 82, '长乐市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (35, 02, '厦门市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (35, 02, '厦门市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (35, 02, 01, '市辖区'),
 (35, 02, 03, '思明区'),
 (35, 02, 05, '海沧区'),
@@ -1588,8 +1585,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (35, 02, 12, '同安区'),
 (35, 02, 13, '翔安区');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (35, 03, '莆田市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (35, 03, '莆田市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (35, 03, 01, '市辖区'),
 (35, 03, 02, '城厢区'),
 (35, 03, 03, '涵江区'),
@@ -1597,8 +1594,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (35, 03, 05, '秀屿区'),
 (35, 03, 22, '仙游县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (35, 04, '三明市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (35, 04, '三明市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (35, 04, 01, '市辖区'),
 (35, 04, 02, '梅列区'),
 (35, 04, 03, '三元区'),
@@ -1613,8 +1610,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (35, 04, 30, '建宁县'),
 (35, 04, 81, '永安市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (35, 05, '泉州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (35, 05, '泉州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (35, 05, 01, '市辖区'),
 (35, 05, 02, '鲤城区'),
 (35, 05, 03, '丰泽区'),
@@ -1629,8 +1626,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (35, 05, 82, '晋江市'),
 (35, 05, 83, '南安市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (35, 06, '漳州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (35, 06, '漳州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (35, 06, 01, '市辖区'),
 (35, 06, 02, '芗城区'),
 (35, 06, 03, '龙文区'),
@@ -1644,8 +1641,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (35, 06, 29, '华安县'),
 (35, 06, 81, '龙海市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (35, 07, '南平市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (35, 07, '南平市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (35, 07, 01, '市辖区'),
 (35, 07, 02, '延平区'),
 (35, 07, 03, '建阳区'),
@@ -1658,8 +1655,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (35, 07, 82, '武夷山市'),
 (35, 07, 83, '建瓯市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (35, 08, '龙岩市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (35, 08, '龙岩市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (35, 08, 01, '市辖区'),
 (35, 08, 02, '新罗区'),
 (35, 08, 03, '永定区'),
@@ -1669,8 +1666,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (35, 08, 25, '连城县'),
 (35, 08, 81, '漳平市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (35, 09, '宁德市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (35, 09, '宁德市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (35, 09, 01, '市辖区'),
 (35, 09, 02, '蕉城区'),
 (35, 09, 21, '霞浦县'),
@@ -1684,10 +1681,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 江西省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (36, '江西省', '江西', '赣');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (36, '江西省', '江西', '赣');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (36, 01, '南昌市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (36, 01, '南昌市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (36, 01, 01, '市辖区'),
 (36, 01, 02, '东湖区'),
 (36, 01, 03, '西湖区'),
@@ -1699,16 +1696,16 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (36, 01, 23, '安义县'),
 (36, 01, 24, '进贤县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (36, 02, '景德镇市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (36, 02, '景德镇市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (36, 02, 01, '市辖区'),
 (36, 02, 02, '昌江区'),
 (36, 02, 03, '珠山区'),
 (36, 02, 22, '浮梁县'),
 (36, 02, 81, '乐平市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (36, 03, '萍乡市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (36, 03, '萍乡市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (36, 03, 01, '市辖区'),
 (36, 03, 02, '安源区'),
 (36, 03, 13, '湘东区'),
@@ -1716,8 +1713,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (36, 03, 22, '上栗县'),
 (36, 03, 23, '芦溪县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (36, 04, '九江市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (36, 04, '九江市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (36, 04, 01, '市辖区'),
 (36, 04, 02, '濂溪区'),
 (36, 04, 03, '浔阳区'),
@@ -1733,21 +1730,21 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (36, 04, 82, '共青城市'),
 (36, 04, 83, '庐山市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (36, 05, '新余市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (36, 05, '新余市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (36, 05, 01, '市辖区'),
 (36, 05, 02, '渝水区'),
 (36, 05, 21, '分宜县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (36, 06, '鹰潭市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (36, 06, '鹰潭市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (36, 06, 01, '市辖区'),
 (36, 06, 02, '月湖区'),
 (36, 06, 22, '余江县'),
 (36, 06, 81, '贵溪市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (36, 07, '赣州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (36, 07, '赣州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (36, 07, 01, '市辖区'),
 (36, 07, 02, '章贡区'),
 (36, 07, 03, '南康区'),
@@ -1768,8 +1765,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (36, 07, 35, '石城县'),
 (36, 07, 81, '瑞金市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (36, 08, '吉安市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (36, 08, '吉安市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (36, 08, 01, '市辖区'),
 (36, 08, 02, '吉州区'),
 (36, 08, 03, '青原区'),
@@ -1785,8 +1782,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (36, 08, 30, '永新县'),
 (36, 08, 81, '井冈山市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (36, 09, '宜春市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (36, 09, '宜春市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (36, 09, 01, '市辖区'),
 (36, 09, 02, '袁州区'),
 (36, 09, 21, '奉新县'),
@@ -1799,8 +1796,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (36, 09, 82, '樟树市'),
 (36, 09, 83, '高安市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (36, 10, '抚州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (36, 10, '抚州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (36, 10, 01, '市辖区'),
 (36, 10, 02, '临川区'),
 (36, 10, 21, '南城县'),
@@ -1814,8 +1811,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (36, 10, 29, '东乡县'),
 (36, 10, 30, '广昌县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (36, 11, '上饶市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (36, 11, '上饶市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (36, 11, 01, '市辖区'),
 (36, 11, 02, '信州区'),
 (36, 11, 03, '广丰区'),
@@ -1832,10 +1829,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 山东省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (37, '山东省', '山东', '鲁');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (37, '山东省', '山东', '鲁');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 01, '济南市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 01, '济南市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 01, 01, '市辖区'),
 (37, 01, 02, '历下区'),
 (37, 01, 03, '市中区'),
@@ -1848,8 +1845,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (37, 01, 26, '商河县'),
 (37, 01, 81, '章丘市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 02, '青岛市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 02, '青岛市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 02, 01, '市辖区'),
 (37, 02, 02, '市南区'),
 (37, 02, 03, '市北区'),
@@ -1862,8 +1859,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (37, 02, 83, '平度市'),
 (37, 02, 85, '莱西市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 03, '淄博市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 03, '淄博市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 03, 01, '市辖区'),
 (37, 03, 02, '淄川区'),
 (37, 03, 03, '张店区'),
@@ -1874,8 +1871,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (37, 03, 22, '高青县'),
 (37, 03, 23, '沂源县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 04, '枣庄市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 04, '枣庄市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 04, 01, '市辖区'),
 (37, 04, 02, '市中区'),
 (37, 04, 03, '薛城区'),
@@ -1884,8 +1881,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (37, 04, 06, '山亭区'),
 (37, 04, 81, '滕州市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 05, '东营市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 05, '东营市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 05, 01, '市辖区'),
 (37, 05, 02, '东营区'),
 (37, 05, 03, '河口区'),
@@ -1893,8 +1890,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (37, 05, 22, '利津县'),
 (37, 05, 23, '广饶县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 06, '烟台市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 06, '烟台市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 06, 01, '市辖区'),
 (37, 06, 02, '芝罘区'),
 (37, 06, 11, '福山区'),
@@ -1909,8 +1906,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (37, 06, 86, '栖霞市'),
 (37, 06, 87, '海阳市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 07, '潍坊市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 07, '潍坊市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 07, 01, '市辖区'),
 (37, 07, 02, '潍城区'),
 (37, 07, 03, '寒亭区'),
@@ -1925,8 +1922,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (37, 07, 85, '高密市'),
 (37, 07, 86, '昌邑市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 08, '济宁市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 08, '济宁市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 08, 01, '市辖区'),
 (37, 08, 11, '任城区'),
 (37, 08, 12, '兖州区'),
@@ -1940,8 +1937,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (37, 08, 81, '曲阜市'),
 (37, 08, 83, '邹城市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 09, '泰安市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 09, '泰安市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 09, 01, '市辖区'),
 (37, 09, 02, '泰山区'),
 (37, 09, 11, '岱岳区'),
@@ -1950,30 +1947,30 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (37, 09, 82, '新泰市'),
 (37, 09, 83, '肥城市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 10, '威海市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 10, '威海市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 10, 01, '市辖区'),
 (37, 10, 02, '环翠区'),
 (37, 10, 03, '文登区'),
 (37, 10, 82, '荣成市'),
 (37, 10, 83, '乳山市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 11, '日照市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 11, '日照市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 11, 01, '市辖区'),
 (37, 11, 02, '东港区'),
 (37, 11, 03, '岚山区'),
 (37, 11, 21, '五莲县'),
 (37, 11, 22, '莒县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 12, '莱芜市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 12, '莱芜市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 12, 01, '市辖区'),
 (37, 12, 02, '莱城区'),
 (37, 12, 03, '钢城区');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 13, '临沂市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 13, '临沂市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 13, 01, '市辖区'),
 (37, 13, 02, '兰山区'),
 (37, 13, 11, '罗庄区'),
@@ -1988,8 +1985,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (37, 13, 28, '蒙阴县'),
 (37, 13, 29, '临沭县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 14, '德州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 14, '德州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 14, 01, '市辖区'),
 (37, 14, 02, '德城区'),
 (37, 14, 03, '陵城区'),
@@ -2003,8 +2000,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (37, 14, 81, '乐陵市'),
 (37, 14, 82, '禹城市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 15, '聊城市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 15, '聊城市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 15, 01, '市辖区'),
 (37, 15, 02, '东昌府区'),
 (37, 15, 21, '阳谷县'),
@@ -2015,8 +2012,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (37, 15, 26, '高唐县'),
 (37, 15, 81, '临清市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 16, '滨州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 16, '滨州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 16, 01, '市辖区'),
 (37, 16, 02, '滨城区'),
 (37, 16, 03, '沾化区'),
@@ -2026,8 +2023,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (37, 16, 25, '博兴县'),
 (37, 16, 26, '邹平县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (37, 17, '菏泽市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (37, 17, '菏泽市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (37, 17, 01, '市辖区'),
 (37, 17, 02, '牡丹区'),
 (37, 17, 03, '定陶区'),
@@ -2041,10 +2038,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 河南省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (41, '河南省', '河南', '豫');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (41, '河南省', '河南', '豫');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 01, '郑州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 01, '郑州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 01, 01, '市辖区'),
 (41, 01, 02, '中原区'),
 (41, 01, 03, '二七区'),
@@ -2059,8 +2056,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 01, 84, '新郑市'),
 (41, 01, 85, '登封市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 02, '开封市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 02, '开封市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 02, 01, '市辖区'),
 (41, 02, 02, '龙亭区'),
 (41, 02, 03, '顺河回族区'),
@@ -2073,8 +2070,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 02, 23, '尉氏县'),
 (41, 02, 25, '兰考县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 03, '洛阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 03, '洛阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 03, 01, '市辖区'),
 (41, 03, 02, '老城区'),
 (41, 03, 03, '西工区'),
@@ -2092,8 +2089,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 03, 29, '伊川县'),
 (41, 03, 81, '偃师市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 04, '平顶山市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 04, '平顶山市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 04, 01, '市辖区'),
 (41, 04, 02, '新华区'),
 (41, 04, 03, '卫东区'),
@@ -2106,8 +2103,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 04, 81, '舞钢市'),
 (41, 04, 82, '汝州市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 05, '安阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 05, '安阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 05, 01, '市辖区'),
 (41, 05, 02, '文峰区'),
 (41, 05, 03, '北关区'),
@@ -2119,8 +2116,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 05, 27, '内黄县'),
 (41, 05, 81, '林州市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 06, '鹤壁市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 06, '鹤壁市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 06, 01, '市辖区'),
 (41, 06, 02, '鹤山区'),
 (41, 06, 03, '山城区'),
@@ -2128,8 +2125,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 06, 21, '浚县'),
 (41, 06, 22, '淇县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 07, '新乡市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 07, '新乡市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 07, 01, '市辖区'),
 (41, 07, 02, '红旗区'),
 (41, 07, 03, '卫滨区'),
@@ -2144,8 +2141,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 07, 81, '卫辉市'),
 (41, 07, 82, '辉县市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 08, '焦作市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 08, '焦作市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 08, 01, '市辖区'),
 (41, 08, 02, '解放区'),
 (41, 08, 03, '中站区'),
@@ -2158,8 +2155,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 08, 82, '沁阳市'),
 (41, 08, 83, '孟州市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 09, '濮阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 09, '濮阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 09, 01, '市辖区'),
 (41, 09, 02, '华龙区'),
 (41, 09, 22, '清丰县'),
@@ -2168,8 +2165,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 09, 27, '台前县'),
 (41, 09, 28, '濮阳县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 10, '许昌市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 10, '许昌市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 10, 01, '市辖区'),
 (41, 10, 02, '魏都区'),
 (41, 10, 23, '许昌县'),
@@ -2178,8 +2175,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 10, 81, '禹州市'),
 (41, 10, 82, '长葛市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 11, '漯河市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 11, '漯河市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 11, 01, '市辖区'),
 (41, 11, 02, '源汇区'),
 (41, 11, 03, '郾城区'),
@@ -2187,8 +2184,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 11, 21, '舞阳县'),
 (41, 11, 22, '临颍县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 12, '三门峡市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 12, '三门峡市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 12, 01, '市辖区'),
 (41, 12, 02, '湖滨区'),
 (41, 12, 03, '陕州区'),
@@ -2197,8 +2194,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 12, 81, '义马市'),
 (41, 12, 82, '灵宝市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 13, '南阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 13, '南阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 13, 01, '市辖区'),
 (41, 13, 02, '宛城区'),
 (41, 13, 03, '卧龙区'),
@@ -2214,8 +2211,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 13, 30, '桐柏县'),
 (41, 13, 81, '邓州市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 14, '商丘市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 14, '商丘市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 14, 01, '市辖区'),
 (41, 14, 02, '梁园区'),
 (41, 14, 03, '睢阳区'),
@@ -2227,8 +2224,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 14, 26, '夏邑县'),
 (41, 14, 81, '永城市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 15, '信阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 15, '信阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 15, 01, '市辖区'),
 (41, 15, 02, '浉河区'),
 (41, 15, 03, '平桥区'),
@@ -2241,8 +2238,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 15, 27, '淮滨县'),
 (41, 15, 28, '息县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 16, '周口市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 16, '周口市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 16, 01, '市辖区'),
 (41, 16, 02, '川汇区'),
 (41, 16, 21, '扶沟县'),
@@ -2255,8 +2252,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 16, 28, '鹿邑县'),
 (41, 16, 81, '项城市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 17, '驻马店市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 17, '驻马店市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (41, 17, 01, '市辖区'),
 (41, 17, 02, '驿城区'),
 (41, 17, 21, '西平县'),
@@ -2269,15 +2266,15 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (41, 17, 28, '遂平县'),
 (41, 17, 29, '新蔡县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (41, 90, '省直辖县级行政区划');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES (41, 90, 01, '济源市');
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (41, 90, '省直辖县级行政区划');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES (41, 90, 01, '济源市');
 
 /* 湖北省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (42, '湖北省', '湖北', '鄂');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (42, '湖北省', '湖北', '鄂');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (42, 01, '武汉市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (42, 01, '武汉市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (42, 01, 01, '市辖区'),
 (42, 01, 02, '江岸区'),
 (42, 01, 03, '江汉区'),
@@ -2293,8 +2290,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (42, 01, 16, '黄陂区'),
 (42, 01, 17, '新洲区');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (42, 02, '黄石市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (42, 02, '黄石市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (42, 02, 01, '市辖区'),
 (42, 02, 02, '黄石港区'),
 (42, 02, 03, '西塞山区'),
@@ -2303,8 +2300,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (42, 02, 22, '阳新县'),
 (42, 02, 81, '大冶市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (42, 03, '十堰市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (42, 03, '十堰市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (42, 03, 01, '市辖区'),
 (42, 03, 02, '茅箭区'),
 (42, 03, 03, '张湾区'),
@@ -2315,8 +2312,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (42, 03, 25, '房县'),
 (42, 03, 81, '丹江口市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (42, 05, '宜昌市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (42, 05, '宜昌市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (42, 05, 01, '市辖区'),
 (42, 05, 02, '西陵区'),
 (42, 05, 03, '伍家岗区'),
@@ -2332,8 +2329,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (42, 05, 82, '当阳市'),
 (42, 05, 83, '枝江市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (42, 06, '襄阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (42, 06, '襄阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (42, 06, 01, '市辖区'),
 (42, 06, 02, '襄城区'),
 (42, 06, 06, '樊城区'),
@@ -2345,15 +2342,15 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (42, 06, 83, '枣阳市'),
 (42, 06, 84, '宜城市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (42, 07, '鄂州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (42, 07, '鄂州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (42, 07, 01, '市辖区'),
 (42, 07, 02, '梁子湖区'),
 (42, 07, 03, '华容区'),
 (42, 07, 04, '鄂城区');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (42, 08, '荆门市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (42, 08, '荆门市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (42, 08, 01, '市辖区'),
 (42, 08, 02, '东宝区'),
 (42, 08, 04, '掇刀区'),
@@ -2361,8 +2358,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (42, 08, 22, '沙洋县'),
 (42, 08, 81, '钟祥市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (42, 09, '孝感市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (42, 09, '孝感市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (42, 09, 01, '市辖区'),
 (42, 09, 02, '孝南区'),
 (42, 09, 21, '孝昌县'),
@@ -2372,8 +2369,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (42, 09, 82, '安陆市'),
 (42, 09, 84, '汉川市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (42, 10, '荆州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (42, 10, '荆州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (42, 10, 01, '市辖区'),
 (42, 10, 02, '沙市区'),
 (42, 10, 03, '荆州区'),
@@ -2384,8 +2381,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (42, 10, 83, '洪湖市'),
 (42, 10, 87, '松滋市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (42, 11, '黄冈市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (42, 11, '黄冈市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (42, 11, 01, '市辖区'),
 (42, 11, 02, '黄州区'),
 (42, 11, 21, '团风县'),
@@ -2398,8 +2395,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (42, 11, 81, '麻城市'),
 (42, 11, 82, '武穴市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (42, 12, '咸宁市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (42, 12, '咸宁市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (42, 12, 01, '市辖区'),
 (42, 12, 02, '咸安区'),
 (42, 12, 21, '嘉鱼县'),
@@ -2408,15 +2405,15 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (42, 12, 24, '通山县'),
 (42, 12, 81, '赤壁市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (42, 13, '随州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (42, 13, '随州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (42, 13, 01, '市辖区'),
 (42, 13, 03, '曾都区'),
 (42, 13, 21, '随县'),
 (42, 13, 81, '广水市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (42, 28, '恩施土家族苗族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (42, 28, '恩施土家族苗族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (42, 28, 01, '恩施市'),
 (42, 28, 02, '利川市'),
 (42, 28, 22, '建始县'),
@@ -2426,8 +2423,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (42, 28, 27, '来凤县'),
 (42, 28, 28, '鹤峰县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (42, 90, '省直辖县级行政区划');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (42, 90, '省直辖县级行政区划');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (42, 90, 04, '仙桃市'),
 (42, 90, 05, '潜江市'),
 (42, 90, 06, '天门市'),
@@ -2435,10 +2432,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 湖南省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (43, '湖南省', '湖南', '湘');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (43, '湖南省', '湖南', '湘');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (43, 01, '长沙市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (43, 01, '长沙市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (43, 01, 01, '市辖区'),
 (43, 01, 02, '芙蓉区'),
 (43, 01, 03, '天心区'),
@@ -2450,8 +2447,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (43, 01, 24, '宁乡县'),
 (43, 01, 81, '浏阳市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (43, 02, '株洲市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (43, 02, '株洲市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (43, 02, 01, '市辖区'),
 (43, 02, 02, '荷塘区'),
 (43, 02, 03, '芦淞区'),
@@ -2463,8 +2460,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (43, 02, 25, '炎陵县'),
 (43, 02, 81, '醴陵市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (43, 03, '湘潭市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (43, 03, '湘潭市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (43, 03, 01, '市辖区'),
 (43, 03, 02, '雨湖区'),
 (43, 03, 04, '岳塘区'),
@@ -2472,8 +2469,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (43, 03, 81, '湘乡市'),
 (43, 03, 82, '韶山市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (43, 04, '衡阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (43, 04, '衡阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (43, 04, 01, '市辖区'),
 (43, 04, 05, '珠晖区'),
 (43, 04, 06, '雁峰区'),
@@ -2488,8 +2485,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (43, 04, 81, '耒阳市'),
 (43, 04, 82, '常宁市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (43, 05, '邵阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (43, 05, '邵阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (43, 05, 01, '市辖区'),
 (43, 05, 02, '双清区'),
 (43, 05, 03, '大祥区'),
@@ -2504,8 +2501,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (43, 05, 29, '城步苗族自治县'),
 (43, 05, 81, '武冈市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (43, 06, '岳阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (43, 06, '岳阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (43, 06, 01, '市辖区'),
 (43, 06, 02, '岳阳楼区'),
 (43, 06, 03, '云溪区'),
@@ -2517,8 +2514,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (43, 06, 81, '汨罗市'),
 (43, 06, 82, '临湘市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (43, 07, '常德市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (43, 07, '常德市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (43, 07, 01, '市辖区'),
 (43, 07, 02, '武陵区'),
 (43, 07, 03, '鼎城区'),
@@ -2530,16 +2527,16 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (43, 07, 26, '石门县'),
 (43, 07, 81, '津市市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (43, 08, '张家界市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (43, 08, '张家界市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (43, 08, 01, '市辖区'),
 (43, 08, 02, '永定区'),
 (43, 08, 11, '武陵源区'),
 (43, 08, 21, '慈利县'),
 (43, 08, 22, '桑植县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (43, 09, '益阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (43, 09, '益阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (43, 09, 01, '市辖区'),
 (43, 09, 02, '资阳区'),
 (43, 09, 03, '赫山区'),
@@ -2548,8 +2545,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (43, 09, 23, '安化县'),
 (43, 09, 81, '沅江市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (43, 10, '郴州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (43, 10, '郴州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (43, 10, 01, '市辖区'),
 (43, 10, 02, '北湖区'),
 (43, 10, 03, '苏仙区'),
@@ -2563,8 +2560,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (43, 10, 28, '安仁县'),
 (43, 10, 81, '资兴市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (43, 11, '永州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (43, 11, '永州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (43, 11, 01, '市辖区'),
 (43, 11, 02, '零陵区'),
 (43, 11, 03, '冷水滩区'),
@@ -2578,8 +2575,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (43, 11, 28, '新田县'),
 (43, 11, 29, '江华瑶族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (43, 12, '怀化市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (43, 12, '怀化市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (43, 12, 01, '市辖区'),
 (43, 12, 02, '鹤城区'),
 (43, 12, 21, '中方县'),
@@ -2594,8 +2591,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (43, 12, 30, '通道侗族自治县'),
 (43, 12, 81, '洪江市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (43, 13, '娄底市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (43, 13, '娄底市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (43, 13, 01, '市辖区'),
 (43, 13, 02, '娄星区'),
 (43, 13, 21, '双峰县'),
@@ -2603,8 +2600,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (43, 13, 81, '冷水江市'),
 (43, 13, 82, '涟源市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (43, 31, '湘西土家族苗族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (43, 31, '湘西土家族苗族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (43, 31, 01, '吉首市'),
 (43, 31, 22, '泸溪县'),
 (43, 31, 23, '凤凰县'),
@@ -2616,10 +2613,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 广东省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (44, '广东省', '广东', '粤');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (44, '广东省', '广东', '粤');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 01, '广州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 01, '广州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 01, 01, '市辖区'),
 (44, 01, 03, '荔湾区'),
 (44, 01, 04, '越秀区'),
@@ -2633,8 +2630,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (44, 01, 17, '从化区'),
 (44, 01, 18, '增城区');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 02, '韶关市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 02, '韶关市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 02, 01, '市辖区'),
 (44, 02, 03, '武江区'),
 (44, 02, 04, '浈江区'),
@@ -2647,8 +2644,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (44, 02, 81, '乐昌市'),
 (44, 02, 82, '南雄市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 03, '深圳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 03, '深圳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 03, 01, '市辖区'),
 (44, 03, 03, '罗湖区'),
 (44, 03, 04, '福田区'),
@@ -2657,15 +2654,15 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (44, 03, 07, '龙岗区'),
 (44, 03, 08, '盐田区');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 04, '珠海市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 04, '珠海市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 04, 01, '市辖区'),
 (44, 04, 02, '香洲区'),
 (44, 04, 03, '斗门区'),
 (44, 04, 04, '金湾区');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 05, '汕头市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 05, '汕头市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 05, 01, '市辖区'),
 (44, 05, 07, '龙湖区'),
 (44, 05, 11, '金平区'),
@@ -2675,8 +2672,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (44, 05, 15, '澄海区'),
 (44, 05, 23, '南澳县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 06, '佛山市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 06, '佛山市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 06, 01, '市辖区'),
 (44, 06, 04, '禅城区'),
 (44, 06, 05, '南海区'),
@@ -2684,8 +2681,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (44, 06, 07, '三水区'),
 (44, 06, 08, '高明区');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 07, '江门市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 07, '江门市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 07, 01, '市辖区'),
 (44, 07, 03, '蓬江区'),
 (44, 07, 04, '江海区'),
@@ -2695,8 +2692,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (44, 07, 84, '鹤山市'),
 (44, 07, 85, '恩平市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 08, '湛江市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 08, '湛江市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 08, 01, '市辖区'),
 (44, 08, 02, '赤坎区'),
 (44, 08, 03, '霞山区'),
@@ -2708,8 +2705,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (44, 08, 82, '雷州市'),
 (44, 08, 83, '吴川市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 09, '茂名市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 09, '茂名市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 09, 01, '市辖区'),
 (44, 09, 02, '茂南区'),
 (44, 09, 04, '电白区'),
@@ -2717,8 +2714,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (44, 09, 82, '化州市'),
 (44, 09, 83, '信宜市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 12, '肇庆市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 12, '肇庆市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 12, 01, '市辖区'),
 (44, 12, 02, '端州区'),
 (44, 12, 03, '鼎湖区'),
@@ -2729,8 +2726,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (44, 12, 26, '德庆县'),
 (44, 12, 84, '四会市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 13, '惠州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 13, '惠州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 13, 01, '市辖区'),
 (44, 13, 02, '惠城区'),
 (44, 13, 03, '惠阳区'),
@@ -2738,8 +2735,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (44, 13, 23, '惠东县'),
 (44, 13, 24, '龙门县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 14, '梅州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 14, '梅州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 14, 01, '市辖区'),
 (44, 14, 02, '梅江区'),
 (44, 14, 03, '梅县区'),
@@ -2750,16 +2747,16 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (44, 14, 27, '蕉岭县'),
 (44, 14, 81, '兴宁市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 15, '汕尾市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 15, '汕尾市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 15, 01, '市辖区'),
 (44, 15, 02, '城区'),
 (44, 15, 21, '海丰县'),
 (44, 15, 23, '陆河县'),
 (44, 15, 81, '陆丰市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 16, '河源市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 16, '河源市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 16, 01, '市辖区'),
 (44, 16, 02, '源城区'),
 (44, 16, 21, '紫金县'),
@@ -2768,16 +2765,16 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (44, 16, 24, '和平县'),
 (44, 16, 25, '东源县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 17, '阳江市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 17, '阳江市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 17, 01, '市辖区'),
 (44, 17, 02, '江城区'),
 (44, 17, 04, '阳东区'),
 (44, 17, 21, '阳西县'),
 (44, 17, 81, '阳春市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 18, '清远市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 18, '清远市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 18, 01, '市辖区'),
 (44, 18, 02, '清城区'),
 (44, 18, 03, '清新区'),
@@ -2788,8 +2785,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (44, 18, 81, '英德市'),
 (44, 18, 82, '连州市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 19, '东莞市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 19, '东莞市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 19, 001, '市辖区'),
 (44, 19, 101, '石碣镇'),
 (44, 19, 102, '石龙镇'),
@@ -2823,8 +2820,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (44, 19, 202, '虎门港管委会'),
 (44, 19, 203, '东莞生态园');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 20, '中山市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 20, '中山市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 20, 001, '市辖区'),
 (44, 20, 100, '小榄镇'),
 (44, 20, 101, '黄圃镇'),
@@ -2845,15 +2842,15 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (44, 20, 116, '大涌镇'),
 (44, 20, 117, '神湾镇');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 51, '潮州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 51, '潮州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 51, 01, '市辖区'),
 (44, 51, 02, '湘桥区'),
 (44, 51, 03, '潮安区'),
 (44, 51, 22, '饶平县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 52, '揭阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 52, '揭阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 52, 01, '市辖区'),
 (44, 52, 02, '榕城区'),
 (44, 52, 03, '揭东区'),
@@ -2861,8 +2858,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (44, 52, 24, '惠来县'),
 (44, 52, 81, '普宁市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (44, 53, '云浮市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (44, 53, '云浮市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (44, 53, 01, '市辖区'),
 (44, 53, 02, '云城区'),
 (44, 53, 03, '云安区'),
@@ -2872,10 +2869,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 广西省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (45, '广西壮族自治区', '广西', '桂');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (45, '广西壮族自治区', '广西', '桂');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (45, 01, '南宁市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (45, 01, '南宁市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (45, 01, 01, '市辖区'),
 (45, 01, 02, '兴宁区'),
 (45, 01, 03, '青秀区'),
@@ -2890,8 +2887,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (45, 01, 26, '宾阳县'),
 (45, 01, 27, '横县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (45, 02, '柳州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (45, 02, '柳州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (45, 02, 01, '市辖区'),
 (45, 02, 02, '城中区'),
 (45, 02, 03, '鱼峰区'),
@@ -2904,8 +2901,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (45, 02, 25, '融水苗族自治县'),
 (45, 02, 26, '三江侗族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (45, 03, '桂林市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (45, 03, '桂林市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (45, 03, 01, '市辖区'),
 (45, 03, 02, '秀峰区'),
 (45, 03, 03, '叠彩区'),
@@ -2925,8 +2922,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (45, 03, 31, '荔浦县'),
 (45, 03, 32, '恭城瑶族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (45, 04, '梧州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (45, 04, '梧州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (45, 04, 01, '市辖区'),
 (45, 04, 03, '万秀区'),
 (45, 04, 05, '长洲区'),
@@ -2936,32 +2933,32 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (45, 04, 23, '蒙山县'),
 (45, 04, 81, '岑溪市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (45, 05, '北海市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (45, 05, '北海市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (45, 05, 01, '市辖区'),
 (45, 05, 02, '海城区'),
 (45, 05, 03, '银海区'),
 (45, 05, 12, '铁山港区'),
 (45, 05, 21, '合浦县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (45, 06, '防城港市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (45, 06, '防城港市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (45, 06, 01, '市辖区'),
 (45, 06, 02, '港口区'),
 (45, 06, 03, '防城区'),
 (45, 06, 21, '上思县'),
 (45, 06, 81, '东兴市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (45, 07, '钦州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (45, 07, '钦州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (45, 07, 01, '市辖区'),
 (45, 07, 02, '钦南区'),
 (45, 07, 03, '钦北区'),
 (45, 07, 21, '灵山县'),
 (45, 07, 22, '浦北县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (45, 08, '贵港市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (45, 08, '贵港市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (45, 08, 01, '市辖区'),
 (45, 08, 02, '港北区'),
 (45, 08, 03, '港南区'),
@@ -2969,8 +2966,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (45, 08, 21, '平南县'),
 (45, 08, 81, '桂平市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (45, 09, '玉林市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (45, 09, '玉林市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (45, 09, 01, '市辖区'),
 (45, 09, 02, '玉州区'),
 (45, 09, 03, '福绵区'),
@@ -2980,8 +2977,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (45, 09, 24, '兴业县'),
 (45, 09, 81, '北流市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (45, 10, '百色市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (45, 10, '百色市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (45, 10, 01, '市辖区'),
 (45, 10, 02, '右江区'),
 (45, 10, 21, '田阳县'),
@@ -2996,8 +2993,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (45, 10, 31, '隆林各族自治县'),
 (45, 10, 81, '靖西市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (45, 11, '贺州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (45, 11, '贺州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (45, 11, 01, '市辖区'),
 (45, 11, 02, '八步区'),
 (45, 11, 03, '平桂区'),
@@ -3005,8 +3002,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (45, 11, 22, '钟山县'),
 (45, 11, 23, '富川瑶族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (45, 12, '河池市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (45, 12, '河池市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (45, 12, 01, '市辖区'),
 (45, 12, 02, '金城江区'),
 (45, 12, 21, '南丹县'),
@@ -3020,8 +3017,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (45, 12, 29, '大化瑶族自治县'),
 (45, 12, 81, '宜州市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (45, 13, '来宾市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (45, 13, '来宾市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (45, 13, 01, '市辖区'),
 (45, 13, 02, '兴宾区'),
 (45, 13, 21, '忻城县'),
@@ -3030,8 +3027,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (45, 13, 24, '金秀瑶族自治县'),
 (45, 13, 81, '合山市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (45, 14, '崇左市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (45, 14, '崇左市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (45, 14, 01, '市辖区'),
 (45, 14, 02, '江州区'),
 (45, 14, 21, '扶绥县'),
@@ -3043,30 +3040,30 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 海南省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (46, '海南省', '海南', '琼');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (46, '海南省', '海南', '琼');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (46, 01, '海口市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (46, 01, '海口市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (46, 01, 01, '市辖区'),
 (46, 01, 05, '秀英区'),
 (46, 01, 06, '龙华区'),
 (46, 01, 07, '琼山区'),
 (46, 01, 08, '美兰区');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (46, 02, '三亚市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (46, 02, '三亚市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (46, 02, 01, '市辖区'),
 (46, 02, 02, '海棠区'),
 (46, 02, 03, '吉阳区'),
 (46, 02, 04, '天涯区'),
 (46, 02, 05, '崖州区');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (46, 03, '三沙市');
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (46, 03, '三沙市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (46, 04, '儋州市');
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (46, 04, '儋州市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (46, 90, '省直辖县级行政区划');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (46, 90, '省直辖县级行政区划');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (46, 90, 01, '五指山市'),
 (46, 90, 02, '琼海市'),
 (46, 90, 05, '文昌市'),
@@ -3085,10 +3082,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 重庆市 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (50, '重庆市', '重庆', '渝');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (50, '重庆市', '重庆', '渝');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (50, 01, '市辖区');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (50, 01, '市辖区');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (50, 01, 01, '万州区'),
 (50, 01, 02, '涪陵区'),
 (50, 01, 03, '渝中区'),
@@ -3114,8 +3111,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (50, 01, 53, '荣昌区'),
 (50, 01, 54, '开州区');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (50, 02, '县');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (50, 02, '县');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (50, 02, 28, '梁平县'),
 (50, 02, 29, '城口县'),
 (50, 02, 30, '丰都县'),
@@ -3133,10 +3130,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 四川省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (51, '四川省', '四川', '川');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (51, '四川省', '四川', '川');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 01, '成都市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 01, '成都市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 01, 01, '市辖区'),
 (51, 01, 04, '锦江区'),
 (51, 01, 05, '青羊区'),
@@ -3159,8 +3156,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 01, 84, '崇州市'),
 (51, 01, 85, '简阳市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 03, '自贡市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 03, '自贡市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 03, 01, '市辖区'),
 (51, 03, 02, '自流井区'),
 (51, 03, 03, '贡井区'),
@@ -3169,8 +3166,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 03, 21, '荣县'),
 (51, 03, 22, '富顺县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 04, '攀枝花市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 04, '攀枝花市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 04, 01, '市辖区'),
 (51, 04, 02, '东区'),
 (51, 04, 03, '西区'),
@@ -3178,8 +3175,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 04, 21, '米易县'),
 (51, 04, 22, '盐边县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 05, '泸州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 05, '泸州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 05, 01, '市辖区'),
 (51, 05, 02, '江阳区'),
 (51, 05, 03, '纳溪区'),
@@ -3189,8 +3186,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 05, 24, '叙永县'),
 (51, 05, 25, '古蔺县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 06, '德阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 06, '德阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 06, 01, '市辖区'),
 (51, 06, 03, '旌阳区'),
 (51, 06, 23, '中江县'),
@@ -3199,8 +3196,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 06, 82, '什邡市'),
 (51, 06, 83, '绵竹市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 07, '绵阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 07, '绵阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 07, 01, '市辖区'),
 (51, 07, 03, '涪城区'),
 (51, 07, 04, '游仙区'),
@@ -3212,8 +3209,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 07, 27, '平武县'),
 (51, 07, 81, '江油市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 08, '广元市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 08, '广元市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 08, 01, '市辖区'),
 (51, 08, 02, '利州区'),
 (51, 08, 11, '昭化区'),
@@ -3223,8 +3220,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 08, 23, '剑阁县'),
 (51, 08, 24, '苍溪县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 09, '遂宁市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 09, '遂宁市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 09, 01, '市辖区'),
 (51, 09, 03, '船山区'),
 (51, 09, 04, '安居区'),
@@ -3232,8 +3229,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 09, 22, '射洪县'),
 (51, 09, 23, '大英县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 10, '内江市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 10, '内江市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 10, 01, '市辖区'),
 (51, 10, 02, '市中区'),
 (51, 10, 11, '东兴区'),
@@ -3241,8 +3238,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 10, 25, '资中县'),
 (51, 10, 28, '隆昌县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 11, '乐山市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 11, '乐山市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 11, 01, '市辖区'),
 (51, 11, 02, '市中区'),
 (51, 11, 11, '沙湾区'),
@@ -3256,8 +3253,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 11, 33, '马边彝族自治县'),
 (51, 11, 81, '峨眉山市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 13, '南充市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 13, '南充市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 13, 01, '市辖区'),
 (51, 13, 02, '顺庆区'),
 (51, 13, 03, '高坪区'),
@@ -3269,8 +3266,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 13, 25, '西充县'),
 (51, 13, 81, '阆中市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 14, '眉山市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 14, '眉山市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 14, 01, '市辖区'),
 (51, 14, 02, '东坡区'),
 (51, 14, 03, '彭山区'),
@@ -3279,8 +3276,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 14, 24, '丹棱县'),
 (51, 14, 25, '青神县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 15, '宜宾市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 15, '宜宾市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 15, 01, '市辖区'),
 (51, 15, 02, '翠屏区'),
 (51, 15, 03, '南溪区'),
@@ -3293,8 +3290,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 15, 28, '兴文县'),
 (51, 15, 29, '屏山县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 16, '广安市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 16, '广安市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 16, 01, '市辖区'),
 (51, 16, 02, '广安区'),
 (51, 16, 03, '前锋区'),
@@ -3303,8 +3300,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 16, 23, '邻水县'),
 (51, 16, 81, '华蓥市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 17, '达州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 17, '达州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 17, 01, '市辖区'),
 (51, 17, 02, '通川区'),
 (51, 17, 03, '达川区'),
@@ -3314,8 +3311,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 17, 25, '渠县'),
 (51, 17, 81, '万源市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 18, '雅安市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 18, '雅安市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 18, 01, '市辖区'),
 (51, 18, 02, '雨城区'),
 (51, 18, 03, '名山区'),
@@ -3326,8 +3323,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 18, 26, '芦山县'),
 (51, 18, 27, '宝兴县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 19, '巴中市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 19, '巴中市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 19, 01, '市辖区'),
 (51, 19, 02, '巴州区'),
 (51, 19, 03, '恩阳区'),
@@ -3335,15 +3332,15 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 19, 22, '南江县'),
 (51, 19, 23, '平昌县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 20, '资阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 20, '资阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 20, 01, '市辖区'),
 (51, 20, 02, '雁江区'),
 (51, 20, 21, '安岳县'),
 (51, 20, 22, '乐至县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 32, '阿坝藏族羌族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 32, '阿坝藏族羌族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 32, 01, '马尔康市'),
 (51, 32, 21, '汶川县'),
 (51, 32, 22, '理县'),
@@ -3358,8 +3355,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 32, 32, '若尔盖县'),
 (51, 32, 33, '红原县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 33, '甘孜藏族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 33, '甘孜藏族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 33, 01, '康定市'),
 (51, 33, 22, '泸定县'),
 (51, 33, 23, '丹巴县'),
@@ -3379,8 +3376,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (51, 33, 37, '稻城县'),
 (51, 33, 38, '得荣县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (51, 34, '凉山彝族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (51, 34, '凉山彝族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (51, 34, 01, '西昌市'),
 (51, 34, 22, '木里藏族自治县'),
 (51, 34, 23, '盐源县'),
@@ -3401,10 +3398,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 贵州省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (52, '贵州省', '贵州', '贵');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (52, '贵州省', '贵州', '贵');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (52, 01, '贵阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (52, 01, '贵阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (52, 01, 01, '市辖区'),
 (52, 01, 02, '南明区'),
 (52, 01, 03, '云岩区'),
@@ -3417,15 +3414,15 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (52, 01, 23, '修文县'),
 (52, 01, 81, '清镇市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (52, 02, '六盘水市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (52, 02, '六盘水市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (52, 02, 01, '钟山区'),
 (52, 02, 03, '六枝特区'),
 (52, 02, 21, '水城县'),
 (52, 02, 22, '盘县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (52, 03, '遵义市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (52, 03, '遵义市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (52, 03, 01, '市辖区'),
 (52, 03, 02, '红花岗区'),
 (52, 03, 03, '汇川区'),
@@ -3442,8 +3439,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (52, 03, 81, '赤水市'),
 (52, 03, 82, '仁怀市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (52, 04, '安顺市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (52, 04, '安顺市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (52, 04, 01, '市辖区'),
 (52, 04, 02, '西秀区'),
 (52, 04, 03, '平坝区'),
@@ -3452,8 +3449,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (52, 04, 24, '关岭布依族苗族自治县'),
 (52, 04, 25, '紫云苗族布依族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (52, 05, '毕节市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (52, 05, '毕节市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (52, 05, 01, '市辖区'),
 (52, 05, 02, '七星关区'),
 (52, 05, 21, '大方县'),
@@ -3464,8 +3461,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (52, 05, 26, '威宁彝族回族苗族自治县'),
 (52, 05, 27, '赫章县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (52, 06, '铜仁市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (52, 06, '铜仁市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (52, 06, 01, '市辖区'),
 (52, 06, 02, '碧江区'),
 (52, 06, 03, '万山区'),
@@ -3478,8 +3475,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (52, 06, 27, '沿河土家族自治县'),
 (52, 06, 28, '松桃苗族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (52, 23, '黔西南布依族苗族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (52, 23, '黔西南布依族苗族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (52, 23, 01, '兴义市'),
 (52, 23, 22, '兴仁县'),
 (52, 23, 23, '普安县'),
@@ -3489,8 +3486,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (52, 23, 27, '册亨县'),
 (52, 23, 28, '安龙县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (52, 26, '黔东南苗族侗族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (52, 26, '黔东南苗族侗族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (52, 26, 01, '凯里市'),
 (52, 26, 22, '黄平县'),
 (52, 26, 23, '施秉县'),
@@ -3508,8 +3505,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (52, 26, 35, '麻江县'),
 (52, 26, 36, '丹寨县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (52, 27, '黔南布依族苗族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (52, 27, '黔南布依族苗族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (52, 27, 01, '都匀市'),
 (52, 27, 02, '福泉市'),
 (52, 27, 22, '荔波县'),
@@ -3525,10 +3522,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 云南省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (53, '云南省', '云南', '云');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (53, '云南省', '云南', '云');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 01, '昆明市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (53, 01, '昆明市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (53, 01, 01, '市辖区'),
 (53, 01, 02, '五华区'),
 (53, 01, 03, '盘龙区'),
@@ -3545,8 +3542,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (53, 01, 29, '寻甸回族彝族自治县'),
 (53, 01, 81, '安宁市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 03, '曲靖市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (53, 03, '曲靖市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (53, 03, 01, '市辖区'),
 (53, 03, 02, '麒麟区'),
 (53, 03, 03, '沾益区'),
@@ -3558,8 +3555,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (53, 03, 26, '会泽县'),
 (53, 03, 81, '宣威市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 04, '玉溪市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (53, 04, '玉溪市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (53, 04, 01, '市辖区'),
 (53, 04, 02, '红塔区'),
 (53, 04, 03, '江川区'),
@@ -3571,8 +3568,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (53, 04, 27, '新平彝族傣族自治县'),
 (53, 04, 28, '元江哈尼族彝族傣族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 05, '保山市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (53, 05, '保山市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (53, 05, 01, '市辖区'),
 (53, 05, 02, '隆阳区'),
 (53, 05, 21, '施甸县'),
@@ -3580,8 +3577,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (53, 05, 24, '昌宁县'),
 (53, 05, 81, '腾冲市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 06, '昭通市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (53, 06, '昭通市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (53, 06, 01, '市辖区'),
 (53, 06, 02, '昭阳区'),
 (53, 06, 21, '鲁甸县'),
@@ -3595,8 +3592,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (53, 06, 29, '威信县'),
 (53, 06, 30, '水富县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 07, '丽江市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (53, 07, '丽江市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (53, 07, 01, '市辖区'),
 (53, 07, 02, '古城区'),
 (53, 07, 21, '玉龙纳西族自治县'),
@@ -3604,8 +3601,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (53, 07, 23, '华坪县'),
 (53, 07, 24, '宁蒗彝族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 08, '普洱市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (53, 08, '普洱市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (53, 08, 01, '市辖区'),
 (53, 08, 02, '思茅区'),
 (53, 08, 21, '宁洱哈尼族彝族自治县'),
@@ -3618,8 +3615,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (53, 08, 28, '澜沧拉祜族自治县'),
 (53, 08, 29, '西盟佤族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 09, '临沧市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (53, 09, '临沧市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (53, 09, 01, '市辖区'),
 (53, 09, 02, '临翔区'),
 (53, 09, 21, '凤庆县'),
@@ -3630,8 +3627,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (53, 09, 26, '耿马傣族佤族自治县'),
 (53, 09, 27, '沧源佤族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 23, '楚雄彝族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (53, 23, '楚雄彝族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (53, 23, 01, '楚雄市'),
 (53, 23, 22, '双柏县'),
 (53, 23, 23, '牟定县'),
@@ -3643,8 +3640,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (53, 23, 29, '武定县'),
 (53, 23, 31, '禄丰县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 25, '红河哈尼族彝族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (53, 25, '红河哈尼族彝族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (53, 25, 01, '个旧市'),
 (53, 25, 02, '开远市'),
 (53, 25, 03, '蒙自市'),
@@ -3659,8 +3656,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (53, 25, 31, '绿春县'),
 (53, 25, 32, '河口瑶族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 26, '文山壮族苗族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (53, 26, '文山壮族苗族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (53, 26, 01, '文山市'),
 (53, 26, 22, '砚山县'),
 (53, 26, 23, '西畴县'),
@@ -3670,14 +3667,14 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (53, 26, 27, '广南县'),
 (53, 26, 28, '富宁县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 28, '西双版纳傣族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (53, 28, '西双版纳傣族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (53, 28, 01, '景洪市'),
 (53, 28, 22, '勐海县'),
 (53, 28, 23, '勐腊县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 29, '大理白族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (53, 29, '大理白族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (53, 29, 01, '大理市'),
 (53, 29, 22, '漾濞彝族自治县'),
 (53, 29, 23, '祥云县'),
@@ -3691,33 +3688,33 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (53, 29, 31, '剑川县'),
 (53, 29, 32, '鹤庆县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 31, '德宏傣族景颇族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (53, 31, '德宏傣族景颇族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (53, 31, 02, '瑞丽市'),
 (53, 31, 03, '芒市'),
 (53, 31, 22, '梁河县'),
 (53, 31, 23, '盈江县'),
 (53, 31, 24, '陇川县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 33, '怒江傈僳族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (53, 33, '怒江傈僳族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (53, 33, 01, '泸水市'),
 (53, 33, 23, '福贡县'),
 (53, 33, 24, '贡山独龙族怒族自治县'),
 (53, 33, 25, '兰坪白族普米族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (53, 34, '迪庆藏族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (53, 34, '迪庆藏族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (53, 34, 01, '香格里拉市'),
 (53, 34, 22, '德钦县'),
 (53, 34, 23, '维西傈僳族自治县');
 
 /* 西藏自治区 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (54, '西藏自治区', '西藏', '藏');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (54, '西藏自治区', '西藏', '藏');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (54, 01, '拉萨市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (54, 01, '拉萨市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (54, 01, 01, '市辖区'),
 (54, 01, 02, '城关区'),
 (54, 01, 03, '堆龙德庆区'),
@@ -3728,8 +3725,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (54, 01, 26, '达孜县'),
 (54, 01, 27, '墨竹工卡县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (54, 02, '日喀则市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (54, 02, '日喀则市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (54, 02, 02, '桑珠孜区'),
 (54, 02, 21, '南木林县'),
 (54, 02, 22, '江孜县'),
@@ -3749,8 +3746,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (54, 02, 36, '萨嘎县'),
 (54, 02, 37, '岗巴县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (54, 03, '昌都市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (54, 03, '昌都市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (54, 03, 02, '卡若区'),
 (54, 03, 21, '江达县'),
 (54, 03, 22, '贡觉县'),
@@ -3763,8 +3760,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (54, 03, 29, '洛隆县'),
 (54, 03, 30, '边坝县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (54, 04, '林芝市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (54, 04, '林芝市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (54, 04, 02, '巴宜区'),
 (54, 04, 21, '工布江达县'),
 (54, 04, 22, '米林县'),
@@ -3773,8 +3770,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (54, 04, 25, '察隅县'),
 (54, 04, 26, '朗县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (54, 05, '山南市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (54, 05, '山南市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (54, 05, 01, '市辖区'),
 (54, 05, 02, '乃东区'),
 (54, 05, 21, '扎囊县'),
@@ -3789,8 +3786,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (54, 05, 30, '错那县'),
 (54, 05, 31, '浪卡子县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (54, 24, '那曲地区');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (54, 24, '那曲地区');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (54, 24, 21, '那曲县'),
 (54, 24, 22, '嘉黎县'),
 (54, 24, 23, '比如县'),
@@ -3803,8 +3800,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (54, 24, 30, '尼玛县'),
 (54, 24, 31, '双湖县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (54, 25, '阿里地区');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (54, 25, '阿里地区');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (54, 25, 21, '普兰县'),
 (54, 25, 22, '札达县'),
 (54, 25, 23, '噶尔县'),
@@ -3815,10 +3812,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 陕西省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (61, '陕西省', '陕西', '陕');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (61, '陕西省', '陕西', '陕');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (61, 01, '西安市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (61, 01, '西安市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (61, 01, 01, '市辖区'),
 (61, 01, 02, '新城区'),
 (61, 01, 03, '碑林区'),
@@ -3834,16 +3831,16 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (61, 01, 24, '周至县'),
 (61, 01, 25, '户县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (61, 02, '铜川市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (61, 02, '铜川市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (61, 02, 01, '市辖区'),
 (61, 02, 02, '王益区'),
 (61, 02, 03, '印台区'),
 (61, 02, 04, '耀州区'),
 (61, 02, 22, '宜君县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (61, 03, '宝鸡市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (61, 03, '宝鸡市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (61, 03, 01, '市辖区'),
 (61, 03, 02, '渭滨区'),
 (61, 03, 03, '金台区'),
@@ -3858,8 +3855,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (61, 03, 30, '凤县'),
 (61, 03, 31, '太白县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (61, 04, '咸阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (61, 04, '咸阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (61, 04, 01, '市辖区'),
 (61, 04, 02, '秦都区'),
 (61, 04, 03, '杨陵区'),
@@ -3876,8 +3873,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (61, 04, 31, '武功县'),
 (61, 04, 81, '兴平市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (61, 05, '渭南市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (61, 05, '渭南市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (61, 05, 01, '市辖区'),
 (61, 05, 02, '临渭区'),
 (61, 05, 03, '华州区'),
@@ -3891,8 +3888,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (61, 05, 81, '韩城市'),
 (61, 05, 82, '华阴市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (61, 06, '延安市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (61, 06, '延安市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (61, 06, 01, '市辖区'),
 (61, 06, 02, '宝塔区'),
 (61, 06, 03, '安塞区'),
@@ -3908,8 +3905,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (61, 06, 31, '黄龙县'),
 (61, 06, 32, '黄陵县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (61, 07, '汉中市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (61, 07, '汉中市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (61, 07, 01, '市辖区'),
 (61, 07, 02, '汉台区'),
 (61, 07, 21, '南郑县'),
@@ -3923,8 +3920,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (61, 07, 29, '留坝县'),
 (61, 07, 30, '佛坪县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (61, 08, '榆林市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (61, 08, '榆林市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (61, 08, 01, '市辖区'),
 (61, 08, 02, '榆阳区'),
 (61, 08, 03, '横山区'),
@@ -3939,8 +3936,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (61, 08, 30, '清涧县'),
 (61, 08, 31, '子洲县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (61, 09, '安康市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (61, 09, '安康市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (61, 09, 01, '市辖区'),
 (61, 09, 02, '汉滨区'),
 (61, 09, 21, '汉阴县'),
@@ -3953,8 +3950,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (61, 09, 28, '旬阳县'),
 (61, 09, 29, '白河县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (61, 10, '商洛市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (61, 10, '商洛市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (61, 10, 01, '市辖区'),
 (61, 10, 02, '商州区'),
 (61, 10, 21, '洛南县'),
@@ -3966,10 +3963,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 甘肃省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (62, '甘肃省', '甘肃', '甘');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (62, '甘肃省', '甘肃', '甘');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (62, 01, '兰州市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (62, 01, '兰州市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (62, 01, 01, '市辖区'),
 (62, 01, 02, '城关区'),
 (62, 01, 03, '七里河区'),
@@ -3980,17 +3977,17 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (62, 01, 22, '皋兰县'),
 (62, 01, 23, '榆中县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (62, 02, '嘉峪关市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES (62, 02, 01, '市辖区');
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (62, 02, '嘉峪关市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES (62, 02, 01, '市辖区');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (62, 03, '金昌市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (62, 03, '金昌市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (62, 03, 01, '市辖区'),
 (62, 03, 02, '金川区'),
 (62, 03, 21, '永昌县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (62, 04, '白银市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (62, 04, '白银市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (62, 04, 01, '市辖区'),
 (62, 04, 02, '白银区'),
 (62, 04, 03, '平川区'),
@@ -3998,8 +3995,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (62, 04, 22, '会宁县'),
 (62, 04, 23, '景泰县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (62, 05, '天水市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (62, 05, '天水市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (62, 05, 01, '市辖区'),
 (62, 05, 02, '秦州区'),
 (62, 05, 03, '麦积区'),
@@ -4009,16 +4006,16 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (62, 05, 24, '武山县'),
 (62, 05, 25, '张家川回族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (62, 06, '武威市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (62, 06, '武威市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (62, 06, 01, '市辖区'),
 (62, 06, 02, '凉州区'),
 (62, 06, 21, '民勤县'),
 (62, 06, 22, '古浪县'),
 (62, 06, 23, '天祝藏族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (62, 07, '张掖市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (62, 07, '张掖市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (62, 07, 01, '市辖区'),
 (62, 07, 02, '甘州区'),
 (62, 07, 21, '肃南裕固族自治县'),
@@ -4027,8 +4024,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (62, 07, 24, '高台县'),
 (62, 07, 25, '山丹县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (62, 08, '平凉市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (62, 08, '平凉市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (62, 08, 01, '市辖区'),
 (62, 08, 02, '崆峒区'),
 (62, 08, 21, '泾川县'),
@@ -4038,8 +4035,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (62, 08, 25, '庄浪县'),
 (62, 08, 26, '静宁县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (62, 09, '酒泉市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (62, 09, '酒泉市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (62, 09, 01, '市辖区'),
 (62, 09, 02, '肃州区'),
 (62, 09, 21, '金塔县'),
@@ -4049,8 +4046,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (62, 09, 81, '玉门市'),
 (62, 09, 82, '敦煌市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (62, 10, '庆阳市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (62, 10, '庆阳市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (62, 10, 01, '市辖区'),
 (62, 10, 02, '西峰区'),
 (62, 10, 21, '庆城县'),
@@ -4061,8 +4058,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (62, 10, 26, '宁县'),
 (62, 10, 27, '镇原县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (62, 11, '定西市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (62, 11, '定西市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (62, 11, 01, '市辖区'),
 (62, 11, 02, '安定区'),
 (62, 11, 21, '通渭县'),
@@ -4072,8 +4069,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (62, 11, 25, '漳县'),
 (62, 11, 26, '岷县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (62, 12, '陇南市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (62, 12, '陇南市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (62, 12, 01, '市辖区'),
 (62, 12, 02, '武都区'),
 (62, 12, 21, '成县'),
@@ -4085,8 +4082,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (62, 12, 27, '徽县'),
 (62, 12, 28, '两当县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (62, 29, '临夏回族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (62, 29, '临夏回族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (62, 29, 01, '临夏市'),
 (62, 29, 21, '临夏县'),
 (62, 29, 22, '康乐县'),
@@ -4096,8 +4093,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (62, 29, 26, '东乡族自治县'),
 (62, 29, 27, '积石山保安族东乡族撒拉族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (62, 30, '甘南藏族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (62, 30, '甘南藏族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (62, 30, 01, '合作市'),
 (62, 30, 21, '临潭县'),
 (62, 30, 22, '卓尼县'),
@@ -4109,10 +4106,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 青海省 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (63, '青海省', '青海', '青');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (63, '青海省', '青海', '青');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (63, 01, '西宁市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (63, 01, '西宁市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (63, 01, 01, '市辖区'),
 (63, 01, 02, '城东区'),
 (63, 01, 03, '城中区'),
@@ -4122,8 +4119,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (63, 01, 22, '湟中县'),
 (63, 01, 23, '湟源县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (63, 02, '海东市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (63, 02, '海东市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (63, 02, 02, '乐都区'),
 (63, 02, 03, '平安区'),
 (63, 02, 22, '民和回族土族自治县'),
@@ -4131,30 +4128,30 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (63, 02, 24, '化隆回族自治县'),
 (63, 02, 25, '循化撒拉族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (63, 22, '海北藏族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (63, 22, '海北藏族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (63, 22, 21, '门源回族自治县'),
 (63, 22, 22, '祁连县'),
 (63, 22, 23, '海晏县'),
 (63, 22, 24, '刚察县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (63, 23, '黄南藏族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (63, 23, '黄南藏族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (63, 23, 21, '同仁县'),
 (63, 23, 22, '尖扎县'),
 (63, 23, 23, '泽库县'),
 (63, 23, 24, '河南蒙古族自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (63, 25, '海南藏族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (63, 25, '海南藏族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (63, 25, 21, '共和县'),
 (63, 25, 22, '同德县'),
 (63, 25, 23, '贵德县'),
 (63, 25, 24, '兴海县'),
 (63, 25, 25, '贵南县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (63, 26, '果洛藏族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (63, 26, '果洛藏族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (63, 26, 21, '玛沁县'),
 (63, 26, 22, '班玛县'),
 (63, 26, 23, '甘德县'),
@@ -4162,8 +4159,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (63, 26, 25, '久治县'),
 (63, 26, 26, '玛多县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (63, 27, '玉树藏族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (63, 27, '玉树藏族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (63, 27, 01, '玉树市'),
 (63, 27, 22, '杂多县'),
 (63, 27, 23, '称多县'),
@@ -4171,8 +4168,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (63, 27, 25, '囊谦县'),
 (63, 27, 26, '曲麻莱县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (63, 28, '海西蒙古族藏族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (63, 28, '海西蒙古族藏族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (63, 28, 01, '格尔木市'),
 (63, 28, 02, '德令哈市'),
 (63, 28, 21, '乌兰县'),
@@ -4181,10 +4178,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 宁夏回族自治区 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (64, '宁夏回族自治区', '宁夏', '宁');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (64, '宁夏回族自治区', '宁夏', '宁');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (64, 01, '银川市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (64, 01, '银川市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (64, 01, 01, '市辖区'),
 (64, 01, 04, '兴庆区'),
 (64, 01, 05, '西夏区'),
@@ -4193,15 +4190,15 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (64, 01, 22, '贺兰县'),
 (64, 01, 81, '灵武市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (64, 02, '石嘴山市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (64, 02, '石嘴山市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (64, 02, 01, '市辖区'),
 (64, 02, 02, '大武口区'),
 (64, 02, 05, '惠农区'),
 (64, 02, 21, '平罗县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (64, 03, '吴忠市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (64, 03, '吴忠市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (64, 03, 01, '市辖区'),
 (64, 03, 02, '利通区'),
 (64, 03, 03, '红寺堡区'),
@@ -4209,8 +4206,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (64, 03, 24, '同心县'),
 (64, 03, 81, '青铜峡市');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (64, 04, '固原市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (64, 04, '固原市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (64, 04, 01, '市辖区'),
 (64, 04, 02, '原州区'),
 (64, 04, 22, '西吉县'),
@@ -4218,8 +4215,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (64, 04, 24, '泾源县'),
 (64, 04, 25, '彭阳县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (64, 05, '中卫市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (64, 05, '中卫市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (64, 05, 01, '市辖区'),
 (64, 05, 02, '沙坡头区'),
 (64, 05, 21, '中宁县'),
@@ -4227,10 +4224,10 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 新疆维吾尔自治区 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (65, '新疆维吾尔自治区', '新疆', '新');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (65, '新疆维吾尔自治区', '新疆', '新');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (65, 01, '乌鲁木齐市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (65, 01, '乌鲁木齐市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (65, 01, 01, '市辖区'),
 (65, 01, 02, '天山区'),
 (65, 01, 03, '沙依巴克区'),
@@ -4241,28 +4238,28 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (65, 01, 09, '米东区'),
 (65, 01, 21, '乌鲁木齐县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (65, 02, '克拉玛依市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (65, 02, '克拉玛依市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (65, 02, 01, '市辖区'),
 (65, 02, 02, '独山子区'),
 (65, 02, 03, '克拉玛依区'),
 (65, 02, 04, '白碱滩区'),
 (65, 02, 05, '乌尔禾区');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (65, 04, '吐鲁番市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (65, 04, '吐鲁番市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (65, 04, 02, '高昌区'),
 (65, 04, 21, '鄯善县'),
 (65, 04, 22, '托克逊县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (65, 05, '哈密市');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (65, 05, '哈密市');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (65, 05, 02, '伊州区'),
 (65, 05, 21, '巴里坤哈萨克自治县'),
 (65, 05, 22, '伊吾县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (65, 23, '昌吉回族自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (65, 23, '昌吉回族自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (65, 23, 01, '昌吉市'),
 (65, 23, 02, '阜康市'),
 (65, 23, 23, '呼图壁县'),
@@ -4271,15 +4268,15 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (65, 23, 27, '吉木萨尔县'),
 (65, 23, 28, '木垒哈萨克自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (65, 27, '博尔塔拉蒙古自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (65, 27, '博尔塔拉蒙古自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (65, 27, 01, '博乐市'),
 (65, 27, 02, '阿拉山口市'),
 (65, 27, 22, '精河县'),
 (65, 27, 23, '温泉县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (65, 28, '巴音郭楞蒙古自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (65, 28, '巴音郭楞蒙古自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (65, 28, 01, '库尔勒市'),
 (65, 28, 22, '轮台县'),
 (65, 28, 23, '尉犁县'),
@@ -4290,8 +4287,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (65, 28, 28, '和硕县'),
 (65, 28, 29, '博湖县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (65, 29, '阿克苏地区');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (65, 29, '阿克苏地区');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (65, 29, 01, '阿克苏市'),
 (65, 29, 22, '温宿县'),
 (65, 29, 23, '库车县'),
@@ -4302,15 +4299,15 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (65, 29, 28, '阿瓦提县'),
 (65, 29, 29, '柯坪县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (65, 30, '克孜勒苏柯尔克孜自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (65, 30, '克孜勒苏柯尔克孜自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (65, 30, 01, '阿图什市'),
 (65, 30, 22, '阿克陶县'),
 (65, 30, 23, '阿合奇县'),
 (65, 30, 24, '乌恰县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (65, 31, '喀什地区');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (65, 31, '喀什地区');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (65, 31, 01, '喀什市'),
 (65, 31, 21, '疏附县'),
 (65, 31, 22, '疏勒县'),
@@ -4324,8 +4321,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (65, 31, 30, '巴楚县'),
 (65, 31, 31, '塔什库尔干塔吉克自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (65, 32, '和田地区');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (65, 32, '和田地区');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (65, 32, 01, '和田市'),
 (65, 32, 21, '和田县'),
 (65, 32, 22, '墨玉县'),
@@ -4335,8 +4332,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (65, 32, 26, '于田县'),
 (65, 32, 27, '民丰县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (65, 40, '伊犁哈萨克自治州');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (65, 40, '伊犁哈萨克自治州');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (65, 40, 02, '伊宁市'),
 (65, 40, 03, '奎屯市'),
 (65, 40, 04, '霍尔果斯市'),
@@ -4349,8 +4346,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (65, 40, 27, '特克斯县'),
 (65, 40, 28, '尼勒克县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (65, 42, '塔城地区');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (65, 42, '塔城地区');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (65, 42, 01, '塔城市'),
 (65, 42, 02, '乌苏市'),
 (65, 42, 21, '额敏县'),
@@ -4359,8 +4356,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (65, 42, 25, '裕民县'),
 (65, 42, 26, '和布克赛尔蒙古自治县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (65, 43, '阿勒泰地区');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (65, 43, '阿勒泰地区');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (65, 43, 01, '阿勒泰市'),
 (65, 43, 21, '布尔津县'),
 (65, 43, 22, '富蕴县'),
@@ -4369,8 +4366,8 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 (65, 43, 25, '青河县'),
 (65, 43, 26, '吉木乃县');
 
-INSERT INTO `City` (`ProvinceId`, `CityId`, `Name`) VALUES (65, 90, '自治区直辖县级行政区划');
-INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
+INSERT INTO City (ProvinceId, CityId, Name) VALUES (65, 90, '自治区直辖县级行政区划');
+INSERT INTO District (ProvinceId, CityId, DistrictId, Name) VALUES
 (65, 90, 01, '石河子市'),
 (65, 90, 02, '阿拉尔市'),
 (65, 90, 03, '图木舒克市'),
@@ -4379,6 +4376,6 @@ INSERT INTO `District` (`ProvinceId`, `CityId`, `DistrictId`, `Name`) VALUES
 
 /* 港澳台 */
 
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (71, '台湾省', '台湾', '台');
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (81, '香港特别行政区', '香港', '港');
-INSERT INTO `Province` (`ProvinceId`, `Name`, `Abbr`, `Alias`) VALUES (82, '澳门特别行政区', '澳门', '澳');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (71, '台湾省', '台湾', '台');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (81, '香港特别行政区', '香港', '港');
+INSERT INTO Province (ProvinceId, Name, Abbr, Alias) VALUES (82, '澳门特别行政区', '澳门', '澳');
