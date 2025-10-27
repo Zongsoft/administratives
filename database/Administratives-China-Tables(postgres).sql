@@ -9,9 +9,9 @@ CREATE TABLE IF NOT EXISTS "Province"
 );
 
 CREATE INDEX IF NOT EXISTS "IX_Province_Name" ON "Province" USING btree
-  ("Name" ASC NULLS LAST);
+  ("Name" ASC);
 CREATE INDEX IF NOT EXISTS "IX_Province_Acronym" ON "Province" USING btree
-  ("Acronym" ASC NULLS LAST);
+  ("Acronym" ASC);
 
 COMMENT ON TABLE "Province" IS '省份表';
 COMMENT ON COLUMN "Province"."ProvinceId" IS '主键，省份代码';
@@ -29,9 +29,9 @@ CREATE TABLE IF NOT EXISTS "City" (
 );
 
 CREATE INDEX IF NOT EXISTS "IX_City_Name" ON "City" USING btree
-  ("Name" ASC NULLS LAST);
+  ("Name" ASC);
 CREATE INDEX IF NOT EXISTS "IX_City_Acronym" ON "City" USING btree
-  ("Acronym" ASC NULLS LAST);
+  ("Acronym" ASC);
 
 COMMENT ON TABLE "City" IS '城市表';
 COMMENT ON COLUMN "City"."ProvinceId" IS '主键，省份代码';
@@ -50,11 +50,11 @@ CREATE TABLE IF NOT EXISTS "District" (
 );
 
 CREATE INDEX IF NOT EXISTS "IX_District_Name" ON "District" USING btree
-  ("Name" ASC NULLS LAST);
+  ("Name" ASC);
 CREATE INDEX IF NOT EXISTS "IX_District_Acronym" ON "District" USING btree
-  ("Acronym" ASC NULLS LAST);
+  ("Acronym" ASC);
 CREATE INDEX IF NOT EXISTS "IX_District_PostalCode" ON "District" USING btree
-  ("PostalCode" ASC NULLS LAST);
+  ("PostalCode" ASC);
 
 COMMENT ON TABLE "District" IS '区县表';
 COMMENT ON COLUMN "District"."ProvinceId" IS '主键，省份代码';
@@ -76,11 +76,11 @@ CREATE TABLE IF NOT EXISTS "Street" (
 );
 
 CREATE INDEX IF NOT EXISTS "IX_Street_Name" ON "Street" USING btree
-  ("Name" ASC NULLS LAST);
+  ("Name" ASC);
 CREATE INDEX IF NOT EXISTS "IX_Street_Acronym" ON "Street" USING btree
-  ("Acronym" ASC NULLS LAST);
+  ("Acronym" ASC);
 CREATE INDEX IF NOT EXISTS "IX_Street_PostalCode" ON "Street" USING btree
-  ("PostalCode" ASC NULLS LAST);
+  ("PostalCode" ASC);
 
 COMMENT ON TABLE "Street" IS '街道(乡镇)表';
 COMMENT ON COLUMN "Street"."ProvinceId" IS '主键，省份代码';
