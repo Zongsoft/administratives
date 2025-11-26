@@ -67,16 +67,17 @@ namespace Zongsoft.Administratives.Web
 			return Address.Get(province, city, district, street);
 		}
 
-		[HttpGet("States")]
-		[HttpGet("Provinces")]
+		[HttpGet("[action]")]
+		[ActionName("Provinces")]
 		public IActionResult GetProvinces()
 		{
 			var provinces = Address.GetProvinces();
 			return provinces == null || provinces.Length == 0 ? this.NoContent() : this.Ok(provinces);
 		}
 
-		[HttpGet("{province}/Cities")]
-		[HttpGet("Cities/{province}")]
+		[ActionName("Cities")]
+		[HttpGet("{province}/[action]")]
+		[HttpGet("[action]/{province}")]
 		public IActionResult GetCities(byte province)
 		{
 			if(province == 0)
@@ -86,8 +87,9 @@ namespace Zongsoft.Administratives.Web
 			return cities == null ? this.NoContent() : this.Ok(cities);
 		}
 
-		[HttpGet("{province}-{city}/Districts")]
-		[HttpGet("Districts/{province}-{city}")]
+		[ActionName("Districts")]
+		[HttpGet("{province}-{city}/[action]")]
+		[HttpGet("[action]/{province}-{city}")]
 		public IActionResult GetDistricts(byte province, byte city)
 		{
 			if(province == 0)
@@ -97,8 +99,9 @@ namespace Zongsoft.Administratives.Web
 			return districts == null ? this.NoContent() : this.Ok(districts);
 		}
 
-		[HttpGet("{province}-{city}-{district}/Streets")]
-		[HttpGet("Streets/{province}-{city}-{district}")]
+		[ActionName("Streets")]
+		[HttpGet("{province}-{city}-{district}/[action]")]
+		[HttpGet("[action]/{province}-{city}-{district}")]
 		public IActionResult GetStreets(byte province, byte city, byte district)
 		{
 			if(province == 0)
