@@ -40,4 +40,4 @@
 
 ## 版权说明
 
-注意：本项目采用 [MIT 授权协议](https://github.com/Zongsoft/Administratives/blob/master/LICENSE)，请严格遵照授权协议，违者必究！
+注意：本项目采用 [MIT 授权协议](https://github.com/Zongsoft/administratives/blob/main/LICENSE)，请严格遵照授权协议，违者必究！

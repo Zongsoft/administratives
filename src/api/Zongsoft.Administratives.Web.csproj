@@ -7,8 +7,8 @@
 		<IsPackable>true</IsPackable>
 		<IncludeSymbols>true</IncludeSymbols>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<PackageProjectUrl>https://github.com/Zongsoft/Administratives</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/Zongsoft/Administratives/tree/master/src/api</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/Zongsoft/administratives</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Zongsoft/administratives/tree/main/src/api</RepositoryUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
