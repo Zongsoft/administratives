@@ -8,6 +8,7 @@
 		<RepositoryUrl>https://github.com/Zongsoft/administratives</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/Zongsoft/administratives</PackageProjectUrl>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageIcon>zongsoft-logo.png</PackageIcon>
 		<PackageIconUrl>https://github.com/Zongsoft/guidelines/raw/main/zongsoft-logo(48x48).png</PackageIconUrl>
 		<PackageLicenseExpression>LGPL-3.0-or-later</PackageLicenseExpression>

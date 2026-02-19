@@ -1,6 +1,18 @@
-# 概述
+# 中华人民共和国行政区划·数据集
 
-该项目提供了中华人民共和国行政区划(**2015**)的数据，数据来源于 [中华人民共和国国家统计局](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2015/index.html) 网站。
+![License](https://img.shields.io/github/license/Zongsoft/administratives)
+![NuGet Version](https://img.shields.io/nuget/v/Zongsoft.Administratives)
+![NuGet Downloads](https://img.shields.io/nuget/dt/Zongsoft.Administratives)
+![GitHub Stars](https://img.shields.io/github/stars/Zongsoft/administratives?style=social)
+
+[English](README.md) |
+[简体中文](README-zh_CN.md)
+
+-----
+
+## 概述
+
+该项目提供了 _中华人民共和国行政区划(**2015**)_ 的数据，数据来源于 [中华人民共和国国家统计局](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2015/index.html) 网站。
 
 ## 目录说明
 
