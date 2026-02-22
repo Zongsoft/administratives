@@ -1,7 +1,7 @@
 var target = Argument("target", "default");
 var edition = Argument("edition", "Debug");
 
-var solutionFile  = "src/Zongsoft.Administratives.sln";
+var solutionFile  = "src/Zongsoft.Administratives.slnx";
 
 Task("clean")
 	.Description("清理解决方案")
