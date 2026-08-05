@@ -22,9 +22,9 @@ This project provides data on the _administrative divisions of the **P**eople's 
 ### 2015 Data
 
 - The [`database/2015`](./database/2015) directory contains the general-purpose data scripts for _**M**y**SQL**_, _**SQL**ite_, and _**D**uck**DB**_.
+- The [`database/2015/.raw`](./database/2015/.raw) directory contains raw administrative division data files collected from government agencies.
 - The [`database/2015/mssql`](./database/2015/mssql) directory contains the _**M**icrosoft **SQL** **S**erver_ data scripts.
 - The [`database/2015/postgres`](./database/2015/postgres) directory contains the _**P**ostgre**SQL**_ data scripts.
-- The [`database/2015/.raw`](./database/2015/.raw) directory contains raw administrative division data files collected from government agencies.
 
 ## File Descriptions
 

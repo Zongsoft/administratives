@@ -16,15 +16,15 @@
 
 ## 目录说明
 
-- [`src`](./src) 目录包含对行政区划解析与读取、缓存等相关源码；
-- [`database`](./database) 目录包含行政区划的表结构设计文档及所有 _SQL_ 脚本文件；
+- [`src`](./src) 目录包含对行政区划解析与读取、缓存等相关源码。
+- [`database`](./database) 目录包含行政区划的表结构设计文档及所有 _SQL_ 脚本文件。
 
 ### 2015 数据
 
-- [`database/2015`](./database/2015) 目录包含适用于 _**M**y**SQL**_、_**SQL**ite_ 和 _**D**uck**DB**_ 的通用数据脚本；
-- [`database/2015/mssql`](./database/2015/mssql) 目录包含 _**M**icrosoft **SQL** **S**erver_ 专用数据脚本；
-- [`database/2015/postgres`](./database/2015/postgres) 目录包含 _**P**ostgre**SQL**_ 专用数据脚本；
+- [`database/2015`](./database/2015) 目录包含适用于 _**M**y**SQL**_、_**SQL**ite_ 和 _**D**uck**DB**_ 的通用数据脚本。
 - [`database/2015/.raw`](./database/2015/.raw) 目录包含从国家机关采集的行政区划的原始数据文件。
+- [`database/2015/mssql`](./database/2015/mssql) 目录包含 _**M**icrosoft **SQL** **S**erver_ 专用数据脚本。
+- [`database/2015/postgres`](./database/2015/postgres) 目录包含 _**P**ostgre**SQL**_ 专用数据脚本。
 
 ## 文件说明
 
@@ -59,7 +59,7 @@
 
 ## 脚本运行
 
-1. 运行 建表 脚本，创建行政区划的表结构；
+1. 运行建表脚本，创建行政区划的表结构：
 	> * _**M**y**SQL**_ [《Administratives-China-Tables(mysql).sql》](./database/Administratives-China-Tables(mysql).sql)
 	> * _**M**icrosoft **SQL** **S**erver_ [《Administratives-China-Tables(mssql).sql》](./database/Administratives-China-Tables(mssql).sql)
 	> * _**P**ostgre**SQL**_ [《Administratives-China-Tables(postgres).sql》](./database/Administratives-China-Tables(postgres).sql)
