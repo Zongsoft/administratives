@@ -1,4 +1,4 @@
-# 中华人民共和国行政区划·数据集
+# Administrative Divisions of the People's Republic of China · Dataset
 
 ![License](https://img.shields.io/github/license/Zongsoft/administratives)
 ![NuGet Version](https://img.shields.io/nuget/v/Zongsoft.Administratives)
@@ -10,46 +10,68 @@
 
 -----
 
-## 概述
+## Overview
 
-该项目提供了 _中华人民共和国行政区划(**2015**)_ 的数据，数据来源于 [中华人民共和国国家统计局](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2015/index.html) 网站。
+This project provides data on the _administrative divisions of the **P**eople's **R**epublic of **C**hina (**2015**)_. The data was sourced from the website of the [National Bureau of Statistics of China](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2015/index.html).
 
-## 目录说明
+## Directory Structure
 
-- `src` 目录包含对行政区划解析与读取、缓存等相关源码；
-- `database` 目录包含行政区划的表结构设计文档及所有SQL脚本文件；
-- `database/.raw` 目录包含从国家机关采集的行政区划的原始数据文件。
+- The [`src`](./src) directory contains source code for parsing, reading, and caching administrative division data.
+- The [`database`](./database) directory contains the administrative division database schema documentation and all _SQL_ script files.
 
-## 文件说明
+### 2015 Data
 
-### 表结构设计
+- The [`database/2015`](./database/2015) directory contains the general-purpose data scripts for _**M**y**SQL**_, _**SQL**ite_, and _**D**uck**DB**_.
+- The [`database/2015/mssql`](./database/2015/mssql) directory contains the _**M**icrosoft **SQL** **S**erver_ data scripts.
+- The [`database/2015/postgres`](./database/2015/postgres) directory contains the _**P**ostgre**SQL**_ data scripts.
+- The [`database/2015/.raw`](./database/2015/.raw) directory contains raw administrative division data files collected from government agencies.
 
-- [《Administratives-China-Tables.md》](./database/Administratives-China-Tables.md)表结构设计文档
-- [《Administratives-China-Tables(MySql).sql》](./database/Administratives-China-Tables(mysql).sql)表结构构建脚本 _(**M**y**SQL**版本)_
-- [《Administratives-China-Tables(Postgres).sql》](./database/Administratives-China-Tables(postgres).sql)表结构构建脚本 _(**P**ostgre**SQL**版本)_
+## File Descriptions
 
-### 数据脚本文件
+### Database Schema
 
-- [《Administratives-China(Province-City-District).sql》](./database/data/Administratives-China(Province-City-District).sql)省(*州*)、市、区/县数据；
-- [《Administratives-China(Street)-0.sql》](./database/data/Administratives-China(Street)-0.sql)直辖市(北京市、天津市、上海市、重庆市)的街道、乡镇数据；
-- [《Administratives-China(Street)-1.sql》](./database/data/Administratives-China(Street)-1.sql)河北省(`13`)、山西省(`14`)、内蒙古自治区(`15`) 的街道、乡镇数据；
-- [《Administratives-China(Street)-2.sql》](./database/data/Administratives-China(Street)-2.sql)辽宁省(`21`)、吉林省(`22`)、黑龙江省(`23`) 的街道、乡镇数据；
-- [《Administratives-China(Street)-3.sql》](./database/data/Administratives-China(Street)-3.sql)江苏省(`32`)、浙江省(`33`)、安徽省(`34`) 的街道、乡镇数据；
-- [《Administratives-China(Street)-4.sql》](./database/data/Administratives-China(Street)-4.sql)福建省(`35`)、江西省(`36`)、山东省(37) 的街道、乡镇数据；
-- [《Administratives-China(Street)-5.sql》](./database/data/Administratives-China(Street)-5.sql)河南省(`41`)、湖北省(`42`)、湖南省(`43`) 的街道、乡镇数据；
-- [《Administratives-China(Street)-6.sql》](./database/data/Administratives-China(Street)-6.sql)广东省(`44`)、广西省(`45`)、海南省(`46`) 的街道、乡镇数据；
-- [《Administratives-China(Street)-7.sql》](./database/data/Administratives-China(Street)-7.sql)四川省(`51`)、贵州省(`52`)、云南省(`53`) 的街道、乡镇数据；
-- [《Administratives-China(Street)-8.sql》](./database/data/Administratives-China(Street)-8.sql)陕西省(`61`)、甘肃省(`62`)、青海省(`63`) 的街道、乡镇数据；
-- [《Administratives-China(Street)-9.sql》](./database/data/Administratives-China(Street)-9.sql)宁夏回族自治区(`64`)、新疆维吾尔自治区(`65`)、西藏自治区(`54`) 的街道、乡镇数据。
+- [Administratives-China-Tables.md](./database/Administratives-China-Tables.md): database schema design document
+- [Administratives-China-Tables(mysql).sql](./database/Administratives-China-Tables(mysql).sql): database schema creation script for _**M**y**SQL**_
+- [Administratives-China-Tables(mssql).sql](./database/Administratives-China-Tables(mssql).sql): database schema creation script for _**M**icrosoft **SQL** **S**erver_
+- [Administratives-China-Tables(postgres).sql](./database/Administratives-China-Tables(postgres).sql): database schema creation script for _**P**ostgre**SQL**_
+- [Administratives-China-Tables(sqlite).sql](./database/Administratives-China-Tables(sqlite).sql): database schema creation script for _**SQL**ite_
+- [Administratives-China-Tables(duckdb).sql](./database/Administratives-China-Tables(duckdb).sql): database schema creation script for _**D**uck**DB**_
 
-## 脚本运行
+### Data Scripts
 
-1. 运行 建表 脚本，创建行政区划的表结构；
-	> * _**M**y**SQL**_ [《Administratives-China-Tables(mysql).sql》](./database/Administratives-China-Tables(mysql).sql)
-	> * _**P**ostgre**SQL**_ [《Administratives-China-Tables(postgres).sql》](./database/Administratives-China-Tables(postgres).sql)
-2. 运行 [《Administratives-China(Province-City-District).sql》](./database/data/Administratives-China(Province-City-District).sql) 脚本，初始化 **_省(州)_**、**_市_**、**_区/县_** 数据。
-3. 依次运行 《Administratives-China(Street)-`?`.sql》脚本以构建 **_街道_**、**_乡镇_** 相关数据。
+The data script filenames are consistent across database variants. Select the appropriate directory for your database:
 
-## 版权说明
+- _**M**y**SQL**_, _**SQL**ite_, and _**D**uck**DB**_: [`database/2015`](./database/2015)
+- _**M**icrosoft **SQL** **S**erver_: [`database/2015/mssql`](./database/2015/mssql), whose scripts use _Unicode_ string literals to preserve Chinese text
+- _**P**ostgre**SQL**_: [`database/2015/postgres`](./database/2015/postgres), whose scripts use quoted identifiers to preserve table and column name casing
 
-注意：本项目采用 [MIT 授权协议](https://github.com/Zongsoft/administratives/blob/main/LICENSE)，请严格遵照授权协议，违者必究！
+- [Administratives-China(Province-City-District).sql](./database/2015/Administratives-China(Province-City-District).sql): data for provinces(*prefectures*), cities, and districts/counties
+- [Administratives-China(Street)-0.sql](./database/2015/Administratives-China(Street)-0.sql): subdistrict and township data for the municipalities of **B**eijing, **T**ianjin, **S**hanghai, and **C**hongqing
+- [Administratives-China(Street)-1.sql](./database/2015/Administratives-China(Street)-1.sql): subdistrict and township data for **H**ebei(`13`), **S**hanxi(`14`), and **I**nner-**M**ongolia(`15`)
+- [Administratives-China(Street)-2.sql](./database/2015/Administratives-China(Street)-2.sql): subdistrict and township data for **L**iaoning(`21`), **J**ilin(`22`), and **H**eilongjiang(`23`)
+- [Administratives-China(Street)-3.sql](./database/2015/Administratives-China(Street)-3.sql): subdistrict and township data for **J**iangsu(`32`), **Z**hejiang(`33`), and **A**nhui(`34`)
+- [Administratives-China(Street)-4.sql](./database/2015/Administratives-China(Street)-4.sql): subdistrict and township data for **F**ujian(`35`), **J**iangxi(`36`), and **S**handong(`37`)
+- [Administratives-China(Street)-5.sql](./database/2015/Administratives-China(Street)-5.sql): subdistrict and township data for **H**enan(`41`), **H**ubei(`42`), and **H**unan(`43`)
+- [Administratives-China(Street)-6.sql](./database/2015/Administratives-China(Street)-6.sql): subdistrict and township data for **G**uangdong(`44`), **G**uangxi(`45`), and **H**ainan(`46`)
+- [Administratives-China(Street)-7.sql](./database/2015/Administratives-China(Street)-7.sql): subdistrict and township data for **S**ichuan(`51`), **G**uizhou(`52`), and **Y**unnan(`53`)
+- [Administratives-China(Street)-8.sql](./database/2015/Administratives-China(Street)-8.sql): subdistrict and township data for **S**haanxi(`61`), **G**ansu(`62`), and **Q**inghai(`63`)
+- [Administratives-China(Street)-9.sql](./database/2015/Administratives-China(Street)-9.sql): subdistrict and township data for **N**ingxia(`64`), **X**injiang(`65`), and **X**izang(`54`)
+
+## Running the Scripts
+
+1. Run a schema creation script to create the administrative division tables:
+	> * _**M**y**SQL**_: [Administratives-China-Tables(mysql).sql](./database/Administratives-China-Tables(mysql).sql)
+	> * _**M**icrosoft **SQL** **S**erver_: [Administratives-China-Tables(mssql).sql](./database/Administratives-China-Tables(mssql).sql)
+	> * _**P**ostgre**SQL**_: [Administratives-China-Tables(postgres).sql](./database/Administratives-China-Tables(postgres).sql)
+	> * _**SQL**ite_: [Administratives-China-Tables(sqlite).sql](./database/Administratives-China-Tables(sqlite).sql)
+	> * _**D**uck**DB**_: [Administratives-China-Tables(duckdb).sql](./database/Administratives-China-Tables(duckdb).sql)
+2. Select the appropriate year's data script directory for your database:
+	> * _**M**y**SQL**_, _**SQL**ite_, or _**D**uck**DB**_: [`database/2015`](./database/2015)
+	> * _**M**icrosoft **SQL** **S**erver_: [`database/2015/mssql`](./database/2015/mssql)
+	> * _**P**ostgre**SQL**_: [`database/2015/postgres`](./database/2015/postgres)
+3. Run `Administratives-China(Province-City-District).sql` from the selected directory to initialize the **_province (prefecture)_**, **_city_**, and **_district/county_** data.
+4. Run the `Administratives-China(Street)-?.sql` scripts from the same directory in sequence to create the **_subdistrict_** and **_township_** data.
+
+## License
+
+Note: This project is licensed under the [MIT License](https://github.com/Zongsoft/administratives/blob/main/LICENSE). Please comply with its terms.

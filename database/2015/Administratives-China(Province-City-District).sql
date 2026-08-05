@@ -39,10 +39,10 @@
 
 
 /* 注意：清空行政区划表的所有数据！！！ */
-TRUNCATE TABLE Province;
-TRUNCATE TABLE City;
-TRUNCATE TABLE District;
-TRUNCATE TABLE Street;
+DELETE FROM Province;
+DELETE FROM City;
+DELETE FROM District;
+DELETE FROM Street;
 
 /* 北京市 */
 
