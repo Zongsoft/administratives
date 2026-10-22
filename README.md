@@ -30,7 +30,11 @@ var addresses = await Address.GetAddressesAsync(AddressFormat.Keyed, cancellatio
 
 ## Directory Structure
 
+The root solution `Zongsoft.Administratives.slnx` includes the library, Web API, and unit test projects.
+
 - The [`src`](./src) directory contains source code for parsing, reading, and caching administrative division data.
+- The [`api`](./api) directory contains the Web API plugin.
+- The [`test`](./test) directory contains offline unit tests.
 - The [`database`](./database) directory contains the administrative division database schema documentation and all _SQL_ script files.
 
 ### 2015 Data

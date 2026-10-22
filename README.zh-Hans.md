@@ -30,7 +30,11 @@ var addresses = await Address.GetAddressesAsync(AddressFormat.Keyed, cancellatio
 
 ## 目录说明
 
+根目录的 `Zongsoft.Administratives.slnx` 包含业务库、Web API 和单元测试项目。
+
 - [`src`](./src) 目录包含对行政区划解析与读取、缓存等相关源码。
+- [`api`](./api) 目录包含 Web API 插件。
+- [`test`](./test) 目录包含离线单元测试。
 - [`database`](./database) 目录包含行政区划的表结构设计文档及所有 _SQL_ 脚本文件。
 
 ### 2015 数据

@@ -1,4 +1,0 @@
-<Solution>
-	<Project Path="Zongsoft.Administratives.csproj" />
-	<Project Path="api/Zongsoft.Administratives.Web.csproj" />
-</Solution>

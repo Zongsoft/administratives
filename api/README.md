@@ -1,4 +1,4 @@
-# Zongsoft.Administratives.Web 插件库
+# Zongsoft.Administratives.Web Plugin Library
 
 ![License](https://img.shields.io/github/license/Zongsoft/administratives)
 ![NuGet Version](https://img.shields.io/nuget/v/Zongsoft.Administratives.Web)
@@ -10,6 +10,6 @@
 
 -----
 
-## 概述
+## Overview
 
-[**Z**ongsoft.**A**dministratives.**W**eb](https://github.com/Zongsoft/administratives/tree/main/src/api) 是 [_**Z**ongsoft_](https://github.com/Zongsoft/framework) 开源框架的扩展插件之一，提供了 _中华人民共和国行政区划_ 数据集的 _**W**eb_ 插件化支持。
+[**Z**ongsoft.**A**dministratives.**W**eb](https://github.com/Zongsoft/administratives/tree/main/api) is an extension plugin for the open-source [_**Z**ongsoft_](https://github.com/Zongsoft/framework) framework. It exposes the administrative-division dataset of the People's Republic of China through the pluggable Zongsoft Web stack.

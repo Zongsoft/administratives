@@ -14,12 +14,6 @@
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	</PropertyGroup>
 
-	<ItemGroup>
-		<Compile Remove="api\**" />
-		<EmbeddedResource Remove="api\**" />
-		<None Remove="api\**" />
-	</ItemGroup>
-
 	<Choose>
 		<When Condition="$(ZongsoftFrameworkPathReferenced) And Exists('$(ZongsoftFrameworkPath)')">
 			<ItemGroup>

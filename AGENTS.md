@@ -9,7 +9,7 @@
 ## 验证
 
 - ASP.NET API 项目不编写单元测试；通过定向构建和具备环境后的 HTTP 集成验证检查。业务库单元测试不引用 API 程序集。
-- 数据读取或缓存改动先构建 src/Zongsoft.Administratives.slnx，再运行 test/Zongsoft.Administratives.Tests.csproj，覆盖 net8.0、net9.0、net10.0。
+- 数据读取或缓存改动先构建 Zongsoft.Administratives.slnx，再运行 test/Zongsoft.Administratives.Tests.csproj，覆盖 net8.0、net9.0、net10.0。
 - 本地 Framework 引用需先生成匹配目标框架的 Core 程序集，并设置 ZongsoftFrameworkPathReferenced=true；测试中的 Core HintPath 不自动构建这些依赖。
 - 离线测试使用临时数据文件与替身访问器，不装配插件或使用真实服务；缓存测试恢复静态状态。不要扩大生产成员可见性来方便测试。
 - 文档与格式检查使用 git diff --check，按 CRLF 规则识别行末；.cs 的 #region 后与 #endregion 前不留空行。

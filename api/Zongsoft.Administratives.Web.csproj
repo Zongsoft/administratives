@@ -8,16 +8,16 @@
 		<IncludeSymbols>true</IncludeSymbols>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageProjectUrl>https://github.com/Zongsoft/administratives</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/Zongsoft/administratives/tree/main/src/api</RepositoryUrl>
+		<RepositoryUrl>https://github.com/Zongsoft/administratives/tree/main/api</RepositoryUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Zongsoft.Administratives.csproj" />
+		<ProjectReference Include="..\src\Zongsoft.Administratives.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<None Include="README.md" Pack="true" PackagePath="\" />
-		<None Include="..\..\.http\*.http" Pack="true" PackagePath="\artifacts\http" />
+		<None Include="..\.http\*.http" Pack="true" PackagePath="\artifacts\http" />
 		<None Include="$(MSBuildProjectName).deploy" Link=".deploy" Pack="true" PackagePath="\.deploy" />
 		<None Include="$(MSBuildProjectName).plugin" Pack="true" PackagePath="\artifacts" />
 	</ItemGroup>
