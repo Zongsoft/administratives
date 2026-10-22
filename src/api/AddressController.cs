@@ -24,6 +24,10 @@
  * limitations under the License.
  */
 
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace Zongsoft.Administratives.Web
@@ -34,80 +38,80 @@ namespace Zongsoft.Administratives.Web
 	public class AddressController : ControllerBase
 	{
 		[HttpGet]
-		public object Get([FromQuery]AddressFormat format = AddressFormat.Plain)
+		public async ValueTask<object> Get([FromQuery]AddressFormat format = AddressFormat.Plain, CancellationToken cancellation = default)
 		{
-			return Address.GetAddresses(format);
+			return await Address.GetAddressesAsync(format, cancellation);
 		}
 
 		[HttpGet("{id}")]
-		public IActionResult Get(uint id)
+		public async ValueTask<IActionResult> Get(uint id, CancellationToken cancellation = default)
 		{
 			if(id == 0)
 				return this.BadRequest();
 
-			var result = Address.Get(id);
+			var result = await Address.GetAsync(id, cancellation);
 			return result == null ? this.NotFound() : this.Ok(result);
 		}
 
 		[HttpGet("{province:required}-{city:required}-{district}-{street}")]
-		public object Get(byte province, byte city, byte district = 0, byte street = 0, [FromQuery]AddressFormat format = AddressFormat.Plain)
+		public async ValueTask<object> Get(byte province, byte city, byte district = 0, byte street = 0, [FromQuery]AddressFormat format = AddressFormat.Plain, CancellationToken cancellation = default)
 		{
 			if(province == 0)
 				return this.BadRequest();
 
 			if(city == 0)
-				return Address.Get(province, format);
+				return await Address.GetAsync(province, format, cancellation);
 
 			if(district == 0)
-				return Address.Get(province, city, format);
+				return await Address.GetAsync(province, city, format, cancellation);
 
 			if(street == 0)
-				return Address.Get(province, city, district, format);
+				return await Address.GetAsync(province, city, district, format, cancellation);
 
-			return Address.Get(province, city, district, street);
+			return await Address.GetAsync(province, city, district, street, cancellation);
 		}
 
 		[HttpGet("[action]")]
 		[ActionName("Provinces")]
-		public IActionResult GetProvinces()
+		public async ValueTask<IActionResult> GetProvinces(CancellationToken cancellation = default)
 		{
-			var provinces = Address.GetProvinces();
+			var provinces = await Address.GetProvincesAsync(cancellation);
 			return provinces == null || provinces.Length == 0 ? this.NoContent() : this.Ok(provinces);
 		}
 
 		[ActionName("Cities")]
 		[HttpGet("{province}/[action]")]
 		[HttpGet("[action]/{province}")]
-		public IActionResult GetCities(byte province)
+		public async ValueTask<IActionResult> GetCities(byte province, CancellationToken cancellation = default)
 		{
 			if(province == 0)
 				return this.BadRequest();
 
-			var cities = Address.GetCities(province);
+			var cities = await Address.GetCitiesAsync(province, cancellation);
 			return cities == null ? this.NoContent() : this.Ok(cities);
 		}
 
 		[ActionName("Districts")]
 		[HttpGet("{province}-{city}/[action]")]
 		[HttpGet("[action]/{province}-{city}")]
-		public IActionResult GetDistricts(byte province, byte city)
+		public async ValueTask<IActionResult> GetDistricts(byte province, byte city, CancellationToken cancellation = default)
 		{
 			if(province == 0)
 				return this.BadRequest();
 
-			var districts = Address.GetDistricts(province, city);
+			var districts = await Address.GetDistrictsAsync(province, city, cancellation);
 			return districts == null ? this.NoContent() : this.Ok(districts);
 		}
 
 		[ActionName("Streets")]
 		[HttpGet("{province}-{city}-{district}/[action]")]
 		[HttpGet("[action]/{province}-{city}-{district}")]
-		public IActionResult GetStreets(byte province, byte city, byte district)
+		public async ValueTask<IActionResult> GetStreets(byte province, byte city, byte district, CancellationToken cancellation = default)
 		{
 			if(province == 0)
 				return this.BadRequest();
 
-			var streets = Address.GetStreets(province, city, district);
+			var streets = await Address.GetStreetsAsync(province, city, district, cancellation);
 			return streets == null ? this.NoContent() : this.Ok(streets);
 		}
 	}

@@ -14,6 +14,20 @@
 
 该项目提供了 _中华人民共和国行政区划(**2015**)_ 的数据，数据来源于 [中华人民共和国国家统计局](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2015/index.html) 网站。
 
+## 读取行政区划
+
+库支持 .NET 8、9、10。通过 `Address` 的异步方法读取数据，并在最后一个参数传入取消令牌：
+
+```csharp
+using Zongsoft.Administratives;
+
+var provinces = await Address.GetProvincesAsync(cancellation);
+var cities = await Address.GetCitiesAsync(11, cancellation);
+var addresses = await Address.GetAddressesAsync(AddressFormat.Keyed, cancellation);
+```
+
+`AddressFormat.Plain` 返回数组式的下级区划，`AddressFormat.Keyed` 返回以区划编号为键的下级区划。`GetCompressedAddressesAsync` 返回对应 JSON 的 GZip 压缩数据。读取全部区划需要可用的数据文件，或已配置并初始化本项目数据的 Zongsoft 数据访问服务。
+
 ## 目录说明
 
 - [`src`](./src) 目录包含对行政区划解析与读取、缓存等相关源码。

@@ -30,6 +30,7 @@ using System.IO.Compression;
 using System.Linq;
 using System.Text.Json;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Collections.Generic;
 
 using Zongsoft.Data;
@@ -55,24 +56,24 @@ namespace Zongsoft.Administratives
 		private static byte[] _compressedKeyedData;
 		private static Province[] _provinces;
 
-		private static readonly ManualResetEventSlim _signaling = new ManualResetEventSlim(true, 50);
+		private static readonly SemaphoreSlim _loading = new(1, 1);
 		#endregion
 
 		#region 公共方法
-		public static object Get(uint addressId)
+		public static async ValueTask<object> GetAsync(uint addressId, CancellationToken cancellation = default)
 		{
 			if(addressId == 0)
 				return null;
 
-			return Get((byte)(addressId >> 24), (byte)(addressId >> 16), (byte)(addressId >> 8), (byte)(addressId));
+			return await GetAsync((byte)(addressId >> 24), (byte)(addressId >> 16), (byte)(addressId >> 8), (byte)addressId, cancellation);
 		}
 
-		public static object Get(byte provinceId, byte cityId, byte districtId, byte streetId)
+		public static async ValueTask<object> GetAsync(byte provinceId, byte cityId, byte districtId, byte streetId, CancellationToken cancellation = default)
 		{
 			if(provinceId == 0)
 				return null;
 
-			var province = (Province.Keyed)GetAddresses(AddressFormat.Keyed)?.FirstOrDefault(p => p.ProvinceId == provinceId);
+			var province = (Province.Keyed)(await GetAddressesAsync(AddressFormat.Keyed, cancellation))?.FirstOrDefault(p => p.ProvinceId == provinceId);
 
 			if(province == null || cityId == 0)
 				return province;
@@ -110,17 +111,17 @@ namespace Zongsoft.Administratives
 			return null;
 		}
 
-		public static Province Get(byte provinceId, AddressFormat format)
+		public static async ValueTask<Province> GetAsync(byte provinceId, AddressFormat format, CancellationToken cancellation = default)
 		{
 			if(provinceId == 0)
 				return null;
 
-			return GetAddresses(format)?.FirstOrDefault(p => p.ProvinceId == provinceId);
+			return (await GetAddressesAsync(format, cancellation))?.FirstOrDefault(p => p.ProvinceId == provinceId);
 		}
 
-		public static City Get(byte provinceId, byte cityId, AddressFormat format)
+		public static async ValueTask<City> GetAsync(byte provinceId, byte cityId, AddressFormat format, CancellationToken cancellation = default)
 		{
-			var province = Get(provinceId, format);
+			var province = await GetAsync(provinceId, format, cancellation);
 
 			if(province == null)
 				return null;
@@ -159,9 +160,9 @@ namespace Zongsoft.Administratives
 			return null;
 		}
 
-		public static District Get(byte provinceId, byte cityId, byte districtId, AddressFormat format)
+		public static async ValueTask<District> GetAsync(byte provinceId, byte cityId, byte districtId, AddressFormat format, CancellationToken cancellation = default)
 		{
-			var city = Get(provinceId, cityId, format);
+			var city = await GetAsync(provinceId, cityId, format, cancellation);
 
 			if(city == null)
 				return null;
@@ -196,7 +197,7 @@ namespace Zongsoft.Administratives
 			return null;
 		}
 
-		public static Province[] GetProvinces()
+		public static async ValueTask<Province[]> GetProvincesAsync(CancellationToken cancellation = default)
 		{
 			if(_provinces == null)
 			{
@@ -205,45 +206,45 @@ namespace Zongsoft.Administratives
 				if(dataAccess == null)
 					return null;
 
-				_provinces = dataAccess.Select<Province>().ToArray();
+				_provinces = await ReadRecordsAsync<Province>(dataAccess, cancellation);
 			}
 
 			return _provinces;
 		}
 
-		public static IEnumerable<City> GetCities(byte provinceId)
+		public static async ValueTask<IEnumerable<City>> GetCitiesAsync(byte provinceId, CancellationToken cancellation = default)
 		{
 			if(provinceId == 0)
 				return null;
 
-			return Get(provinceId, AddressFormat.Plain) is Province.Plain province ? province.Cities.Select(city => new City(city)) : null;
+			return await GetAsync(provinceId, AddressFormat.Plain, cancellation) is Province.Plain province ? province.Cities.Select(city => new City(city)) : null;
 		}
 
-		public static IEnumerable<District> GetDistricts(byte provinceId, byte cityId)
+		public static async ValueTask<IEnumerable<District>> GetDistrictsAsync(byte provinceId, byte cityId, CancellationToken cancellation = default)
 		{
 			if(provinceId == 0 || cityId == 0)
 				return null;
 
-			return Get(provinceId, cityId, AddressFormat.Plain) is City.Plain city ? city.Districts.Select(district => new District(district)) : null;
+			return await GetAsync(provinceId, cityId, AddressFormat.Plain, cancellation) is City.Plain city ? city.Districts.Select(district => new District(district)) : null;
 		}
 
-		public static IEnumerable<Street> GetStreets(byte provinceId, byte cityId, byte districtId)
+		public static async ValueTask<IEnumerable<Street>> GetStreetsAsync(byte provinceId, byte cityId, byte districtId, CancellationToken cancellation = default)
 		{
-			return Get(provinceId, cityId, districtId, AddressFormat.Plain) is District.Plain district ? district.Streets : null;
+			return await GetAsync(provinceId, cityId, districtId, AddressFormat.Plain, cancellation) is District.Plain district ? district.Streets : null;
 		}
 
-		public static IEnumerable<Province> GetAddresses(AddressFormat format)
+		public static async ValueTask<IEnumerable<Province>> GetAddressesAsync(AddressFormat format, CancellationToken cancellation = default)
 		{
 			switch(format)
 			{
 				case AddressFormat.Keyed:
 					if(_keyedProvinces == null)
-						Load();
+						await LoadAsync(cancellation);
 
 					return _keyedProvinces;
 				case AddressFormat.Plain:
 					if(_plainProvinces == null)
-						Load();
+						await LoadAsync(cancellation);
 
 					return _plainProvinces;
 			}
@@ -251,14 +252,14 @@ namespace Zongsoft.Administratives
 			return null;
 		}
 
-		public static byte[] GetCompressedAddresses(AddressFormat format)
+		public static async ValueTask<byte[]> GetCompressedAddressesAsync(AddressFormat format, CancellationToken cancellation = default)
 		{
 			switch(format)
 			{
 				case AddressFormat.Keyed:
 					if(_compressedKeyedData == null)
 					{
-						var provinces = GetAddresses(format);
+						var provinces = await GetAddressesAsync(format, cancellation);
 						_compressedKeyedData = Compress(provinces);
 					}
 
@@ -266,7 +267,7 @@ namespace Zongsoft.Administratives
 				case AddressFormat.Plain:
 					if(_compressedPlainData == null)
 					{
-						var provinces = GetAddresses(format);
+						var provinces = await GetAddressesAsync(format, cancellation);
 						_compressedPlainData = Compress(provinces);
 					}
 
@@ -278,54 +279,43 @@ namespace Zongsoft.Administratives
 		#endregion
 
 		#region 私有方法
-		private static void Load()
+		private static async ValueTask LoadAsync(CancellationToken cancellation)
 		{
+			await _loading.WaitAsync(cancellation);
+
 			try
 			{
-				//重置信号量堵塞其他线程（红灯）
-				_signaling.Reset();
-
 				if(_plainProvinces != null && _keyedProvinces != null)
 					return;
 
-				//首先从文件加载缓存地址对象，如果文件加载失败则再从数据库中加载
-				if(!TryLoadFromFile())
+				//先读取文件缓存，缓存不存在时再读取数据库。
+				if(!await TryLoadFromFileAsync(cancellation))
 				{
-					//从数据库中加载所有数据
-					LoadFromDatabase();
-
-					//将加载成功的数据保存到文件
-					SaveToFile();
+					await LoadFromDatabaseAsync(cancellation);
+					await SaveToFileAsync(cancellation);
 				}
 			}
 			finally
 			{
-				//设置信号量释放其他线程（绿灯）
-				_signaling?.Set();
+				_loading.Release();
 			}
 		}
 
-		private static bool TryLoadFromFile()
+		private static async ValueTask<bool> TryLoadFromFileAsync(CancellationToken cancellation)
 		{
 			var filePath = GetAddressFilePath(AddressFormat.Plain);
 
 			if(File.Exists(filePath))
 			{
-				using(var fileStream = File.Open(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
-				{
-					using(var reader = new StreamReader(fileStream, System.Text.Encoding.UTF8))
-					{
-						_plainProvinces = JsonSerializer.Deserialize<Province.Plain[]>(reader.ReadToEnd());
-					}
-				}
-
+				await using var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read, 4096, FileOptions.Asynchronous);
+				_plainProvinces = await JsonSerializer.DeserializeAsync<Province.Plain[]>(stream, (JsonSerializerOptions)null, cancellation);
 				_keyedProvinces ??= PopulateKeyedProvinces((ICollection<Province.Plain>)_plainProvinces);
 			}
 
 			return _plainProvinces != null;
 		}
 
-		private static void LoadFromDatabase()
+		private static async ValueTask LoadFromDatabaseAsync(CancellationToken cancellation)
 		{
 			//获取数据访问服务
 			var dataAccess = ApplicationContext.Current.Services.ResolveRequired<IDataAccessProvider>().GetAccessor();
@@ -334,13 +324,13 @@ namespace Zongsoft.Administratives
 				return;
 
 			//获取所有的省份记录
-			var provinces = dataAccess.Select<Province>().ToArray();
+			var provinces = await ReadRecordsAsync<Province>(dataAccess, cancellation);
 			//获取所有的城市记录
-			var cities = dataAccess.Select<City>().ToArray();
+			var cities = await ReadRecordsAsync<City>(dataAccess, cancellation);
 			//获取所有的区县记录
-			var districts = dataAccess.Select<District>().ToArray();
+			var districts = await ReadRecordsAsync<District>(dataAccess, cancellation);
 			//获取所有的街道记录
-			var streets = dataAccess.Select<Street>().ToArray();
+			var streets = await ReadRecordsAsync<Street>(dataAccess, cancellation);
 
 			if(_plainProvinces == null)
 			{
@@ -454,21 +444,26 @@ namespace Zongsoft.Administratives
 			return keyedProvinces;
 		}
 
-		private static void SaveToFile()
+		private static async ValueTask SaveToFileAsync(CancellationToken cancellation)
 		{
 			var data = _plainProvinces;
+
 			if(data == null)
 				return;
 
 			var filePath = GetAddressFilePath(AddressFormat.Plain);
+			await using var stream = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None, 4096, FileOptions.Asynchronous);
+			await JsonSerializer.SerializeAsync(stream, data, (JsonSerializerOptions)null, cancellation);
+		}
 
-			using(var fileStream = File.Open(filePath, FileMode.Create, FileAccess.Write))
-			{
-				using(var writer = new Utf8JsonWriter(fileStream))
-				{
-					JsonSerializer.Serialize(writer, data);
-				}
-			}
+		private static async ValueTask<T[]> ReadRecordsAsync<T>(IDataAccess accessor, CancellationToken cancellation)
+		{
+			var records = new List<T>();
+
+			await foreach(var record in accessor.SelectAsync<T>(cancellation))
+				records.Add(record);
+
+			return records.ToArray();
 		}
 
 		private static string GetAddressFilePath(AddressFormat format, string relativePath = null)

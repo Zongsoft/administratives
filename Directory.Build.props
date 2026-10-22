@@ -24,6 +24,11 @@
 		<GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<ZongsoftFrameworkPath>$(MSBuildThisFileDirectory)..\framework</ZongsoftFrameworkPath>
+		<ZongsoftFrameworkPathReferenced>false</ZongsoftFrameworkPathReferenced>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<None Include="$(MSBuildThisFileDirectory)zongsoft-logo.png" Pack="true" PackagePath="\" Visible="false"  />    
 	</ItemGroup>

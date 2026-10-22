@@ -14,6 +14,20 @@
 
 This project provides data on the _administrative divisions of the **P**eople's **R**epublic of **C**hina (**2015**)_. The data was sourced from the website of the [National Bureau of Statistics of China](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2015/index.html).
 
+## Reading administrative divisions
+
+The library supports .NET 8, 9, and 10. Use the asynchronous `Address` methods, with the cancellation token as the last argument:
+
+```csharp
+using Zongsoft.Administratives;
+
+var provinces = await Address.GetProvincesAsync(cancellation);
+var cities = await Address.GetCitiesAsync(11, cancellation);
+var addresses = await Address.GetAddressesAsync(AddressFormat.Keyed, cancellation);
+```
+
+`AddressFormat.Plain` uses arrays for child divisions; `AddressFormat.Keyed` uses dictionaries keyed by division IDs. `GetCompressedAddressesAsync` returns the corresponding JSON as GZip-compressed bytes. Reading the complete hierarchy requires an available data file or a configured Zongsoft data accessor with this project's schema and data initialized.
+
 ## Directory Structure
 
 - The [`src`](./src) directory contains source code for parsing, reading, and caching administrative division data.

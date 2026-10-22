@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<IsPackable>false</IsPackable>
+		<IsTestProject>true</IsTestProject>
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
+		<ZongsoftFrameworkPathReferenced>true</ZongsoftFrameworkPathReferenced>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\src\Zongsoft.Administratives.csproj" AdditionalProperties="ZongsoftFrameworkPathReferenced=true;GeneratePackageOnBuild=false" />
+
+		<Reference Include="Zongsoft.Core">
+			<HintPath>..\..\framework\Zongsoft.Core\src\bin\$(Configuration)\$(TargetFramework)\Zongsoft.Core.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" />
+		<PackageReference Include="xunit.v3" />
+		<PackageReference Include="xunit.runner.visualstudio" />
+	</ItemGroup>
+</Project>
