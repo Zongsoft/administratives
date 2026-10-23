@@ -3,11 +3,10 @@
 		<IsPackable>false</IsPackable>
 		<IsTestProject>true</IsTestProject>
 		<GenerateDocumentationFile>false</GenerateDocumentationFile>
-		<ZongsoftFrameworkPathReferenced>true</ZongsoftFrameworkPathReferenced>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\src\Zongsoft.Administratives.csproj" AdditionalProperties="ZongsoftFrameworkPathReferenced=true;GeneratePackageOnBuild=false" />
+		<ProjectReference Include="..\src\Zongsoft.Administratives.csproj" />
 
 		<Reference Include="Zongsoft.Core">
 			<HintPath>..\..\framework\Zongsoft.Core\src\bin\$(Configuration)\$(TargetFramework)\Zongsoft.Core.dll</HintPath>
