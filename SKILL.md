@@ -10,7 +10,8 @@ description: 修改行政区划库的异步读取、缓存、Web 路由或离线
 - 完整区划首次加载使用可等待的互斥入口，进入后复查缓存，finally 释放；等待者取消不能释放他人持有的锁。失败允许后续调用重试。
 - Plain 使用数组，Keyed 使用编号字典；保持 GetAsync 各重载的返回类型、FullName 拼接、无效编号与空结果约定。Web 控制器保持现有 Addresses/Administratives 路由和 HTTP 返回分支。
 - 修改读取路径时运行 test/Zongsoft.Administratives.Tests.csproj 的离线测试；测试只使用独立临时文件和替身数据访问器。静态缓存与 ApplicationContext 的隔离测试顺序执行并恢复原值。
-- 测试仅 ProjectReference 被测主库，Core 使用匹配目标框架的 HintPath。先构建相邻 framework 的 Core，再以 ZongsoftFrameworkPathReferenced=true 构建 Zongsoft.Administratives.slnx，最后运行测试；覆盖 net8.0、net9.0、net10.0。
+- 测试依赖版本由 test/Directory.Packages.props 独立管理，不导入相邻 framework 仓库的版本文件。
+- 测试仅 ProjectReference 被测主库；默认包模式通过主库传递获取 Core 依赖。显式启用本地 Framework 引用且目录存在时，测试使用匹配目标框架的 Core HintPath；先构建相邻 framework 的 Core，再统一以 ZongsoftFrameworkPathReferenced=true 构建 Zongsoft.Administratives.slnx，最后运行测试。两种模式均覆盖 net8.0、net9.0、net10.0。
 - 测试的主库 ProjectReference 与解决方案、API 引用使用相同的全局属性；需要本地 Framework 引用或禁用构建打包时，从命令行统一传入，不在测试引用上单独覆盖。
 
 - ASP.NET API 项目不编写单元测试；构建 API 项目，并在具备测试环境后验证 HTTP 路由与返回分支。
