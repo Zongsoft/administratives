@@ -1,0 +1,50 @@
+name: Publish NuGet Packages
+
+run-name: Publish Zongsoft.Administratives to nuget.org
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: nuget-publishing
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: release
+    timeout-minutes: 60
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Install .NET
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: |
+            8.0.x
+            9.0.x
+            10.0.x
+
+      - name: Build packages
+        run: |
+          dotnet pack src/Zongsoft.Administratives.csproj --configuration Release -p:GeneratePackageOnBuild=false -bl:artifacts/domain.binlog
+          dotnet pack api/Zongsoft.Administratives.Web.csproj --configuration Release -p:GeneratePackageOnBuild=false -bl:artifacts/web.binlog
+
+      - name: NuGet login
+        id: login
+        uses: NuGet/login@v1
+        with:
+          user: ${{ secrets.NUGET_USER }}
+
+      - name: Publish packages
+        env:
+          NUGET_API_KEY: ${{ steps.login.outputs.NUGET_API_KEY }}
+        run: |
+          dotnet nuget push "src/bin/Release/*.nupkg" --source https://api.nuget.org/v3/index.json --api-key "$NUGET_API_KEY" --skip-duplicate
+          dotnet nuget push "api/bin/Release/*.nupkg" --source https://api.nuget.org/v3/index.json --api-key "$NUGET_API_KEY" --skip-duplicate

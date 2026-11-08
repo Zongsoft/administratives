@@ -90,6 +90,19 @@ The data script filenames are consistent across database variants. Select the ap
 3. Run `Administratives-China(Province-City-District).sql` from the selected directory to initialize the **_province (prefecture)_**, **_city_**, and **_district/county_** data.
 4. Run the `Administratives-China(Street)-?.sql` scripts from the same directory in sequence to create the **_subdistrict_** and **_township_** data.
 
+## NuGet publishing
+
+The manual [Publish NuGet Packages](.github/workflows/publish-nuget.yaml) workflow publishes `Zongsoft.Administratives` and `Zongsoft.Administratives.Web` from `main`. It builds Release packages for .NET 8, 9, and 10, then uses `NuGet/login@v1` with `id-token: write` to obtain a short-lived publishing key.
+
+Configure the `release` GitHub environment with a `NUGET_USER` secret containing the nuget.org username. The [NuGet trusted publishing policy](https://www.nuget.org/account/trustedpublishing) must match owner `Zongsoft`, repository `administratives`, workflow filename `publish-nuget.yaml`, and environment `release`.
+
+Before the first publish, create and inspect both packages locally:
+
+```powershell
+dotnet pack src/Zongsoft.Administratives.csproj -c Release -p:GeneratePackageOnBuild=false -o ./artifacts -bl:artifacts/domain.binlog
+dotnet pack api/Zongsoft.Administratives.Web.csproj -c Release -p:GeneratePackageOnBuild=false -o ./artifacts -bl:artifacts/web.binlog
+```
+
 ## License
 
 Note: This project is licensed under the [MIT License](https://github.com/Zongsoft/administratives/blob/main/LICENSE). Please comply with its terms.

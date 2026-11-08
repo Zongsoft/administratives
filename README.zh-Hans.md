@@ -90,6 +90,19 @@ var addresses = await Address.GetAddressesAsync(AddressFormat.Keyed, cancellatio
 3. 运行所选目录中的 `Administratives-China(Province-City-District).sql` 脚本，初始化 **_省(州)_**、**_市_**、**_区/县_** 数据。
 4. 依次运行同一目录中的 `Administratives-China(Street)-?.sql` 脚本以构建 **_街道_**、**_乡镇_** 相关数据。
 
+## NuGet 发布
+
+手动工作流 [Publish NuGet Packages](.github/workflows/publish-nuget.yaml) 从 `main` 发布 `Zongsoft.Administratives` 和 `Zongsoft.Administratives.Web`，先生成 .NET 8、9、10 的 Release 包，再通过 `NuGet/login@v1` 和 `id-token: write` 获取短期发布密钥。
+
+在 GitHub 的 `release` 环境中配置 `NUGET_USER` secret，值为 nuget.org 用户名。[NuGet Trusted Publishing 策略](https://www.nuget.org/account/trustedpublishing)须匹配所有者 `Zongsoft`、仓库 `administratives`、工作流文件名 `publish-nuget.yaml` 和环境 `release`。
+
+首次发布前，先在本地生成并检查两个包的内容：
+
+```powershell
+dotnet pack src/Zongsoft.Administratives.csproj -c Release -p:GeneratePackageOnBuild=false -o ./artifacts -bl:artifacts/domain.binlog
+dotnet pack api/Zongsoft.Administratives.Web.csproj -c Release -p:GeneratePackageOnBuild=false -o ./artifacts -bl:artifacts/web.binlog
+```
+
 ## 版权说明
 
 注意：本项目采用 [MIT 授权协议](https://github.com/Zongsoft/administratives/blob/main/LICENSE)，请严格遵照授权协议，违者必究！
