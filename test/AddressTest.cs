@@ -7,13 +7,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 
-using Xunit;
-
 using Zongsoft.Administratives.Models;
 
 namespace Zongsoft.Administratives.Tests;
 
-public sealed class AddressAsyncTest
+public sealed class AddressTest
 {
 	private static readonly TimeSpan _timeout = TimeSpan.FromSeconds(5);
 	internal const uint StreetId = (11u << 24) | (22u << 16) | (33u << 8) | 44u;
