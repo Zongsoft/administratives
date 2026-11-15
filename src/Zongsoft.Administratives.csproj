@@ -1,4 +1,4 @@
-﻿﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<Version>2.0.0</Version>
 		<Product>Zongsoft Administratives(Chinese) Library</Product>
