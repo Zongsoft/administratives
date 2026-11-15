@@ -16,7 +16,7 @@ This project provides data on the _administrative divisions of the **P**eople's 
 
 ## Reading administrative divisions
 
-The library supports .NET 8, 9, and 10. Use the asynchronous `Address` methods, with the cancellation token as the last argument:
+The library supports .NET 10 and 11. Use the asynchronous `Address` methods, with the cancellation token as the last argument:
 
 ```csharp
 using Zongsoft.Administratives;
@@ -92,7 +92,7 @@ The data script filenames are consistent across database variants. Select the ap
 
 ## NuGet publishing
 
-The manual [Publish NuGet Packages](.github/workflows/publish-nuget.yaml) workflow publishes `Zongsoft.Administratives` and `Zongsoft.Administratives.Web` from `main`. It builds Release packages for .NET 8, 9, and 10, then uses `NuGet/login@v1` with `id-token: write` to obtain a short-lived publishing key.
+The manual [Publish NuGet Packages](.github/workflows/publish-nuget.yaml) workflow publishes `Zongsoft.Administratives` and `Zongsoft.Administratives.Web` from `main`. It builds Release packages for .NET 10 and 11, then uses `NuGet/login@v1` with `id-token: write` to obtain a short-lived publishing key.
 
 Configure the `release` GitHub environment with a `NUGET_USER` secret containing the nuget.org username. The [NuGet trusted publishing policy](https://www.nuget.org/account/trustedpublishing) must match owner `Zongsoft`, repository `administratives`, workflow filename `publish-nuget.yaml`, and environment `release`.
 

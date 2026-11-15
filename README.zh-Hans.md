@@ -16,7 +16,7 @@
 
 ## 读取行政区划
 
-库支持 .NET 8、9、10。通过 `Address` 的异步方法读取数据，并在最后一个参数传入取消令牌：
+库支持 .NET 10、11。通过 `Address` 的异步方法读取数据，并在最后一个参数传入取消令牌：
 
 ```csharp
 using Zongsoft.Administratives;
@@ -92,7 +92,7 @@ var addresses = await Address.GetAddressesAsync(AddressFormat.Keyed, cancellatio
 
 ## NuGet 发布
 
-手动工作流 [Publish NuGet Packages](.github/workflows/publish-nuget.yaml) 从 `main` 发布 `Zongsoft.Administratives` 和 `Zongsoft.Administratives.Web`，先生成 .NET 8、9、10 的 Release 包，再通过 `NuGet/login@v1` 和 `id-token: write` 获取短期发布密钥。
+手动工作流 [Publish NuGet Packages](.github/workflows/publish-nuget.yaml) 从 `main` 发布 `Zongsoft.Administratives` 和 `Zongsoft.Administratives.Web`，先生成 .NET 10、11 的 Release 包，再通过 `NuGet/login@v1` 和 `id-token: write` 获取短期发布密钥。
 
 在 GitHub 的 `release` 环境中配置 `NUGET_USER` secret，值为 nuget.org 用户名。[NuGet Trusted Publishing 策略](https://www.nuget.org/account/trustedpublishing)须匹配所有者 `Zongsoft`、仓库 `administratives`、工作流文件名 `publish-nuget.yaml` 和环境 `release`。
 
